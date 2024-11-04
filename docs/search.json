@@ -126,8 +126,8 @@
     "text": "Comparison Summary 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.\n\n\n\n\n\n\nChoosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs. production."
   },
   {
-    "objectID": "day1.html#why-r",
-    "href": "day1.html#why-r",
+    "objectID": "day1.html#why-r-1",
+    "href": "day1.html#why-r-1",
     "title": "Reproducible Data Science with R",
     "section": "Why R?",
     "text": "Why R?\n\n\n\n1. Open-Source\n\nFree to use and modify, with contributions from a large community.\n\n2. Multi-Platform\n\nRuns on Windows, macOS, and Linux, making it versatile for collaboration.\n\n3. Community Support\n\nStrong online help through forums, tutorials, and dedicated resources.\n\n4. Continuous Development\n\nRegular updates keep R on the leading edge of data science.\n\n5. Reproducible Workflows\n\nTools like Rmarkdown and Quarto facilitates the job."
@@ -138,6 +138,13 @@
     "title": "Reproducible Data Science with R",
     "section": "Why RStudio?",
     "text": "Why RStudio?\n\n\n\n1. An interface to R\n\nProvides a user-friendly environment to work with R.\n\n2. Integrates various components of an analysis\n\nCombines data, code, and output in one place, simplifying the workflow.\n\n3. Colored syntax\n\nHighlights code with colors, making it easier to read and spot errors, improving code clarity.\n\n4. Syntax suggestions\n\nOffers autocomplete suggestions, which speeds up coding and reduces mistakes.\n\n5. RStudio panels\n\nPanels for console, scripts, files, and plots, giving quick access to all elements."
+  },
+  {
+    "objectID": "day1.html#rstudio-panels",
+    "href": "day1.html#rstudio-panels",
+    "title": "Reproducible Data Science with R",
+    "section": "Rstudio panels",
+    "text": "Rstudio panels"
   },
   {
     "objectID": "day1.html#why-version-control",

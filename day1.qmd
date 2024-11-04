@@ -20,44 +20,40 @@ highlight-style: oblivion
 
 ## Welcome 👋
 
-- **Goal**: Gain foundational knowledge and understand how data science can improve agricultural practices.
-- Let's dive into it with an emphasis on reproducibility and data literacy.
-
+-   **Goal**: Gain foundational knowledge and understand how data science can improve agricultural practices.
+-   Let's dive into it with an emphasis on reproducibility and data literacy.
 
 ::: fragment
 ::: callout-tip
-- **Remember**: Questions and discussions are encouraged! 💬
+-   **Remember**: Questions and discussions are encouraged! 💬
 :::
 :::
 
 ## Objectives for Today 📌
 
-- Define core concepts: 
-  - Data Science, 
-  - Data Literacy, 
-  - Reproducibility.
-- Understand the role of **reproducible data science** in agriculture.
-- Explore **challenges** and **opportunities**.
+-   Define core concepts:
+    -   Data Science,
+    -   Data Literacy,
+    -   Reproducibility.
+-   Understand the role of **reproducible data science** in agriculture.
+-   Explore **challenges** and **opportunities**.
 
 # Core concepts
 
 ## What is Data Science in Agriculture? 🌱
 
-- Applying data engineering, analysis, statistics, and machine learning to solve agricultural problems.
-- **Examples**: Precision agriculture, yield forecasting, environmental monitoring.
+-   Applying data engineering, analysis, statistics, and machine learning to solve agricultural problems.
+-   **Examples**: Precision agriculture, yield forecasting, environmental monitoring.
 
 ## Key Definitions 📖
 
 ::: columns
 ::: {.column width="55%"}
-- **Data Science**: Extracting insights from data using algorithms and statistical methods.
-<br/>
+-   **Data Science**: Extracting insights from data using algorithms and statistical methods. <br/>
 
-- **Data Literacy**: Skills to read, interpret, and analyze data.
-<br/>
+-   **Data Literacy**: Skills to read, interpret, and analyze data. <br/>
 
-- **Reproducibility**: Ensuring analyses can be recreated by others.
-
+-   **Reproducibility**: Ensuring analyses can be recreated by others.
 :::
 
 ::: {.column width="45%"}
@@ -65,11 +61,11 @@ highlight-style: oblivion
 ::: callout-note
 **Why does reproducibility matter?**
 
-  - Trustworthy results, 
-  
-  - transparency, & 
-  
-  - collaboration in research.
+-   Trustworthy results,
+
+-   transparency, &
+
+-   collaboration in research.
 :::
 :::
 :::
@@ -77,9 +73,9 @@ highlight-style: oblivion
 
 ## Challenges in Data Literacy 🌐
 
-- Diverse data sources (weather, soil, crop data)
-- Standardization issues across datasets
-- Data skills gap among ag professionals
+-   Diverse data sources (weather, soil, crop data)
+-   Standardization issues across datasets
+-   Data skills gap among ag professionals
 
 ## Why does it matter?
 
@@ -129,6 +125,7 @@ highlight-style: oblivion
     -   Facilitates collaboration, accountability, and efficiency among researchers and practitioners.
 
 ## Challenges in [Ag-research]{style="color:forestgreen"}
+
 ::: fragment
 ### [REPRODUCIBILITY]{style="color:#2a9d8f"} 💻
 
@@ -153,20 +150,19 @@ highlight-style: oblivion
 -   Limited curriculum in applied data science
 :::
 
-
 ## Discussion Prompt 💬
 
 ::: fragment
 <br/>
 
 ### i. Where do you think improved data literacy & reproducibility could impact agriculture the most? {style="color:#bc4749"}
-<br/>
 
+<br/>
 :::
 
 ::: fragment
 ::: callout-tip
-- Consider areas like resource management, market predictions, and farm management.
+-   Consider areas like resource management, market predictions, and farm management.
 :::
 :::
 
@@ -174,18 +170,18 @@ highlight-style: oblivion
 <br/>
 
 ### ii. What practical challenges do you face (or may) in implementing them? {style="color:#457b9d"}
-<br/>
 
+<br/>
 :::
 
-# What is R? 
+# What is R?
 
 ::: fragment
 ## What is R? 🧮
 
-- **R** is a programming language and environment primarily for statistical analysis, data visualization, and data science.
-- Known for its extensive **statistical libraries**, **data manipulation capabilities**, and **graphics**.
-- Widely used in fields like **data science**, **bioinformatics**, **agriculture**, and **social sciences**.
+-   **R** is a programming language and environment primarily for statistical analysis, data visualization, and data science.
+-   Known for its extensive **statistical libraries**, **data manipulation capabilities**, and **graphics**.
+-   Widely used in fields like **data science**, **bioinformatics**, **agriculture**, and **social sciences**.
 :::
 
 <br/>
@@ -193,13 +189,11 @@ highlight-style: oblivion
 ::: fragment
 ### Brief History of R 📜
 
-- **Origin**: Developed in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand.
-- **Inspiration**: R is an implementation of the S language, designed at Bell Laboratories for data analysis.
-- **Open Source**: Released as free, open-source software, leading to a large community of users and contributors.
-- **Popularity**: Today, R is one of the top programming languages for statistical analysis and data science.
-
+-   **Origin**: Developed in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand.
+-   **Inspiration**: R is an implementation of the S language, designed at Bell Laboratories for data analysis.
+-   **Open Source**: Released as free, open-source software, leading to a large community of users and contributors.
+-   **Popularity**: Today, R is one of the top programming languages for statistical analysis and data science.
 :::
-
 
 # Alternatives to R
 
@@ -207,40 +201,35 @@ highlight-style: oblivion
 
 ::: columns
 ::: {.column width="65%"}
-- **Excel**: Known for ease of use, popular among business and finance professionals.
-  - **Pros**: Intuitive, good for small datasets and quick analysis.
-  - **Cons**: Limited in handling large datasets, lacks reproducibility.
-  
-- **R**: Provides powerful data manipulation packages (e.g., `dplyr`, `tidyr`).
-  - **Pros**: Handles large datasets efficiently, supports complex transformations, fully reproducible.
-  - **Cons**: Requires programming knowledge, steeper learning curve than Excel.
+-   **Excel**: Known for ease of use, popular among business and finance professionals.
+    -   **Pros**: Intuitive, good for small datasets and quick analysis.
+    -   **Cons**: Limited in handling large datasets, lacks reproducibility.
+-   **R**: Provides powerful data manipulation packages (e.g., `dplyr`, `tidyr`).
+    -   **Pros**: Handles large datasets efficiently, supports complex transformations, fully reproducible.
+    -   **Cons**: Requires programming knowledge, steeper learning curve than Excel.
 :::
 
 ::: {.column width="35%"}
 ![](https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019–present%29.svg){fig-align="right" width="290"}
 :::
-
 :::
 
 ::: fragment
 ::: callout-tip
-- **Tip**: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets.
+-   **Tip**: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets.
 :::
 :::
-
-
 
 ## R vs. SAS for Statistical Analysis 📉
 
 ::: columns
 ::: {.column width="65%"}
-- **SAS**: A powerful statistical software suite used widely in industries such as healthcare and finance.
-  - **Pros**: Robust for regulatory environments, highly standardized.
-  - **Cons**: Proprietary and costly, limited community contributions.
-
-- **R**: Offers a vast array of statistical packages and flexibility in method implementation.
-  - **Pros**: Free and open-source, customizable, strong community support.
-  - **Cons**: Requires more coding and configuration for regulatory standards.
+-   **SAS**: A powerful statistical software suite used widely in industries such as healthcare and finance.
+    -   **Pros**: Robust for regulatory environments, highly standardized.
+    -   **Cons**: Proprietary and costly, limited community contributions.
+-   **R**: Offers a vast array of statistical packages and flexibility in method implementation.
+    -   **Pros**: Free and open-source, customizable, strong community support.
+    -   **Cons**: Requires more coding and configuration for regulatory standards.
 :::
 
 ::: {.column width="35%"}
@@ -249,19 +238,17 @@ highlight-style: oblivion
 
 ::: fragment
 ::: callout-note
-- **Comparison**: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control.
+-   **Comparison**: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control.
 :::
 :::
 :::
-
 
 ## R vs Python vs Julia 🔍
 
-- R, Python, and Julia are popular languages in data science and research.
-- Each language has unique strengths, ideal use cases, and licensing considerations.
+-   R, Python, and Julia are popular languages in data science and research.
+-   Each language has unique strengths, ideal use cases, and licensing considerations.
 
 ::: columns
-
 ::: {.column width="34%"}
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1448px-R_logo.svg.png?20240131042527){fig-align="right" width="290"}
 :::
@@ -273,23 +260,22 @@ highlight-style: oblivion
 ::: {.column width="33%"}
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg){fig-align="right" width="290"}
 :::
-
 :::
-
 
 ## R: Strengths and Use Cases 🧮
 
 ::: columns
 ::: {.column width="65%"}
-- **Designed for Statistics**: R is optimized for statistical analysis, making it ideal for research and academia.
-- **Visualization**: Excellent data visualization libraries like `ggplot2`.
-- **Licensing**: Licensed under **GPL**; many packages are also GPL, with some using MIT or BSD.
+-   **Designed for Statistics**: R is optimized for statistical analysis, making it ideal for research and academia.
+-   **Visualization**: Excellent data visualization libraries like `ggplot2`.
+-   **Licensing**: Licensed under **GPL**; many packages are also GPL, with some using MIT or BSD.
 
 ::: fragment
 ### Ideal Use Cases:
-- Data analysis, visualization, and complex statistical modeling.
-- Research and academia where open-source, reproducible code is needed.
-- **Licensing in Production**: GPL may restrict proprietary use; check package licenses carefully.
+
+-   Data analysis, visualization, and complex statistical modeling.
+-   Research and academia where open-source, reproducible code is needed.
+-   **Licensing in Production**: GPL may restrict proprietary use; check package licenses carefully.
 :::
 :::
 
@@ -298,22 +284,20 @@ highlight-style: oblivion
 :::
 :::
 
-
-
 ## Python: Strengths and Use Cases 🐍
 
 ::: columns
 ::: {.column width="65%"}
-
-- **General-Purpose Language**: Python is popular for both data science and software development.
-- **Machine Learning & AI**: Extensive libraries for ML and AI, such as `scikit-learn`, `TensorFlow`.
-- **Licensing**: PSFL (Python Software Foundation License), highly permissive for proprietary use.
+-   **General-Purpose Language**: Python is popular for both data science and software development.
+-   **Machine Learning & AI**: Extensive libraries for ML and AI, such as `scikit-learn`, `TensorFlow`.
+-   **Licensing**: PSFL (Python Software Foundation License), highly permissive for proprietary use.
 
 ::: fragment
 ### Ideal Use Cases:
-- End-to-end development, from data wrangling to ML and web development.
-- Production-ready ML and AI applications.
-- **Licensing in Production**: Permissive licenses allow closed-source use, making Python production-friendly.
+
+-   End-to-end development, from data wrangling to ML and web development.
+-   Production-ready ML and AI applications.
+-   **Licensing in Production**: Permissive licenses allow closed-source use, making Python production-friendly.
 :::
 :::
 
@@ -322,21 +306,19 @@ highlight-style: oblivion
 :::
 :::
 
-
-
 ## Julia: Strengths and Use Cases 🚀
 
 ::: columns
 ::: {.column width="65%"}
-
-- **High Performance**: Designed for scientific computing, close to the speed of C/C++.
-- **Ease of Use**: Combines high-level syntax with low-level performance.
-- **Licensing**: MIT license, very permissive for commercial and open-source use.
+-   **High Performance**: Designed for scientific computing, close to the speed of C/C++.
+-   **Ease of Use**: Combines high-level syntax with low-level performance.
+-   **Licensing**: MIT license, very permissive for commercial and open-source use.
 
 ::: fragment
 ### Ideal Use Cases:
-- Large-scale simulations, optimization problems, high-performance computing.
-- **Licensing in Production**: MIT license allows proprietary use without restrictions.
+
+-   Large-scale simulations, optimization problems, high-performance computing.
+-   **Licensing in Production**: MIT license allows proprietary use without restrictions.
 :::
 :::
 
@@ -349,56 +331,56 @@ highlight-style: oblivion
 
 ::: fragment
 ::: callout-note
-- **R**: Open-source, powerful for data science, statistical analysis, and visualizations.
-- **Excel**: User-friendly, ideal for simple tasks, but limited for complex data wrangling.
-- **SAS**: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.
+-   **R**: Open-source, powerful for data science, statistical analysis, and visualizations.
+-   **Excel**: User-friendly, ideal for simple tasks, but limited for complex data wrangling.
+-   **SAS**: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.
 :::
 :::
 
 <br/>
 
 ::: fragment
-| Feature                  | R                              | Python                          | Julia                         |
-|--------------------------|--------------------------------|---------------------------------|-------------------------------|
-| **Primary Strength**     | Statistics & Visualization     | General-purpose, ML, AI         | High-performance computing    |
-| **Performance**          | Moderate                       | Moderate                        | High                          |
-| **Licensing**            | GPL (core), MIT, BSD (some)    | PSFL, highly permissive         | MIT, highly permissive        |
-| **Production Use**       | Limited by GPL                 | Very friendly for proprietary   | Very friendly for proprietary |
+| Feature              | R                           | Python                        | Julia                         |
+|------------------|------------------|-------------------|------------------|
+| **Primary Strength** | Statistics & Visualization  | General-purpose, ML, AI       | High-performance computing    |
+| **Performance**      | Moderate                    | Moderate                      | High                          |
+| **Licensing**        | GPL (core), MIT, BSD (some) | PSFL, highly permissive       | MIT, highly permissive        |
+| **Production Use**   | Limited by GPL              | Very friendly for proprietary | Very friendly for proprietary |
 :::
 
 <br/>
 
 ::: fragment
-
 ::: callout-tip
-- **R**: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.
-- **Python**: Strong in ML and AI with highly permissive licensing, making it ideal for production.
-- **Julia**: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.
+-   **R**: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.
+-   **Python**: Strong in ML and AI with highly permissive licensing, making it ideal for production.
+-   **Julia**: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.
 :::
 :::
 
 ::: fragment
-Choosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs. production.
+Choosing the right tool depends on your project's requirements, team skills, and licensing needs for research vs. production.
 :::
 
----
+------------------------------------------------------------------------
+
+# Why R?
+
 
 ## Why R?
 
 ::: columns
 ::: {.column width="70%"}
-
-- **1. Open-Source**
-  - Free to use and modify, with contributions from a large community.
-- **2. Multi-Platform**
-  - Runs on Windows, macOS, and Linux, making it versatile for collaboration.
-- **3. Community Support**
-  - Strong online help through forums, tutorials, and dedicated resources.
-- **4. Continuous Development**
-  - Regular updates keep R on the leading edge of data science.
-- **5. Reproducible Workflows**
-  - Tools like **Rmarkdown** and **Quarto** facilitates the job.
-
+-   **1. Open-Source**
+    -   Free to use and modify, with contributions from a large community.
+-   **2. Multi-Platform**
+    -   Runs on Windows, macOS, and Linux, making it versatile for collaboration.
+-   **3. Community Support**
+    -   Strong online help through forums, tutorials, and dedicated resources.
+-   **4. Continuous Development**
+    -   Regular updates keep R on the leading edge of data science.
+-   **5. Reproducible Workflows**
+    -   Tools like **Rmarkdown** and **Quarto** facilitates the job.
 :::
 
 ::: {.column width="30%"}
@@ -406,23 +388,20 @@ Choosing the right tool depends on your project’s requirements, team skills, a
 :::
 :::
 
-
-
-
 ## Why RStudio?
 
 ::: columns
 ::: {.column width="70%"}
-- **1. An interface to R**
-  - Provides a user-friendly environment to work with R.
-- **2. Integrates various components of an analysis**
-  - Combines data, code, and output in one place, simplifying the workflow.
-- **3. Colored syntax**
-  - Highlights code with colors, making it easier to read and spot errors, improving code clarity.
-- **4. Syntax suggestions**
-  - Offers autocomplete suggestions, which speeds up coding and reduces mistakes.
-- **5. RStudio panels**
-  - Panels for console, scripts, files, and plots, giving quick access to all elements.
+-   **1. An interface to R**
+    -   Provides a user-friendly environment to work with R.
+-   **2. Integrates various components of an analysis**
+    -   Combines data, code, and output in one place, simplifying the workflow.
+-   **3. Colored syntax**
+    -   Highlights code with colors, making it easier to read and spot errors, improving code clarity.
+-   **4. Syntax suggestions**
+    -   Offers autocomplete suggestions, which speeds up coding and reduces mistakes.
+-   **5. RStudio panels**
+    -   Panels for console, scripts, files, and plots, giving quick access to all elements.
 :::
 
 ::: {.column width="30%"}
@@ -430,20 +409,23 @@ Choosing the right tool depends on your project’s requirements, team skills, a
 :::
 :::
 
+## Rstudio panels
+![](images/rstudiopanel.png)
+
 ## Why version control? 🔄
 
 ::: columns
 ::: {.column width="70%"}
-- **1. Track Changes**
-  - Maintain a complete history of edits, making it easy to identify when and why changes were made.
-- **2. Collaborate Seamlessly**
-  - Multiple users can work together without overwriting each other’s work, enhancing teamwork.
-- **3. Ensure Data Integrity**
-  - Protect primary data by using branches for experimentation, avoiding accidental overwrites.
-- **4. Boost Reproducibility**
-  - Access exact versions of code and data, enabling others to reproduce your work reliably.
-- **5. Provide Built-in Documentation**
-  - Each change can be documented, helping others understand your workflow and decisions.
+-   **1. Track Changes**
+    -   Maintain a complete history of edits, making it easy to identify when and why changes were made.
+-   **2. Collaborate Seamlessly**
+    -   Multiple users can work together without overwriting each other's work, enhancing teamwork.
+-   **3. Ensure Data Integrity**
+    -   Protect primary data by using branches for experimentation, avoiding accidental overwrites.
+-   **4. Boost Reproducibility**
+    -   Access exact versions of code and data, enabling others to reproduce your work reliably.
+-   **5. Provide Built-in Documentation**
+    -   Each change can be documented, helping others understand your workflow and decisions.
 :::
 
 ::: {.column width="30%"}
@@ -459,14 +441,13 @@ Choosing the right tool depends on your project’s requirements, team skills, a
 
 ::: columns
 ::: {.column width="70%"}
+-   **Git**
+    -   A version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.
 
-- **Git**
-  - A version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.
-  
 <br/>
 
-- **GitHub**
-  - An online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.
+-   **GitHub**
+    -   An online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.
 :::
 
 ::: {.column width="30%"}
@@ -480,50 +461,54 @@ Choosing the right tool depends on your project’s requirements, team skills, a
 
 ## Key Principles for Reproducibility
 
-- **Documentation and Code Comments**
-  - Metadata: information about data origin, format, structure, and meaning.
-  - Code comments: provide explanations directly in scripts for future reference.
-  
-- **Version Control (Git/GitHub)**
-  - Tracks changes to code over time, making it easy to return to previous versions.
-  - Useful for collaborative work and transparency.
-
-- **Organization & Structured coding...**
+-   **Documentation and Code Comments**
+    -   Metadata: information about data origin, format, structure, and meaning.
+    -   Code comments: provide explanations directly in scripts for future reference.
+-   **Version Control (Git/GitHub)**
+    -   Tracks changes to code over time, making it easy to return to previous versions.
+    -   Useful for collaborative work and transparency.
+-   **Organization & Structured coding...**
 
 ## Basic Project Structure
-- **Organizing Projects for Reproducibility**
-  - Folder setup: `data/`, `code/`, `results/` folders for logical organization.
-  - README file: brief guide to project structure, data sources, and analysis steps.
 
-- **Sample Project Structure**
-  ```
-  project_directory/
-  ├── data/       # Raw and processed datasets
-  ├── code/    # Code files for data processing
-  ├── results/    # Generated results, plots, and reports
-  ├── README.md   # Overview of the project structure and purpose
-  ```
-  
+-   **Organizing Projects for Reproducibility**
+
+    -   Folder setup: `data/`, `code/`, `results/` folders for logical organization.
+    -   README file: brief guide to project structure, data sources, and analysis steps.
+
+-   **Sample Project Structure**
+
+    ```         
+    project_directory/
+    ├── data/       # Raw and processed datasets
+    ├── code/    # Code files for data processing
+    ├── results/    # Generated results, plots, and reports
+    ├── README.md   # Overview of the project structure and purpose
+    ```
+
+![](images/projectfolders.png)
+
+
 # Essentials of R 🔍
 
-- Let's cover the core building blocks of R for data science.
+-   Let's cover the core building blocks of R for data science.
 
 ## Objectives 📌
 
-- Types of R objects and their uses.
-- Key functions and data wrangling basics.
-- Tidy data concepts.
+-   Types of R objects and their uses.
+-   Key functions and data wrangling basics.
+-   Tidy data concepts.
 
 ## Common R Objects 🧩
 
-- **Scalars**: Single data point (e.g., `5`, or `a`)
-- **Vectors**: Simple data storage (e.g., `c(1, 2, 3)`)
-- **Lists**: Collection of various data types
-- **Dataframes**: Tabular data (like spreadsheets)
-- **Tibbles**: Enhanced dataframes with cleaner output
-- **Matrices**: data arranged in rows and columns (2D)
+-   **Scalars**: Single data point (e.g., `5`, or `a`)
+-   **Vectors**: Simple data storage (e.g., `c(1, 2, 3)`)
+-   **Lists**: Collection of various data types
+-   **Dataframes**: Tabular data (like spreadsheets)
+-   **Tibbles**: Enhanced dataframes with cleaner output
+-   **Matrices**: data arranged in rows and columns (2D)
 
-## Object 
+## Object
 
 ::: fragment
 ```{r}
@@ -585,7 +570,6 @@ d
 :::
 
 ::: fragment
-
 <br/>
 
 ### 2. Tibble
@@ -637,21 +621,20 @@ class(f)
 ```
 :::
 
-## Functions ⚙️ 
+## Functions ⚙️
 
 ::: fragment
-- A function is a block of code that performs a specific task. <br/>
-- Types: 
-  - **Pre-built functions**: e.g., `mean()`, `sum()`
-  - **Custom functions**: How to define and use
-  
+-   A function is a block of code that performs a specific task. <br/>
+-   Types:
+    -   **Pre-built functions**: e.g., `mean()`, `sum()`
+    -   **Custom functions**: How to define and use
 :::
 
 ::: fragment
 ::: callout-tip
-- Functions make code reusable and organized. Define once, use often! 💡
-- A function is executed when it is **called**. <br/>
-- You can pass data, numbers, lists, dataframes, matrices, etc... <br/>
+-   Functions make code reusable and organized. Define once, use often! 💡
+-   A function is executed when it is **called**. <br/>
+-   You can pass data, numbers, lists, dataframes, matrices, etc... <br/>
 :::
 :::
 
@@ -668,6 +651,7 @@ fx <- function(arguments) {
 
 ::: fragment
 Example of a function to calculate the mean
+
 ```{r}
 #| echo: true
 fx <- function(x, ...) {
@@ -678,7 +662,6 @@ fx(b)
 
 ```
 :::
-
 
 ## Argument
 
@@ -702,17 +685,15 @@ fx(na.rm = T, x = b2)
 
 A package is a collection of R functions, data sets, and compiled code in a well-defined format. <br/>
 
-- Packages are intended to solve specific problems or perform specific tasks. <br/>
+-   Packages are intended to solve specific problems or perform specific tasks. <br/>
 
-- There are currently thousands of packages available (+21,000 on CRAN only). <br/>
+-   There are currently thousands of packages available (+21,000 on CRAN only). <br/>
 
 ::: fragment
-
 <br/>
 
 ![](images/packages.png){fig-align="center" width="1000"}
 :::
-
 
 # Why TIDY data?
 
@@ -722,17 +703,17 @@ A package is a collection of R functions, data sets, and compiled code in a well
 From the hand of the family of packages called [Tidyverse](https://www.tidyverse.org/), the "tidy data" framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure [@wickham2014]:
 :::
 
-- Each variable is a column,
+-   Each variable is a column,
 
-- Each observation is a row, and
+-   Each observation is a row, and
 
-- Each value have its own cell.
+-   Each value have its own cell.
 
 ::: fragment
 ![](images/tidy-1.png) <br/>
 
 **Tidy-data structure**. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells. Source: Wickham (2017).
-::: 
+:::
 
 ## Free HTML books
 
@@ -744,14 +725,14 @@ From the hand of the family of packages called [Tidyverse](https://www.tidyverse
 
 ## Summary & Key Takeaways
 
-- Data literacy and reproducibility are essential in modern agriculture.
-- Reproducible analyses build credibility and foster collaboration.
+-   Data literacy and reproducibility are essential in modern agriculture.
+-   Reproducible analyses build credibility and foster collaboration.
 
----
+------------------------------------------------------------------------
 
 ## THANK YOU!
 
-acorrend@uoguelph.ca
+acorrend\@uoguelph.ca
 
 ::: {style="text-align: right; font-size: 0.75em"}
 Adrian A. Correndo\
@@ -769,10 +750,7 @@ Ontario Agricultural College \| University of Guelph \| 50 Stone Rd E, Guelph, O
 
 ### Contact me
 
-|                                                                                                      |                                                                                                                                                 |                                                                                                                                   |
-|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                               |                                                                                                                                          |                                                                                                                            |
+|--------------------|----------------------------|-------------------------|
 | [![](images/X_logo.png.webp){fig-align="center" width="60"}](http://twitter.com/aacorrendo)   | [![](images/linkedin-icon.png){fig-align="center" width="60"}](https://www.linkedin.com/in/adriancorrendo/)                              | [![](images/github-brands.svg){fig-align="center" width="60" height="60"}](http://github.com/adriancorrendo)               |
 | [![](images/orcid.png){fig-align="center" width="60"}](https://orcid.org/0000-0002-4172-289X) | [![](images/768px-Google_Scholar_logo.png){fig-align="center" width="60"}](https://scholar.google.com/citations?user=4h88EXkAAAAJ&hl=en) | [![](images/ResearchGate_icon.png){fig-align="center" width="60"}](https://www.researchgate.net/profile/Adrian-Correndo-2) |
-
-
-
