@@ -36,6 +36,8 @@ website:
             text: "Description"
       - section: "Sessions"
         contents:
+          - href: talks.qmd
+            text: "Talks"
           - href: day1.qmd
             text: "Day 1"
          
