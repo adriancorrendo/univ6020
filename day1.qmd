@@ -1,0 +1,81 @@
+---
+title: "Reproducible Data Science with R"
+author: "Adrian A. Correndo"
+date: "2024-11-04"
+editor: source
+format:
+  revealjs: 
+    incremental: true
+    slide-number: true
+    show-slide-number: all
+    toc: true
+    toc_float: true
+    toc-depth: 1
+    toc-location: body
+    toc-title: "Contents"
+    smaller: true
+    scrollable: true
+highlight-style: oblivion  
+---
+
+## Welcome & Context
+- **What is Reproducibility?**
+  - In data science, reproducibility refers to the ability to replicate results by following the same data and methods.
+  - Essential for transparency, accountability, and validation of scientific results.
+
+## Why does it matter?
+
+::: {.column width="55%"}
+-   It is the **#1 skill-gap** in the job market: <br/>
+
+    - Academia, 
+    - Industry, 
+    - Government, NGOs, etc.
+:::
+
+::: {.column width="45%"}
+![](images/reproducibility.png){.absolute top=0 right=0 height="65%"}
+:::
+
+
+- Is there a REPRODUCIBILITY CRISIS in science?
+- A [Nature survey](https://www.nature.com/articles/533452a) with \~1,600 researchers found that
+
+  -   **_+70%_** failure rate to reproduce another scientist's experiments
+
+  -   **_+50%_** have failed to reproduce their own experiments
+  
+  -   **_Main causes_**: selective reporting, weak stats, code/data unavailability, etc.
+
+## GOOD NEWS IS...
+
+::: {.fragment}
+::: {.column width="100%"}
+![](images/repbrush.png){.absolute top=50 left=200 height="100%"}
+:::
+:::
+
+## Challenges in [Ag-research]{style="color:#023e8a"}
+
+### [EDUCATION]{style="color:#BA0C2F"} 🎓
+
+-   Limited curriculum in applied data science
+
+### [REPRODUCIBILITY]{style="color:#2a9d8f"}
+
+-   Limited capability to reproduce analyses & results
+
+-   DATA are rarely shared, CODES even less
+
+### [ACCESSIBILITY]{style="color:#023e8a"} 
+
+-   Yet we are not translating enough science into flexible, and transparent decision tools.
+
+"It all starts with *education*"
+
+## Why bother with [reproducible science]{style="color:#BA0C2F"}?
+
+-   Tracks how and why of specific decisions\
+-   Quickly modify analysis and figures\
+-   + efficiency\
+-   + Transparency\

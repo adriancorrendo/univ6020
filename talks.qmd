@@ -1,0 +1,14 @@
+---
+title: "Day #1"
+author: "Adrian Correndo"
+format:
+  html:
+    fontsize: 0.8em
+    linestretch: 1
+---
+
+# Presentation
+
+<iframe class="slide-deck" src="docs/day1.html">
+
+</iframe>

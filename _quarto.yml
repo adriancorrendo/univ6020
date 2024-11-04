@@ -4,10 +4,9 @@ project:
 
 website:
   page-navigation: true
-  title: "Statasaurus - Fall 2022"
-  description: "Homepage for the Statasaurus Team"
-  site-url: "https://adriancorrendo.github.io/statasaurusweb/"
-  repo-url: "https://github.com/adriancorrendo/statasaurusweb/"
+  title: "UNIV6020 - Fall 2024"
+  description: "Reproducible Ag Data Science with R"
+  site-url: "https://adriancorrendo.github.io/"
   repo-actions: [edit, issue]
   
   open-graph: true
@@ -25,7 +24,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/adriancorrendo/Stats_Hub_2022
+        href: https://github.com/adriancorrendo/
         
     style: "docked"
     search: true
@@ -35,26 +34,11 @@ website:
         contents: 
           - href: index.qmd
             text: "Description"
-          - href: schedule.qmd
-            text: "Schedule"
-          - href: members.qmd
-            text: "Members"
-      - section: "Encounters"
+      - section: "Sessions"
         contents:
-          - href: e1_intro.qmd
-            text: "1_intro"
-          - href: e2_bayes_1.qmd
-            text: "2_bayes_1"
-          - href: e3_bayes_2.qmd
-            text: "3_bayes_2"
-          - href: e4_bayes_3.qmd
-            text: "4_bayes_3"
-          - href: e5_shinyapps.qmd
-            text: "5_shinyapps"
-          - href: e7_metaanalysis.qmd
-            text: "7_meta_analysis"
-      
-    
+          - href: day1.qmd
+            text: "Day 1"
+         
 format:
   html:
     theme: cosmo
