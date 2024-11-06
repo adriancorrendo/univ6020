@@ -8,9 +8,7 @@ format:
 Welcome 🍂
 
 ::: callout-note
-It is expected that members have:
+For our Friday coding session, it is expected that students have:
 
-i\. the latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/) installed.
-
-ii\. training on the basics of data analysis using R.
+i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio/download/) installed.
 :::

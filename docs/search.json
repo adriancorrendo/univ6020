@@ -310,7 +310,7 @@
   {
     "objectID": "talks.html",
     "href": "talks.html",
-    "title": "Day #1",
+    "title": "Talks",
     "section": "",
     "text": "Presentation"
   },
@@ -319,12 +319,12 @@
     "href": "index.html",
     "title": "Reproducible Ag Data Science with R",
     "section": "",
-    "text": "Welcome 🍂\n\n\n\n\n\n\nNote\n\n\n\nIt is expected that members have:\ni. the latest version of RStudio installed.\nii. training on the basics of data analysis using R."
+    "text": "Welcome 🍂\n\n\n\n\n\n\nNote\n\n\n\nFor our Friday coding session, it is expected that students have:\ni. the latest version of R & RStudio installed."
   },
   {
     "objectID": "day3.html",
     "href": "day3.html",
-    "title": "Day #1",
+    "title": "Day #3",
     "section": "",
     "text": "Presentation\nComing soon"
   }
