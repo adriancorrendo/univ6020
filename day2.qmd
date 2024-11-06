@@ -58,6 +58,7 @@ highlight-style: oblivion
     -   Offers autocomplete suggestions, which speeds up coding and reduces mistakes.
 -   **5. RStudio panels**
     -   Panels for console, scripts, files, and plots, giving quick access to all elements.
+    
 :::
 
 ::: {.column width="30%"}
@@ -65,8 +66,10 @@ highlight-style: oblivion
 :::
 :::
 
-::: fragment
+
 ## Rstudio panels
+
+::: fragment
 ![](images/rstudiopanel.png)
 :::
 
@@ -84,6 +87,7 @@ highlight-style: oblivion
     -   Access exact versions of code and data, enabling others to reproduce your work reliably.
 -   **5. Provide Built-in Documentation**
     -   Each change can be documented, helping others understand your workflow and decisions.
+
 :::
 
 ::: {.column width="30%"}
@@ -106,6 +110,7 @@ highlight-style: oblivion
 
 -   **GitHub**
     -   An online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.
+    
 :::
 
 ::: {.column width="30%"}
@@ -201,7 +206,9 @@ highlight-style: oblivion
     ├── README.md   # Overview of the project structure and purpose
     ```
 
+::: fragment
 ![](images/projectfolders.png)
+:::
 
 
 # Essentials of R 🔍
