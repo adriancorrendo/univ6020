@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Adrian A. Correndo">
-  <meta name="dcterms.date" content="2024-11-04">
-  <title>UNIV6020 - Fall 2024 - Reproducible Data Science with R</title>
+  <meta name="dcterms.date" content="2024-11-06">
+  <title>UNIV6020 - Fall 2024 - Reproducible Data Science with R II</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #d3d7c1; background-color: #201f1f; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #d3d7c1; } /* Normal */
+    code span.al { color: #e85848; background-color: #451e1a; font-weight: bold; } /* Alert */
+    code span.an { color: #ad7fa8; } /* Annotation */
+    code span.at { color: #ad7fa8; } /* Attribute */
+    code span.bn { color: #edd400; } /* BaseN */
+    code span.bu { color: #729fcf; } /* BuiltIn */
+    code span.cf { color: #ffffff; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #ce5c00; } /* Char */
+    code span.cn { color: #edd400; font-weight: bold; } /* Constant */
+    code span.co { color: #30a100; } /* Comment */
+    code span.cv { color: #ad7fa8; } /* CommentVar */
+    code span.do { color: #4e9a06; } /* Documentation */
+    code span.dt { color: #508ed8; } /* DataType */
+    code span.dv { color: #edd400; } /* DecVal */
+    code span.er { color: #e85848; text-decoration: underline; } /* Error */
+    code span.ex { color: #508ed8; font-weight: bold; } /* Extension */
+    code span.fl { color: #ce5c00; } /* Float */
+    code span.fu { color: #729fcf; font-weight: bold; } /* Function */
+    code span.im { color: #ad7fa8; } /* Import */
+    code span.in { color: #c0a25f; } /* Information */
+    code span.kw { color: #ffffff; font-weight: bold; } /* Keyword */
+    code span.op { color: #eeeeec; } /* Operator */
+    code span.ot { color: #edd400; } /* Other */
+    code span.pp { color: #ad7fa8; } /* Preprocessor */
+    code span.re { color: #508ed8; background-color: #1c2c3f; } /* RegionMarker */
+    code span.sc { color: #ce5c00; } /* SpecialChar */
+    code span.ss { color: #fce94f; } /* SpecialString */
+    code span.st { color: #edd400; } /* String */
+    code span.va { color: #ce5c00; } /* Variable */
+    code span.vs { color: #c4a000; } /* VerbatimString */
+    code span.wa { color: #e85848; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -321,9 +386,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R">
+<meta property="og:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R II">
+<meta property="og:description" content="Why R and R essentials">
 <meta property="og:site-name" content="UNIV6020 - Fall 2024">
-<meta name="twitter:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R">
+<meta name="twitter:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R II">
+<meta name="twitter:description" content="Why R and R essentials">
 <meta name="twitter:creator" content="@aacorrendo">
 <meta name="twitter:card" content="summary">
 </head>
@@ -332,7 +399,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Reproducible Data Science with R</h1>
+  <h1 class="title">Reproducible Data Science with R II</h1>
+  <p class="subtitle">Why R and R essentials</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -342,376 +410,49 @@ Adrian A. Correndo
 </div>
 </div>
 
-  <p class="date">2024-11-04</p>
+  <p class="date">2024-11-06</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Contents</h2>
 <ul>
-<li class="fragment"><a href="#/core-concepts" id="/toc-core-concepts">Core concepts</a></li>
-<li class="fragment"><a href="#/what-is-r" id="/toc-what-is-r">What is R?</a></li>
-<li class="fragment"><a href="#/alternatives-to-r" id="/toc-alternatives-to-r">Alternatives to R</a></li>
+<li class="fragment"><a href="#/why-r" id="/toc-why-r">Why R?</a></li>
+<li class="fragment"><a href="#/essentials-of-r" id="/toc-essentials-of-r">Essentials of R 🔍</a></li>
+<li class="fragment"><a href="#/why-tidy-data" id="/toc-why-tidy-data">Why TIDY data?</a></li>
 </ul>
 </nav>
 </section>
-<section id="welcome" class="slide level2">
-<h2>Welcome 👋</h2>
-<ul>
-<li class="fragment"><strong>Goal</strong>: Gain foundational knowledge and understand how data science can improve agricultural practices.</li>
-<li class="fragment">Let’s dive into it with an emphasis on reproducibility and data literacy.</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><strong>Remember</strong>: Questions and discussions are encouraged! 💬</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="objectives-for-today" class="slide level2">
-<h2>Objectives for Today 📌</h2>
-<ul>
-<li class="fragment">Define core concepts:
-<ul>
-<li class="fragment">Data Science,</li>
-<li class="fragment">Data Literacy,</li>
-<li class="fragment">Reproducibility.</li>
-</ul></li>
-<li class="fragment">Understand the role of <strong>reproducible data science</strong> in agriculture.</li>
-<li class="fragment">Explore <strong>challenges</strong> and <strong>opportunities</strong>.</li>
-</ul>
-</section>
 <section>
-<section id="core-concepts" class="title-slide slide level1 center">
-<h1>Core concepts</h1>
+<section id="why-r" class="title-slide slide level1 center">
+<h1>Why R?</h1>
 
 </section>
-<section id="what-is-data-science-in-agriculture" class="slide level2">
-<h2>What is Data Science in Agriculture? 🌱</h2>
-<ul>
-<li class="fragment">Applying data engineering, analysis, statistics, and machine learning to solve agricultural problems.</li>
-<li class="fragment"><strong>Examples</strong>: Precision agriculture, yield forecasting, environmental monitoring.</li>
-</ul>
-</section>
-<section id="key-definitions" class="slide level2">
-<h2>Key Definitions 📖</h2>
+<section id="why-r-1" class="slide level2">
+<h2>Why R?</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:70%;">
 <ul>
-<li class="fragment"><p><strong>Data Science</strong>: Extracting insights from data using algorithms and statistical methods. <br></p></li>
-<li class="fragment"><p><strong>Data Literacy</strong>: Skills to read, interpret, and analyze data. <br></p></li>
-<li class="fragment"><p><strong>Reproducibility</strong>: Ensuring analyses can be recreated by others.</p></li>
-</ul>
-</div><div class="column" style="width:45%;">
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Why does reproducibility matter?</strong></p>
+<li class="fragment"><strong>1. Open-Source</strong>
 <ul>
-<li class="fragment"><p>Trustworthy results,</p></li>
-<li class="fragment"><p>transparency, &amp;</p></li>
-<li class="fragment"><p>collaboration in research.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="challenges-in-data-literacy" class="slide level2">
-<h2>Challenges in Data Literacy 🌐</h2>
+<li class="fragment">Free to use and modify, with contributions from a large community.</li>
+</ul></li>
+<li class="fragment"><strong>2. Multi-Platform</strong>
 <ul>
-<li class="fragment">Diverse data sources (weather, soil, crop data)</li>
-<li class="fragment">Standardization issues across datasets</li>
-<li class="fragment">Data skills gap among ag professionals</li>
-</ul>
-</section>
-<section id="why-does-it-matter" class="slide level2">
-<h2>Why does it matter?</h2>
-<div class="column" style="width:55%;">
+<li class="fragment">Runs on Windows, macOS, and Linux, making it versatile for collaboration.</li>
+</ul></li>
+<li class="fragment"><strong>3. Community Support</strong>
 <ul>
-<li class="fragment"><p>It is the <strong>#1 skill-gap</strong> in the job market: <br></p>
+<li class="fragment">Strong online help through forums, tutorials, and dedicated resources.</li>
+</ul></li>
+<li class="fragment"><strong>4. Continuous Development</strong>
 <ul>
-<li class="fragment">Academia,</li>
-<li class="fragment">Industry,</li>
-<li class="fragment">Government, NGOs, etc.</li>
+<li class="fragment">Regular updates keep R on the leading edge of data science.</li>
+</ul></li>
+<li class="fragment"><strong>5. Reproducible Workflows</strong>
+<ul>
+<li class="fragment">Tools like <strong>Rmarkdown</strong> and <strong>Quarto</strong> facilitates the job.</li>
 </ul></li>
 </ul>
-</div>
-<div class="column" style="width:45%;">
-<p><img data-src="images/reproducibility.png" class="absolute" style="top: 0px; right: 0px; height: 65%; "></p>
-</div>
-<ul>
-<li class="fragment"><p>Is there a REPRODUCIBILITY CRISIS in science?</p></li>
-<li class="fragment"><p>A <a href="https://www.nature.com/articles/533452a">Nature survey</a> with ~1,600 researchers found that</p>
-<ul>
-<li class="fragment"><p><strong><em>+70%</em></strong> failure rate to reproduce another scientist’s experiments</p></li>
-<li class="fragment"><p><strong><em>+50%</em></strong> have failed to reproduce their own experiments</p></li>
-<li class="fragment"><p><strong><em>Main causes</em></strong>: selective reporting, weak stats, code/data unavailability, etc.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="good-news-is" class="slide level2">
-<h2>GOOD NEWS IS…</h2>
-<div class="fragment">
-<div class="column" style="width:100%;">
-<p><img data-src="images/repbrush.png" class="absolute" style="top: 50px; left: 200px; height: 100%; "></p>
-</div>
-</div>
-</section>
-<section id="why-reproducibility-in-agriculture" class="slide level2">
-<h2><strong>Why Reproducibility in Agriculture?</strong></h2>
-<ul>
-<li class="fragment"><p>Agriculture research relies heavily on environmental data, often variable and complex.</p></li>
-<li class="fragment"><p><strong>We have complex challenges</strong> 🗒️</p>
-<ul>
-<li class="fragment">Variability due to environmental factors, soil types, and weather patterns.</li>
-<li class="fragment">Complex datasets involving long-term studies, geographical variability.</li>
-</ul></li>
-<li class="fragment"><p><strong>Opportunities</strong> ✅</p>
-<ul>
-<li class="fragment">Reproducibility helps stakeholders make reliable, data-driven decisions.</li>
-<li class="fragment">Ensures scientific findings are reliable and valid.</li>
-<li class="fragment">Facilitates collaboration, accountability, and efficiency among researchers and practitioners.</li>
-</ul></li>
-</ul>
-</section>
-<section id="challenges-in-ag-research" class="slide level2">
-<h2>Challenges in <span style="color:forestgreen">Ag-research</span></h2>
-<div class="fragment">
-<!-- -->
-<h3 id="reproducibility"><span style="color:#2a9d8f">REPRODUCIBILITY</span> 💻</h3>
-<ul>
-<li class="fragment"><p>Limited capability to reproduce analyses &amp; results</p></li>
-<li class="fragment"><p>DATA are rarely shared, CODES even less</p></li>
-</ul>
-</div>
-<div class="fragment">
-<!-- -->
-<h3 id="accessibility"><span style="color:#023e8a">ACCESSIBILITY</span> 📲</h3>
-<ul>
-<li class="fragment">Yet we are not translating enough science into flexible, and transparent decision tools.</li>
-</ul>
-</div>
-<div class="fragment">
-<p>“But it all starts with …”</p>
-</div>
-<div class="fragment">
-<!-- -->
-<h3 id="education"><span style="color:#BA0C2F">EDUCATION</span> 🎓</h3>
-<ul>
-<li class="fragment">Limited curriculum in applied data science</li>
-</ul>
-</div>
-</section>
-<section id="discussion-prompt" class="slide level2">
-<h2>Discussion Prompt 💬</h2>
-<div class="fragment">
-<p><br></p>
-<h3 style="color:#bc4749" id="i.-where-do-you-think-improved-data-literacy-reproducibility-could-impact-agriculture-the-most">i. Where do you think improved data literacy &amp; reproducibility could impact agriculture the most?</h3>
-<p><br></p>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment">Consider areas like resource management, market predictions, and farm management.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p><br></p>
-<h3 style="color:#457b9d" id="ii.-what-practical-challenges-do-you-face-or-may-in-implementing-them">ii. What practical challenges do you face (or may) in implementing them?</h3>
-<p><br></p>
-</div>
-</section></section>
-<section>
-<section id="what-is-r" class="title-slide slide level1 center">
-<h1>What is R?</h1>
-
-</section>
-<div class="fragment">
-<section id="what-is-r-1" class="slide level2">
-<h2>What is R? 🧮</h2>
-<ul>
-<li class="fragment"><strong>R</strong> is a programming language and environment primarily for statistical analysis, data visualization, and data science.</li>
-<li class="fragment">Known for its extensive <strong>statistical libraries</strong>, <strong>data manipulation capabilities</strong>, and <strong>graphics</strong>.</li>
-<li class="fragment">Widely used in fields like <strong>data science</strong>, <strong>bioinformatics</strong>, <strong>agriculture</strong>, and <strong>social sciences</strong>.</li>
-</ul>
-</section>
-</div>
-<p><br></p>
-<div class="fragment">
-<!-- -->
-<h3 id="brief-history-of-r">Brief History of R 📜</h3>
-<ul>
-<li class="fragment"><strong>Origin</strong>: Developed in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand.</li>
-<li class="fragment"><strong>Inspiration</strong>: R is an implementation of the S language, designed at Bell Laboratories for data analysis.</li>
-<li class="fragment"><strong>Open Source</strong>: Released as free, open-source software, leading to a large community of users and contributors.</li>
-<li class="fragment"><strong>Popularity</strong>: Today, R is one of the top programming languages for statistical analysis and data science.</li>
-</ul>
-</div></section>
-<section>
-<section id="alternatives-to-r" class="title-slide slide level1 center">
-<h1>Alternatives to R</h1>
-
-</section>
-<section id="r-vs.-excel-for-data-wrangling" class="slide level2">
-<h2>R vs.&nbsp;Excel for Data Wrangling 📊</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>Excel</strong>: Known for ease of use, popular among business and finance professionals.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Intuitive, good for small datasets and quick analysis.</li>
-<li class="fragment"><strong>Cons</strong>: Limited in handling large datasets, lacks reproducibility.</li>
-</ul></li>
-<li class="fragment"><strong>R</strong>: Provides powerful data manipulation packages (e.g., <code>dplyr</code>, <code>tidyr</code>).
-<ul>
-<li class="fragment"><strong>Pros</strong>: Handles large datasets efficiently, supports complex transformations, fully reproducible.</li>
-<li class="fragment"><strong>Cons</strong>: Requires programming knowledge, steeper learning curve than Excel.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019–present%29.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><strong>Tip</strong>: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="r-vs.-sas-for-statistical-analysis" class="slide level2">
-<h2>R vs.&nbsp;SAS for Statistical Analysis 📉</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>SAS</strong>: A powerful statistical software suite used widely in industries such as healthcare and finance.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Robust for regulatory environments, highly standardized.</li>
-<li class="fragment"><strong>Cons</strong>: Proprietary and costly, limited community contributions.</li>
-</ul></li>
-<li class="fragment"><strong>R</strong>: Offers a vast array of statistical packages and flexibility in method implementation.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Free and open-source, customizable, strong community support.</li>
-<li class="fragment"><strong>Cons</strong>: Requires more coding and configuration for regulatory standards.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/SASlogo.svg" title="By SAS Institute - http://www.sas.com, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5291445" width="290"></p>
-</figure>
-</div>
-</div><div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><strong>Comparison</strong>: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="r-vs-python-vs-julia" class="slide level2">
-<h2>R vs Python vs Julia 🔍</h2>
-<ul>
-<li class="fragment">R, Python, and Julia are popular languages in data science and research.</li>
-<li class="fragment">Each language has unique strengths, ideal use cases, and licensing considerations.</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:34%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1448px-R_logo.svg.png?20240131042527" width="290"></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="290"></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="r-strengths-and-use-cases" class="slide level2">
-<h2>R: Strengths and Use Cases 🧮</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>Designed for Statistics</strong>: R is optimized for statistical analysis, making it ideal for research and academia.</li>
-<li class="fragment"><strong>Visualization</strong>: Excellent data visualization libraries like <code>ggplot2</code>.</li>
-<li class="fragment"><strong>Licensing</strong>: Licensed under <strong>GPL</strong>; many packages are also GPL, with some using MIT or BSD.</li>
-</ul>
-<div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases">Ideal Use Cases:</h3>
-<ul>
-<li class="fragment">Data analysis, visualization, and complex statistical modeling.</li>
-<li class="fragment">Research and academia where open-source, reproducible code is needed.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: GPL may restrict proprietary use; check package licenses carefully.</li>
-</ul>
-</div>
-</div><div class="column" style="width:35%;">
+</div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1448px-R_logo.svg.png?20240131042527" width="290"></p>
@@ -720,126 +461,411 @@ Adrian A. Correndo
 </div>
 </div>
 </section>
-<section id="python-strengths-and-use-cases" class="slide level2">
-<h2>Python: Strengths and Use Cases 🐍</h2>
+<section id="why-rstudio" class="slide level2">
+<h2>Why RStudio?</h2>
 <div class="columns">
-<div class="column" style="width:65%;">
+<div class="column" style="width:70%;">
 <ul>
-<li class="fragment"><strong>General-Purpose Language</strong>: Python is popular for both data science and software development.</li>
-<li class="fragment"><strong>Machine Learning &amp; AI</strong>: Extensive libraries for ML and AI, such as <code>scikit-learn</code>, <code>TensorFlow</code>.</li>
-<li class="fragment"><strong>Licensing</strong>: PSFL (Python Software Foundation License), highly permissive for proprietary use.</li>
-</ul>
-<div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases-1">Ideal Use Cases:</h3>
+<li class="fragment"><strong>1. An interface to R</strong>
 <ul>
-<li class="fragment">End-to-end development, from data wrangling to ML and web development.</li>
-<li class="fragment">Production-ready ML and AI applications.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: Permissive licenses allow closed-source use, making Python production-friendly.</li>
+<li class="fragment">Provides a user-friendly environment to work with R.</li>
+</ul></li>
+<li class="fragment"><strong>2. Integrates various components of an analysis</strong>
+<ul>
+<li class="fragment">Combines data, code, and output in one place, simplifying the workflow.</li>
+</ul></li>
+<li class="fragment"><strong>3. Colored syntax</strong>
+<ul>
+<li class="fragment">Highlights code with colors, making it easier to read and spot errors, improving code clarity.</li>
+</ul></li>
+<li class="fragment"><strong>4. Syntax suggestions</strong>
+<ul>
+<li class="fragment">Offers autocomplete suggestions, which speeds up coding and reduces mistakes.</li>
+</ul></li>
+<li class="fragment"><strong>5. RStudio panels</strong>
+<ul>
+<li class="fragment">Panels for console, scripts, files, and plots, giving quick access to all elements.</li>
+</ul></li>
 </ul>
-</div>
-</div><div class="column" style="width:33%;">
+</div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="290"></p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/d/d0/RStudio_logo_flat.svg" width="400"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="julia-strengths-and-use-cases" class="slide level2">
-<h2>Julia: Strengths and Use Cases 🚀</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>High Performance</strong>: Designed for scientific computing, close to the speed of C/C++.</li>
-<li class="fragment"><strong>Ease of Use</strong>: Combines high-level syntax with low-level performance.</li>
-<li class="fragment"><strong>Licensing</strong>: MIT license, very permissive for commercial and open-source use.</li>
-</ul>
 <div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases-2">Ideal Use Cases:</h3>
-<ul>
-<li class="fragment">Large-scale simulations, optimization problems, high-performance computing.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: MIT license allows proprietary use without restrictions.</li>
-</ul>
+<section id="rstudio-panels" class="slide level2">
+<h2>Rstudio panels</h2>
+<p><img data-src="images/rstudiopanel.png"></p>
+</section>
 </div>
-</div><div class="column" style="width:33%;">
+<section id="why-version-control" class="slide level2">
+<h2>Why version control? 🔄</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li class="fragment"><strong>1. Track Changes</strong>
+<ul>
+<li class="fragment">Maintain a complete history of edits, making it easy to identify when and why changes were made.</li>
+</ul></li>
+<li class="fragment"><strong>2. Collaborate Seamlessly</strong>
+<ul>
+<li class="fragment">Multiple users can work together without overwriting each other’s work, enhancing teamwork.</li>
+</ul></li>
+<li class="fragment"><strong>3. Ensure Data Integrity</strong>
+<ul>
+<li class="fragment">Protect primary data by using branches for experimentation, avoiding accidental overwrites.</li>
+</ul></li>
+<li class="fragment"><strong>4. Boost Reproducibility</strong>
+<ul>
+<li class="fragment">Access exact versions of code and data, enabling others to reproduce your work reliably.</li>
+</ul></li>
+<li class="fragment"><strong>5. Provide Built-in Documentation</strong>
+<ul>
+<li class="fragment">Each change can be documented, helping others understand your workflow and decisions.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" width="290"></p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="400"></p>
+</figure>
+</div>
+<p><br></p>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/GitHub-logo.png" width="400"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="comparison-summary" class="slide level2">
-<h2>Comparison Summary 📊</h2>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
+<section id="what-are-git-and-github" class="slide level2">
+<h2>What are Git and GitHub?</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <ul>
-<li class="fragment"><strong>R</strong>: Open-source, powerful for data science, statistical analysis, and visualizations.</li>
-<li class="fragment"><strong>Excel</strong>: User-friendly, ideal for simple tasks, but limited for complex data wrangling.</li>
-<li class="fragment"><strong>SAS</strong>: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.</li>
+<li class="fragment"><strong>Git</strong>
+<ul>
+<li class="fragment">A version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li class="fragment"><strong>GitHub</strong>
+<ul>
+<li class="fragment">An online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="400"></p>
+</figure>
+</div>
+<p><br></p>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/GitHub-logo.png" width="400"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="publishing-coding-projects" class="slide level2">
+<h2>Publishing coding projects</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://doi.org/10.1186/s13104-021-05729-y"><img data-src="images/xpolarispaper.png" width="225"></a></p>
+<figcaption>Retrieve soil data</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://doi.org/10.1186/s13104-021-05622-8"><img data-src="images/agrometrpaper.png" width="225"></a></p>
+<figcaption>Retrieving weather data</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://doi.org/10.1016/j.softx.2022.101275"><img data-src="images/soiltestcorrpaper.png" width="245"></a></p>
+<figcaption>Soil test correlation analysis</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://doi.org/10.21105/joss.04655"><img data-src="images/metricapaper.png" width="225"></a></p>
+<figcaption>Prediction performance metrics</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="open-source-review-of-coding-projects" class="slide level2">
+<h2>Open source review of coding projects</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="https://github.com/openjournals/joss-reviews/issues/4655"><img data-src="images/githubreview.gif" width="800"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<p><br></p>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/GitHub-logo.png" width="400"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="documentation-of-coding-projects" class="slide level2">
+<h2>Documentation of coding projects</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://adriancorrendo.github.io/soiltestcorr/"><img data-src="images/soiltestcorrdocumentation.png" width="800"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<p><br></p>
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/GitHub-logo.png" width="400"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="key-principles-for-reproducibility" class="slide level2">
+<h2>Key Principles for Reproducibility</h2>
+<ul>
+<li class="fragment"><strong>Documentation and Code Comments</strong>
+<ul>
+<li class="fragment">Metadata: information about data origin, format, structure, and meaning.</li>
+<li class="fragment">Code comments: provide explanations directly in scripts for future reference.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li class="fragment"><strong>Version Control (Git/GitHub)</strong>
+<ul>
+<li class="fragment">Tracks changes to code over time, making it easy to return to previous versions.</li>
+<li class="fragment">Useful for collaborative work and transparency.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li class="fragment"><strong>Organization &amp; Structured coding…</strong></li>
+</ul>
+</section>
+<section id="basic-project-structure" class="slide level2">
+<h2>Basic Project Structure</h2>
+<ul>
+<li class="fragment"><p><strong>Organizing Projects for Reproducibility</strong></p>
+<ul>
+<li class="fragment">Folder setup: <code>data/</code>, <code>code/</code>, <code>results/</code> folders for logical organization.</li>
+<li class="fragment">README file: brief guide to project structure, data sources, and analysis steps.</li>
+</ul></li>
+<li class="fragment"><p><strong>Sample Project Structure</strong></p>
+<pre><code>project_directory/
+├── data/       # Raw and processed datasets
+├── code/    # Code files for data processing
+├── results/    # Generated results, plots, and reports
+├── README.md   # Overview of the project structure and purpose</code></pre></li>
+</ul>
+
+<img data-src="images/projectfolders.png" class="r-stretch"></section></section>
+<section>
+<section id="essentials-of-r" class="title-slide slide level1 center">
+<h1>Essentials of R 🔍</h1>
+<ul>
+<li class="fragment">Let’s cover the core building blocks of R for data science.</li>
+</ul>
+</section>
+<section id="objectives" class="slide level2">
+<h2>Objectives 📌</h2>
+<ul>
+<li class="fragment">Types of R objects and their uses.</li>
+<li class="fragment">Key functions and data wrangling basics.</li>
+<li class="fragment">Tidy data concepts.</li>
+</ul>
+</section>
+<section id="common-r-objects" class="slide level2">
+<h2>Common R Objects 🧩</h2>
+<ul>
+<li class="fragment"><strong>Scalars</strong>: Single data point (e.g., <code>5</code>, or <code>a</code>)</li>
+<li class="fragment"><strong>Vectors</strong>: Simple data storage (e.g., <code>c(1, 2, 3)</code>)</li>
+<li class="fragment"><strong>Lists</strong>: Collection of various data types</li>
+<li class="fragment"><strong>Dataframes</strong>: Tabular data (like spreadsheets)</li>
+<li class="fragment"><strong>Tibbles</strong>: Enhanced dataframes with cleaner output</li>
+<li class="fragment"><strong>Matrices</strong>: data arranged in rows and columns (2D)</li>
+</ul>
+</section>
+<section id="object" class="slide level2">
+<h2>Object</h2>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="dv">20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="dv">20</span><span class="sc">/</span><span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Use <code>&lt;-</code> or <code>=</code></p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>a <span class="ot">&lt;-</span> <span class="dv">20</span><span class="sc">/</span><span class="dv">4</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="vector" class="slide level2">
+<h2>Vector</h2>
+<p>It’s a collection of numbers, arithmetic expressions, logical values or character strings for example. Within a table, it could be a row or a column</p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># numeric</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">10</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  3  6 10</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>c <span class="ot">&lt;-</span> <span class="st">"Workshop"</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>c</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Workshop"</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="tabular-data" class="slide level2">
+<h2>Tabular data</h2>
+<div class="fragment">
+<!-- -->
+<h3 id="data-frame">1. Data Frame</h3>
+<p>It’s a <code>tabular</code> arrange of vectors (i.e.&nbsp;2-dimensional, rectangular). Structure used to store values of any data type. The most common way to store data in R.</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Number =</span> b,</span>
+<span id="cb12-2"><a href="#cb12-2"></a>                <span class="at">ID =</span> c)</span>
+<span id="cb12-3"><a href="#cb12-3"></a></span>
+<span id="cb12-4"><a href="#cb12-4"></a>d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Number       ID
+1      3 Workshop
+2      6 Workshop
+3     10 Workshop</code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<h3 id="tibble">2. Tibble</h3>
+<p>It’s a modern version of a data frame. It’s a data frame with class <code>tbl_df</code> and <code>tbl</code> and it only prints the first 10 rows and all the columns that fit on the screen.</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>tb <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">as_tibble</span>(d)</span>
+<span id="cb14-2"><a href="#cb14-2"></a></span>
+<span id="cb14-3"><a href="#cb14-3"></a>tb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  Number ID      
+   &lt;dbl&gt; &lt;chr&gt;   
+1      3 Workshop
+2      6 Workshop
+3     10 Workshop</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="matrix" class="slide level2">
+<h2>Matrix</h2>
+<p>A collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns.</p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(b,b),</span>
+<span id="cb16-2"><a href="#cb16-2"></a>            <span class="at">nrow =</span> <span class="dv">2</span>)</span>
+<span id="cb16-3"><a href="#cb16-3"></a></span>
+<span id="cb16-4"><a href="#cb16-4"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3]
+[1,]    3   10    6
+[2,]    6    3   10</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="list" class="slide level2">
+<h2>List</h2>
+<ul>
+<li class="fragment"><p>A generic object consisting of an ordered collection of objects. <br></p></li>
+<li class="fragment"><p>Lists are one-dimensional, heterogeneous data structures. <br></p></li>
+<li class="fragment"><p>The list can be a list of vectors, matrices, characters, functions, etc… <br></p></li>
+<li class="fragment"><p>A list is a vector but with heterogeneous data elements.</p></li>
+</ul>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>f <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">"a"</span> <span class="ot">=</span> a, <span class="st">"b"</span> <span class="ot">=</span> b,</span>
+<span id="cb18-2"><a href="#cb18-2"></a>          <span class="st">"c"</span> <span class="ot">=</span> c, <span class="st">"d"</span> <span class="ot">=</span> d)</span>
+<span id="cb18-3"><a href="#cb18-3"></a>f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$a
+[1] 5
+
+$b
+[1]  3  6 10
+
+$c
+[1] "Workshop"
+
+$d
+  Number       ID
+1      3 Workshop
+2      6 Workshop
+3     10 Workshop</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">class</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "list"</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="functions" class="slide level2">
+<h2>Functions ⚙️</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">A function is a block of code that performs a specific task. <br></li>
+<li class="fragment">Types:
+<ul>
+<li class="fragment"><strong>Pre-built functions</strong>: e.g., <code>mean()</code>, <code>sum()</code></li>
+<li class="fragment"><strong>Custom functions</strong>: How to define and use</li>
+</ul></li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<p><br></p>
-<div class="fragment">
-<table style="width:100%;">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 26%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>R</th>
-<th>Python</th>
-<th>Julia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Primary Strength</strong></td>
-<td>Statistics &amp; Visualization</td>
-<td>General-purpose, ML, AI</td>
-<td>High-performance computing</td>
-</tr>
-<tr class="even">
-<td><strong>Performance</strong></td>
-<td>Moderate</td>
-<td>Moderate</td>
-<td>High</td>
-</tr>
-<tr class="odd">
-<td><strong>Licensing</strong></td>
-<td>GPL (core), MIT, BSD (some)</td>
-<td>PSFL, highly permissive</td>
-<td>MIT, highly permissive</td>
-</tr>
-<tr class="even">
-<td><strong>Production Use</strong></td>
-<td>Limited by GPL</td>
-<td>Very friendly for proprietary</td>
-<td>Very friendly for proprietary</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><br></p>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -851,17 +877,124 @@ Adrian A. Correndo
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment"><strong>R</strong>: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.</li>
-<li class="fragment"><strong>Python</strong>: Strong in ML and AI with highly permissive licensing, making it ideal for production.</li>
-<li class="fragment"><strong>Julia</strong>: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.</li>
+<li class="fragment">Functions make code reusable and organized. Define once, use often! 💡</li>
+<li class="fragment">A function is executed when it is <strong>called</strong>. <br></li>
+<li class="fragment">You can pass data, numbers, lists, dataframes, matrices, etc… <br></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div class="fragment">
-<p>Choosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs.&nbsp;production.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>arguments <span class="ot">&lt;-</span> <span class="cn">NULL</span> </span>
+<span id="cb22-2"><a href="#cb22-2"></a>fx <span class="ot">&lt;-</span> <span class="cf">function</span>(arguments) {</span>
+<span id="cb22-3"><a href="#cb22-3"></a>        <span class="do">## Do something</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
+<div class="fragment">
+<p>Example of a function to calculate the mean</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>fx <span class="ot">&lt;-</span> <span class="cf">function</span>(x, ...) {</span>
+<span id="cb23-2"><a href="#cb23-2"></a>        <span class="fu">mean</span>(x)</span>
+<span id="cb23-3"><a href="#cb23-3"></a>}</span>
+<span id="cb23-4"><a href="#cb23-4"></a></span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="fu">fx</span>(b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6.333333</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="argument" class="slide level2">
+<h2>Argument</h2>
+<p>An argument is a value you pass to a function when calling it. <br></p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>b2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">10</span>, <span class="cn">NA</span>)</span>
+<span id="cb25-2"><a href="#cb25-2"></a>b2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  3  6 10 NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">fx</span>(b2, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="co"># The order of the arguments is important</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a><span class="co"># But it can be overriden by calling the name of the argument</span></span>
+<span id="cb29-3"><a href="#cb29-3"></a><span class="fu">fx</span>(<span class="at">na.rm =</span> T, <span class="at">x =</span> b2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="packages" class="slide level2">
+<h2>Packages</h2>
+<div class="fragment">
+<p>A package is a collection of R functions, data sets, and compiled code in a well-defined format.</p>
+<ul>
+<li class="fragment"><p>Packages are intended to solve specific problems or perform specific tasks.</p></li>
+<li class="fragment"><p>There are currently thousands of packages available (+21,000 on CRAN only).</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/packages.png" width="600"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="packages-1" class="slide level2">
+<h2>Packages</h2>
+<p><br></p>
+
+<img data-src="images/cranpackages.png" width="800" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="why-tidy-data" class="title-slide slide level1 center">
+<h1>Why TIDY data?</h1>
+
+</section>
+<section id="tidyverse" class="slide level2">
+<h2>Tidyverse</h2>
+<div class="fragment">
+<p>From the hand of the family of packages called <a href="https://www.tidyverse.org/">Tidyverse</a>, the “tidy data” framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure <span class="citation" data-cites="wickham2014">[@wickham2014]</span>:</p>
+</div>
+<ul>
+<li class="fragment"><p>Each variable is a column,</p></li>
+<li class="fragment"><p>Each observation is a row, and</p></li>
+<li class="fragment"><p>Each value have its own cell.</p></li>
+</ul>
+<div class="fragment">
+<p><img data-src="images/tidy-1.png"> <br></p>
+<p><strong>Tidy-data structure</strong>. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells. Source: Wickham (2017).</p>
+</div>
+</section>
+<section id="free-html-books" class="slide level2">
+<h2>Free HTML books</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
+<figure>
+<p><a href="https://r4ds.had.co.nz/"><img data-src="https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 50.0%;justify-content: center;">
+<figure>
+<p><a href="https://www.tmwr.org/"><img data-src="https://www.tmwr.org/images/cover.png"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="summary-key-takeaways" class="slide level2">
+<h2>Summary &amp; Key Takeaways</h2>
+<ul>
+<li class="fragment">Data literacy and reproducibility are essential in modern agriculture.</li>
+<li class="fragment">Reproducible analyses build credibility and foster collaboration.</li>
+</ul>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>THANK YOU!</h2>
@@ -1108,6 +1241,44 @@ University of Guelph<br>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
