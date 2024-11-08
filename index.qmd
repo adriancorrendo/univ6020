@@ -1,14 +1,47 @@
 ---
 title: "Reproducible Ag Data Science with R"
-format:
-  html:
-    fontsize: 1.25em
+slide-format: revealjs
 ---
 
-Welcome 🍂
+Welcome 🚜 🌽
+
+In this special module, part of the UNIV6020 course, you'll dive into key principles and practices for reproducible data science within the context of agriculture. Throughout our time together, you'll gain hands-on experience in R, learning how to structure, analyze, and present data in a way that ensures transparency and replicability---essential skills in today's data-driven world of agriculture. Your understanding will be assessed with a short quiz to reinforce these core concepts.
+
+Looking forward to explore the power of reproducibility in agricultural data science!
+
+::: {style="text-align: left; font-size: 0.75em"}
+Dr. [Adrian Correndo](https://adriancorrendo.github.io/)\
+acorrend\@uoguelph.ca\
+Assistant Professor \| Sustainable Cropping Systems\
+Department of Plant Agriculture, University of Guelph
+:::
 
 ::: callout-note
 For our Friday coding session, it is expected that students have:
 
 i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio/download/) installed.
 :::
+
+# Slide-decks
+```{=html}
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 50%;
+    height: 200px;
+}
+</style>
+```
+## Day 1
+<div>
+```{=html}
+<iframe class="slide-deck" src="docs/day1.html"></iframe>
+```
+</div>
+
+## Day 2
+<div>
+```{=html}
+<iframe class="slide-deck" src="docs/day2.html"></iframe>
+```
+</div>

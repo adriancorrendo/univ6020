@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.433">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.433" />
 
   <meta name="author" content="Adrian A. Correndo">
-  <meta name="dcterms.date" content="2024-11-04">
-  <title>UNIV6020 - Fall 2024 - Reproducible Data Science with R</title>
+  <meta name="dcterms.date" content="2024-11-06">
+  <title>UNIV6020 - Fall 2024 – Reproducible Data Science with R III</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,8 +24,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #007020; background-color: #f3f5f6; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #007020; } /* Normal */
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css"/>
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -321,18 +381,14 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R">
-<meta property="og:site-name" content="UNIV6020 - Fall 2024">
-<meta name="twitter:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R">
-<meta name="twitter:creator" content="@aacorrendo">
-<meta name="twitter:card" content="summary">
 </head>
-<body class="quarto-light">
+<body>
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Reproducible Data Science with R</h1>
+<section id="title-slide" data-background-image="/images/packages.png" data-background-opacity="0.25" data-background-size="contain" class="quarto-title-block">
+  <h1 class="title">Reproducible Data Science with R III</h1>
+  <p class="subtitle">R Packages Essentials</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -342,559 +398,432 @@ Adrian A. Correndo
 </div>
 </div>
 
-  <p class="date">2024-11-04</p>
+  <p class="date">2024-11-06</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Contents</h2>
 <ul>
-<li class="fragment"><a href="#/core-concepts" id="/toc-core-concepts">Core concepts</a></li>
-<li class="fragment"><a href="#/what-is-r" id="/toc-what-is-r">What is R?</a></li>
-<li class="fragment"><a href="#/alternatives-to-r" id="/toc-alternatives-to-r">Alternatives to R</a></li>
+<li class="fragment"><a href="#/what-is-an-r-package" id="/toc-what-is-an-r-package">What is an R Package? 📦</a></li>
+<li class="fragment"><a href="#/why-packages" id="/toc-why-packages">Why packages? 🚀</a></li>
+<li class="fragment"><a href="#/where-do-packages-come-from" id="/toc-where-do-packages-come-from">Where do packages come from ❓</a></li>
 </ul>
 </nav>
 </section>
-<section id="welcome" class="slide level2">
-<h2>Welcome 👋</h2>
-<ul>
-<li class="fragment"><strong>Goal</strong>: Gain foundational knowledge and understand how data science can improve agricultural practices.</li>
-<li class="fragment">Let’s dive into it with an emphasis on reproducibility and data literacy.</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><strong>Remember</strong>: Questions and discussions are encouraged! 💬</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="objectives-for-today" class="slide level2">
-<h2>Objectives for Today 📌</h2>
-<ul>
-<li class="fragment">Define core concepts:
-<ul>
-<li class="fragment">Data Science,</li>
-<li class="fragment">Data Literacy,</li>
-<li class="fragment">Reproducibility.</li>
-</ul></li>
-<li class="fragment">Understand the role of <strong>reproducible data science</strong> in agriculture.</li>
-<li class="fragment">Explore <strong>challenges</strong> and <strong>opportunities</strong>.</li>
-</ul>
-</section>
 <section>
-<section id="core-concepts" class="title-slide slide level1 center">
-<h1>Core concepts</h1>
+<section id="what-is-an-r-package" class="title-slide slide level1">
+<h1>What is an R Package? 📦</h1>
 
 </section>
-<section id="what-is-data-science-in-agriculture" class="slide level2">
-<h2>What is Data Science in Agriculture? 🌱</h2>
+<section id="whats-a-package" class="slide level2 smaller">
+<h2 class="smaller">What’s a Package? 📦</h2>
 <ul>
-<li class="fragment">Applying data engineering, analysis, statistics, and machine learning to solve agricultural problems.</li>
-<li class="fragment"><strong>Examples</strong>: Precision agriculture, yield forecasting, environmental monitoring.</li>
+<li class="fragment">An <strong>R package</strong> is a collection of R functions, data, and documentation organized in a standardized format.</li>
 </ul>
-</section>
-<section id="key-definitions" class="slide level2">
-<h2>Key Definitions 📖</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<ul>
-<li class="fragment"><p><strong>Data Science</strong>: Extracting insights from data using algorithms and statistical methods. <br></p></li>
-<li class="fragment"><p><strong>Data Literacy</strong>: Skills to read, interpret, and analyze data. <br></p></li>
-<li class="fragment"><p><strong>Reproducibility</strong>: Ensuring analyses can be recreated by others.</p></li>
-</ul>
-</div><div class="column" style="width:45%;">
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Why does reproducibility matter?</strong></p>
-<ul>
-<li class="fragment"><p>Trustworthy results,</p></li>
-<li class="fragment"><p>transparency, &amp;</p></li>
-<li class="fragment"><p>collaboration in research.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="challenges-in-data-literacy" class="slide level2">
-<h2>Challenges in Data Literacy 🌐</h2>
-<ul>
-<li class="fragment">Diverse data sources (weather, soil, crop data)</li>
-<li class="fragment">Standardization issues across datasets</li>
-<li class="fragment">Data skills gap among ag professionals</li>
-</ul>
-</section>
-<section id="why-does-it-matter" class="slide level2">
-<h2>Why does it matter?</h2>
-<div class="column" style="width:55%;">
-<ul>
-<li class="fragment"><p>It is the <strong>#1 skill-gap</strong> in the job market: <br></p>
-<ul>
-<li class="fragment">Academia,</li>
-<li class="fragment">Industry,</li>
-<li class="fragment">Government, NGOs, etc.</li>
-</ul></li>
-</ul>
-</div>
-<div class="column" style="width:45%;">
-<p><img data-src="images/reproducibility.png" class="absolute" style="top: 0px; right: 0px; height: 65%; "></p>
-</div>
-<ul>
-<li class="fragment"><p>Is there a REPRODUCIBILITY CRISIS in science?</p></li>
-<li class="fragment"><p>A <a href="https://www.nature.com/articles/533452a">Nature survey</a> with ~1,600 researchers found that</p>
-<ul>
-<li class="fragment"><p><strong><em>+70%</em></strong> failure rate to reproduce another scientist’s experiments</p></li>
-<li class="fragment"><p><strong><em>+50%</em></strong> have failed to reproduce their own experiments</p></li>
-<li class="fragment"><p><strong><em>Main causes</em></strong>: selective reporting, weak stats, code/data unavailability, etc.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="good-news-is" class="slide level2">
-<h2>GOOD NEWS IS…</h2>
-<div class="fragment">
-<div class="column" style="width:100%;">
-<p><img data-src="images/repbrush.png" class="absolute" style="top: 50px; left: 200px; height: 100%; "></p>
-</div>
-</div>
-</section>
-<section id="why-reproducibility-in-agriculture" class="slide level2">
-<h2><strong>Why Reproducibility in Agriculture?</strong></h2>
-<ul>
-<li class="fragment"><p>Agriculture research relies heavily on environmental data, often variable and complex.</p></li>
-<li class="fragment"><p><strong>We have complex challenges</strong> 🗒️</p>
-<ul>
-<li class="fragment">Variability due to environmental factors, soil types, and weather patterns.</li>
-<li class="fragment">Complex datasets involving long-term studies, geographical variability.</li>
-</ul></li>
-<li class="fragment"><p><strong>Opportunities</strong> ✅</p>
-<ul>
-<li class="fragment">Reproducibility helps stakeholders make reliable, data-driven decisions.</li>
-<li class="fragment">Ensures scientific findings are reliable and valid.</li>
-<li class="fragment">Facilitates collaboration, accountability, and efficiency among researchers and practitioners.</li>
-</ul></li>
-</ul>
-</section>
-<section id="challenges-in-ag-research" class="slide level2">
-<h2>Challenges in <span style="color:forestgreen">Ag-research</span></h2>
 <div class="fragment">
 <!-- -->
-<h3 id="reproducibility"><span style="color:#2a9d8f">REPRODUCIBILITY</span> 💻</h3>
-<ul>
-<li class="fragment"><p>Limited capability to reproduce analyses &amp; results</p></li>
-<li class="fragment"><p>DATA are rarely shared, CODES even less</p></li>
-</ul>
+<h3 id="key-components-of-an-r-package">Key Components of an R Package</h3>
 </div>
-<div class="fragment">
-<!-- -->
-<h3 id="accessibility"><span style="color:#023e8a">ACCESSIBILITY</span> 📲</h3>
-<ul>
-<li class="fragment">Yet we are not translating enough science into flexible, and transparent decision tools.</li>
-</ul>
-</div>
-<div class="fragment">
-<p>“But it all starts with …”</p>
-</div>
-<div class="fragment">
-<!-- -->
-<h3 id="education"><span style="color:#BA0C2F">EDUCATION</span> 🎓</h3>
-<ul>
-<li class="fragment">Limited curriculum in applied data science</li>
-</ul>
-</div>
-</section>
-<section id="discussion-prompt" class="slide level2">
-<h2>Discussion Prompt 💬</h2>
-<div class="fragment">
-<p><br></p>
-<h3 style="color:#bc4749" id="i.-where-do-you-think-improved-data-literacy-reproducibility-could-impact-agriculture-the-most">i. Where do you think improved data literacy &amp; reproducibility could impact agriculture the most?</h3>
-<p><br></p>
-</div>
+<ol type="1">
+<li class="fragment"><strong>Functions</strong>: Reusable R code that performs specific tasks.</li>
+<li class="fragment"><strong>Data</strong>: Example datasets to illustrate package functions or concepts.</li>
+<li class="fragment"><strong>Documentation</strong>: Help files and vignettes explaining how to use the package.</li>
+<li class="fragment"><strong>Namespace</strong>: Defines which functions are available to the user.</li>
+</ol>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment">Consider areas like resource management, market predictions, and farm management.</li>
+<li class="fragment"><strong>Pro Tip</strong>: Packages help simplify code reuse and make complex tasks more accessible.</li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div class="fragment">
-<p><br></p>
-<h3 style="color:#457b9d" id="ii.-what-practical-challenges-do-you-face-or-may-in-implementing-them">ii. What practical challenges do you face (or may) in implementing them?</h3>
-<p><br></p>
 </div>
 </section></section>
 <section>
-<section id="what-is-r" class="title-slide slide level1 center">
-<h1>What is R?</h1>
+<section id="why-packages" class="title-slide slide level1">
+<h1>Why packages? 🚀</h1>
 
 </section>
-<div class="fragment">
-<section id="what-is-r-1" class="slide level2">
-<h2>What is R? 🧮</h2>
+<section id="benefits-of-using-r-packages" class="slide level2">
+<h2>Benefits of Using R Packages 💡</h2>
 <ul>
-<li class="fragment"><strong>R</strong> is a programming language and environment primarily for statistical analysis, data visualization, and data science.</li>
-<li class="fragment">Known for its extensive <strong>statistical libraries</strong>, <strong>data manipulation capabilities</strong>, and <strong>graphics</strong>.</li>
-<li class="fragment">Widely used in fields like <strong>data science</strong>, <strong>bioinformatics</strong>, <strong>agriculture</strong>, and <strong>social sciences</strong>.</li>
+<li class="fragment"><strong>Efficiency</strong>: Avoid rewriting code for common tasks.</li>
+<li class="fragment"><strong>Consistency</strong>: Standardized code structure and naming conventions.</li>
+<li class="fragment"><strong>Reproducibility</strong>: Ensures that your work is easier to share and reproduce.</li>
 </ul>
 </section>
+<section id="example-1-mutate" class="slide level2">
+<h2>Example 1: mutate()</h2>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="column" style="width:65%;">
+<p>Packages like <code>dplyr</code> simplify tasks by providing clean, concise code for data manipulation.</p>
 </div>
-<p><br></p>
+<div class="fragment">
+<div class="column" style="width:65%;">
+<p><strong>1. Create a new column</strong>: <code>total</code>, which is the sum of two existing columns (<code>var1</code> and <code>var2</code>).</p>
+</div>
+</div>
+</section>
+<section id="example-1-mutate-1" class="slide level2">
+<h2>Example 1: mutate()</h2>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<h4 id="base-r-version">Base R version</h4>
+<div class="fragment">
+<div class="column" style="width:80%;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Sample data</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">var1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">var2 =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>))</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Adding a new column using base R</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>df<span class="sc">$</span>total <span class="ot">&lt;-</span> df<span class="sc">$</span>var1 <span class="sc">+</span> df<span class="sc">$</span>var2</span></code></pre></div>
+</div>
+</div>
+<p><br/></p>
 <div class="fragment">
 <!-- -->
-<h3 id="brief-history-of-r">Brief History of R 📜</h3>
-<ul>
-<li class="fragment"><strong>Origin</strong>: Developed in the early 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand.</li>
-<li class="fragment"><strong>Inspiration</strong>: R is an implementation of the S language, designed at Bell Laboratories for data analysis.</li>
-<li class="fragment"><strong>Open Source</strong>: Released as free, open-source software, leading to a large community of users and contributors.</li>
-<li class="fragment"><strong>Popularity</strong>: Today, R is one of the top programming languages for statistical analysis and data science.</li>
-</ul>
-</div></section>
+<h4 id="dplyr-package-tidyverse">dplyr package (Tidyverse)</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># Using mutate to add a new column</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">mutate</span>(<span class="at">total =</span> var1 <span class="sc">+</span> var2)</span></code></pre></div>
+</div>
+</section>
+<section id="example-2-filter" class="slide level2">
+<h2>Example 2: filter()</h2>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="fragment">
+<p><strong>2. Filtering</strong>: get values of <code>var1</code> greater than 2.</p>
+</div>
+<div class="fragment">
+<!-- -->
+<h4 id="base-r-version-1">Base R version</h4>
+<div class="column" style="width:65%;">
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Filter rows using base R</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>filtered_df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>var1 <span class="sc">&gt;</span> <span class="dv">2</span>, ]</span></code></pre></div>
+</div>
+</div>
+<p><br/></p>
+<div class="fragment">
+<!-- -->
+<h4 id="dplyr-package-tidyverse-1">dplyr package (Tidyverse)</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Filter rows using dplyr</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">data =</span> df, var1 <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code></pre></div>
+</div>
+</section>
+<section id="example-3-select" class="slide level2">
+<h2>Example 3: select()</h2>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="fragment">
+<p><strong>3. Select specific variables</strong>: get <code>var1</code> and <code>var3</code>.</p>
+</div>
+<p><br/></p>
+<div class="fragment">
+<!-- -->
+<h4 id="base-r-version-2">Base R version</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Select columns using base R</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>selected_df <span class="ot">&lt;-</span> df[ , <span class="fu">c</span>(<span class="st">&quot;var1&quot;</span>,<span class="st">&quot;var3&quot;</span>)]</span></code></pre></div>
+</div>
+<div class="fragment">
+<p><br/></p>
+<h4 id="dplyr-package-tidyverse-2">dplyr package (Tidyverse)</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Filter rows using dplyr</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">select</span>(<span class="at">data =</span> df, var1, var3)</span></code></pre></div>
+</div>
+</section>
+<section id="example-4-iteration" class="slide level2">
+<h2>Example 4: iteration</h2>
+<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="fragment">
+<div class="column" style="width:75%;">
+<p><strong>Scenario</strong>: You have a data frame with a column study and a column data, where data contains nested data frames for each study.<br />
+We want to fit a linear model to each nested data frame (predicting y by x) and store the models in a new column called model.</p>
+</div>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="dataset">Dataset</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Sample data frame with nested data</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="at">study =</span> <span class="fu">c</span>(<span class="st">&quot;Study 1&quot;</span>, <span class="st">&quot;Study 2&quot;</span>),</span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="at">data =</span> <span class="fu">list</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)), </span>
+<span id="cb7-5"><a href="#cb7-5"></a>            <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">10</span>))  ) )</span></code></pre></div>
+</div>
+</section>
+<section id="example-4-iteration-1" class="slide level2 smaller">
+<h2 class="smaller">Example 4: iteration</h2>
+<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="column" style="width:75%;">
+<div class="fragment">
+<!-- -->
+<h4 id="base-r-version-for-loop">Base R version (for loop)</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Initialize an empty list to store models</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>models <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="at">length =</span> <span class="fu">nrow</span>(df))</span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="co"># Using a for loop to fit the model and store results</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(df))) {</span>
+<span id="cb8-6"><a href="#cb8-6"></a>  models[[i]] <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df<span class="sc">$</span>data[[i]])</span>
+<span id="cb8-7"><a href="#cb8-7"></a>}</span>
+<span id="cb8-8"><a href="#cb8-8"></a></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="co"># Add the list of models as a new column in the data frame</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>df<span class="sc">$</span>model <span class="ot">&lt;-</span> models</span></code></pre></div>
+</div>
+</div>
+<p><br/></p>
+<div class="fragment">
+<!-- -->
+<h4 id="purrr-package-map-function">purrr package (map() function)</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># Using map to fit the model for each nested data frame</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, <span class="sc">~</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> .x)))</span></code></pre></div>
+</div>
+</section></section>
 <section>
-<section id="alternatives-to-r" class="title-slide slide level1 center">
-<h1>Alternatives to R</h1>
+<section id="where-do-packages-come-from" class="title-slide slide level1">
+<h1>Where do packages come from ❓</h1>
 
 </section>
-<section id="r-vs.-excel-for-data-wrangling" class="slide level2">
-<h2>R vs.&nbsp;Excel for Data Wrangling 📊</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
+<section id="where-do-packages-come-from-1" class="slide level2 smaller">
+<h2 class="smaller">Where do packages come from ❓</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><a href="https://cran.r-project.org"><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png" data-fig-align="center" width="300" /></a> <a href="https://www.bioconductor.org"><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" data-fig-align="center" width="300" /></a> <a href="https://github.com"><img data-src="images/GitHub-logo.png" data-fig-align="center" width="450" /></a> <a href="https://github.com"><img data-src="https://avatars.githubusercontent.com/u/75573726?s=280&amp;v=4.png" data-fig-align="center" width="300" /></a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="why-is-the-source-important" class="slide level2">
+<h2>Why is the source important? 📌</h2>
 <ul>
-<li class="fragment"><strong>Excel</strong>: Known for ease of use, popular among business and finance professionals.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Intuitive, good for small datasets and quick analysis.</li>
-<li class="fragment"><strong>Cons</strong>: Limited in handling large datasets, lacks reproducibility.</li>
-</ul></li>
-<li class="fragment"><strong>R</strong>: Provides powerful data manipulation packages (e.g., <code>dplyr</code>, <code>tidyr</code>).
-<ul>
-<li class="fragment"><strong>Pros</strong>: Handles large datasets efficiently, supports complex transformations, fully reproducible.</li>
-<li class="fragment"><strong>Cons</strong>: Requires programming knowledge, steeper learning curve than Excel.</li>
-</ul></li>
+<li class="fragment">Understand the benefits and drawbacks of stable vs. development versions.</li>
+<li class="fragment">Understand the security standards and risks associated.</li>
+<li class="fragment">Learn when to choose each source for your projects.</li>
 </ul>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019–present%29.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
+</section>
+<section id="cran-comprehensive-r-archive-network" class="slide level2 scrollable">
+<h2 class="scrollable">CRAN: Comprehensive R Archive Network 🗂️</h2>
+<p>The primary repository for R packages, stability and rigor.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Pros 🌟</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment"><strong>Tip</strong>: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets.</li>
+<li class="fragment">High stability and compatibility across systems</li>
+<li class="fragment">Strict quality standards and documentation requirements</li>
+<li class="fragment">Easy installation and dependency management</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-</section>
-<section id="r-vs.-sas-for-statistical-analysis" class="slide level2">
-<h2>R vs.&nbsp;SAS for Statistical Analysis 📉</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>SAS</strong>: A powerful statistical software suite used widely in industries such as healthcare and finance.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Robust for regulatory environments, highly standardized.</li>
-<li class="fragment"><strong>Cons</strong>: Proprietary and costly, limited community contributions.</li>
-</ul></li>
-<li class="fragment"><strong>R</strong>: Offers a vast array of statistical packages and flexibility in method implementation.
-<ul>
-<li class="fragment"><strong>Pros</strong>: Free and open-source, customizable, strong community support.</li>
-<li class="fragment"><strong>Cons</strong>: Requires more coding and configuration for regulatory standards.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/SASlogo.svg" title="By SAS Institute - http://www.sas.com, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5291445" width="290"></p>
-</figure>
-</div>
-</div><div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li class="fragment"><strong>Comparison</strong>: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="r-vs-python-vs-julia" class="slide level2">
-<h2>R vs Python vs Julia 🔍</h2>
-<ul>
-<li class="fragment">R, Python, and Julia are popular languages in data science and research.</li>
-<li class="fragment">Each language has unique strengths, ideal use cases, and licensing considerations.</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:34%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1448px-R_logo.svg.png?20240131042527" width="290"></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="290"></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="r-strengths-and-use-cases" class="slide level2">
-<h2>R: Strengths and Use Cases 🧮</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>Designed for Statistics</strong>: R is optimized for statistical analysis, making it ideal for research and academia.</li>
-<li class="fragment"><strong>Visualization</strong>: Excellent data visualization libraries like <code>ggplot2</code>.</li>
-<li class="fragment"><strong>Licensing</strong>: Licensed under <strong>GPL</strong>; many packages are also GPL, with some using MIT or BSD.</li>
-</ul>
-<div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases">Ideal Use Cases:</h3>
-<ul>
-<li class="fragment">Data analysis, visualization, and complex statistical modeling.</li>
-<li class="fragment">Research and academia where open-source, reproducible code is needed.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: GPL may restrict proprietary use; check package licenses carefully.</li>
-</ul>
-</div>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1448px-R_logo.svg.png?20240131042527" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="python-strengths-and-use-cases" class="slide level2">
-<h2>Python: Strengths and Use Cases 🐍</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>General-Purpose Language</strong>: Python is popular for both data science and software development.</li>
-<li class="fragment"><strong>Machine Learning &amp; AI</strong>: Extensive libraries for ML and AI, such as <code>scikit-learn</code>, <code>TensorFlow</code>.</li>
-<li class="fragment"><strong>Licensing</strong>: PSFL (Python Software Foundation License), highly permissive for proprietary use.</li>
-</ul>
-<div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases-1">Ideal Use Cases:</h3>
-<ul>
-<li class="fragment">End-to-end development, from data wrangling to ML and web development.</li>
-<li class="fragment">Production-ready ML and AI applications.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: Permissive licenses allow closed-source use, making Python production-friendly.</li>
-</ul>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="julia-strengths-and-use-cases" class="slide level2">
-<h2>Julia: Strengths and Use Cases 🚀</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<ul>
-<li class="fragment"><strong>High Performance</strong>: Designed for scientific computing, close to the speed of C/C++.</li>
-<li class="fragment"><strong>Ease of Use</strong>: Combines high-level syntax with low-level performance.</li>
-<li class="fragment"><strong>Licensing</strong>: MIT license, very permissive for commercial and open-source use.</li>
-</ul>
-<div class="fragment">
-<!-- -->
-<h3 id="ideal-use-cases-2">Ideal Use Cases:</h3>
-<ul>
-<li class="fragment">Large-scale simulations, optimization problems, high-performance computing.</li>
-<li class="fragment"><strong>Licensing in Production</strong>: MIT license allows proprietary use without restrictions.</li>
-</ul>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" width="290"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="comparison-summary" class="slide level2">
-<h2>Comparison Summary 📊</h2>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
+<p><strong>Cons ⚠️</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment"><strong>R</strong>: Open-source, powerful for data science, statistical analysis, and visualizations.</li>
-<li class="fragment"><strong>Excel</strong>: User-friendly, ideal for simple tasks, but limited for complex data wrangling.</li>
-<li class="fragment"><strong>SAS</strong>: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.</li>
+<li class="fragment">Slower update cycles due to strict review processes</li>
+<li class="fragment">Limited flexibility for experimental or niche packages</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<p><br></p>
-<div class="fragment">
-<table style="width:100%;">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 26%">
-<col style="width: 24%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>R</th>
-<th>Python</th>
-<th>Julia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Primary Strength</strong></td>
-<td>Statistics &amp; Visualization</td>
-<td>General-purpose, ML, AI</td>
-<td>High-performance computing</td>
-</tr>
-<tr class="even">
-<td><strong>Performance</strong></td>
-<td>Moderate</td>
-<td>Moderate</td>
-<td>High</td>
-</tr>
-<tr class="odd">
-<td><strong>Licensing</strong></td>
-<td>GPL (core), MIT, BSD (some)</td>
-<td>PSFL, highly permissive</td>
-<td>MIT, highly permissive</td>
-</tr>
-<tr class="even">
-<td><strong>Production Use</strong></td>
-<td>Limited by GPL</td>
-<td>Very friendly for proprietary</td>
-<td>Very friendly for proprietary</td>
-</tr>
-</tbody>
-</table>
 </div>
-<p><br></p>
+</div>
+</section>
+<section id="cran-comprehensive-r-archive-network-1" class="slide level2 smaller">
+<h2 class="smaller">CRAN: Comprehensive R Archive Network 🗂️</h2>
+<p>There are currently +21,000 of packages (on CRAN only).</p>
 <div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cranpackages.png" width="800" /></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="cran-taskviews" class="slide level2 smaller">
+<h2 class="smaller">CRAN Taskviews</h2>
+<ul>
+<li class="fragment"><strong>Definition</strong>: A CRAN Task View is a curated collection of R packages focused on a specific topic or area of research.</li>
+<li class="fragment"><strong>Purpose</strong>: Organizes packages into categories, making it easier for users to find the right tools for their work.</li>
+<li class="fragment"><strong>Topics</strong>: Ranges from “Machine Learning” to “Ecology” to “Time Series Analysis” and beyond.</li>
+<li class="fragment"><strong>Benefits</strong>:
+<ul>
+<li class="fragment">Saves time for users by grouping relevant packages.</li>
+<li class="fragment">Regularly updated by experts in each field.</li>
+<li class="fragment">Offers a starting point for exploring specialized R tools.</li>
+</ul></li>
+</ul>
+</section>
+<section id="agriculture-task-view" class="slide level2 smaller">
+<h2 class="smaller"><a href="https://cran.r-project.org/web/views/Agriculture.html">Agriculture Task View</a></h2>
+<p><img data-src="images/TaskviewAgriculture.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<div class="column" style="width:60%;">
+<p>It compiles R packages useful for agricultural research and data analysis.</p>
+</div>
+<div class="rows">
+<div class="fragment">
+<div class="column" style="width:85%;">
+<ul>
+<li class="fragment"><strong>Content Includes</strong>:
+<ul>
+<li class="fragment">Packages for analyzing crop and livestock data.</li>
+<li class="fragment">Tools for spatial analysis of agricultural data.</li>
+<li class="fragment">Resources for agricultural economics and statistical models.</li>
+</ul></li>
+<li class="fragment"><strong>Examples of Included Packages</strong>:
+<ul>
+<li class="fragment"><strong>agricolae</strong>: Provides tools for analysis of experimental data in agriculture.</li>
+<li class="fragment"><strong>agridat</strong>: A collection of agricultural datasets for research and teaching.</li>
+</ul></li>
+<li class="fragment"><strong>Why Use It?</strong>
+<ul>
+<li class="fragment">Simplifies the search for agricultural tools.</li>
+<li class="fragment">Helps researchers quickly identify relevant resources for their work.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="github-open-source-platform" class="slide level2 smaller">
+<h2 class="smaller">GitHub: Open-Source Platform</h2>
+<p><img data-src="images/GitHub-logo.png" class="absolute" style="top: 0px; right: 0px; height: 15%; " /></p>
+<div class="fragment">
+<div class="column" style="width:75%;">
+<p>A platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.</p>
+</div>
+</div>
+<div class="rows">
+<div class="fragment">
+<div class="column" style="width:75%;">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class='callout-icon'></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Pros 🚀</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment"><strong>R</strong>: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.</li>
-<li class="fragment"><strong>Python</strong>: Strong in ML and AI with highly permissive licensing, making it ideal for production.</li>
-<li class="fragment"><strong>Julia</strong>: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.</li>
+<li class="fragment">Cutting-edge features and fast updates</li>
+<li class="fragment">Flexible release of experimental tools or features</li>
+<li class="fragment">Community-driven contributions and improvements</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+</div>
 <div class="fragment">
-<p>Choosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs.&nbsp;production.</p>
+<div class="column" style="width:75%;">
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<p><strong>Cons ⚠️</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li class="fragment">Less stability</li>
+<li class="fragment">Potential for bugs and security risks</li>
+<li class="fragment">Requires manual dependency management</li>
+<li class="fragment">Variable documentation quality</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="thank-you" class="slide level2">
-<h2>THANK YOU!</h2>
-<p>acorrend@uoguelph.ca</p>
-<div style="text-align: right; font-size: 0.75em">
-<p>Adrian A. Correndo<br>
-Assistant Professor<br>
-Sustainable Cropping Systems<br>
-Department of Plant Agriculture<br>
-University of Guelph<br>
-</p>
+<section id="bioconductor" class="slide level2 scrollable">
+<h2 class="scrollable">Bioconductor</h2>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" class="absolute" style="top: 0px; right: 0px; height: 15%; " /></p>
+<div class="fragment">
+<div class="column" style="width:65%;">
+<p>A platform designed for bioinformatics and computational biology, providing tools for genomic and biomedical data.</p>
 </div>
-<p>Rm 226, Crop Science Bldg | Department of Plant Agriculture</p>
-<p>Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.</p>
-<p><br></p>
+</div>
+<div class="fragment">
+<div class="column" style="width:90%;">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<p><strong>Pros 🚀</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li class="fragment"><strong>Tailored for Bioinformatics</strong>: Ideal for handling specialized data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="thank-you" class="slide level2 smaller">
+<h2 class="smaller">THANK YOU!</h2>
+<div style="text-align: left; font-size: 0.75em">
+<p>acorrend@uoguelph.ca Adrian A. Correndo<br />
+Assistant Professor<br />
+Sustainable Cropping Systems<br />
+Department of Plant Agriculture<br />
+University of Guelph<br />
+Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. <br/></p>
+</div>
 <h3 id="contact-me">Contact me</h3>
 <table>
 <tbody>
 <tr class="odd">
-<td><a href="http://twitter.com/aacorrendo"><img data-src="images/X_logo.png.webp" data-fig-align="center" width="60"></a></td>
-<td><a href="https://www.linkedin.com/in/adriancorrendo/"><img data-src="images/linkedin-icon.png" data-fig-align="center" width="60"></a></td>
-<td><a href="http://github.com/adriancorrendo"><img data-src="images/github-brands.svg" data-fig-align="center" width="60" height="60"></a></td>
+<td><a href="http://twitter.com/aacorrendo"><img data-src="images/X_logo.png.webp" data-fig-align="center" width="60" /></a></td>
+<td><a href="https://www.linkedin.com/in/adriancorrendo/"><img data-src="images/linkedin-icon.png" data-fig-align="center" width="60" /></a></td>
+<td><a href="http://github.com/adriancorrendo"><img data-src="images/github-brands.svg" data-fig-align="center" width="60" height="60" /></a></td>
 </tr>
 <tr class="even">
-<td><a href="https://orcid.org/0000-0002-4172-289X"><img data-src="images/orcid.png" data-fig-align="center" width="60"></a></td>
-<td><a href="https://scholar.google.com/citations?user=4h88EXkAAAAJ&amp;hl=en"><img data-src="images/768px-Google_Scholar_logo.png" data-fig-align="center" width="60"></a></td>
-<td><a href="https://www.researchgate.net/profile/Adrian-Correndo-2"><img data-src="images/ResearchGate_icon.png" data-fig-align="center" width="60"></a></td>
+<td><a href="https://orcid.org/0000-0002-4172-289X"><img data-src="images/orcid.png" data-fig-align="center" width="60" /></a></td>
+<td><a href="https://scholar.google.com/citations?user=4h88EXkAAAAJ&amp;hl=en"><img data-src="images/768px-Google_Scholar_logo.png" data-fig-align="center" width="60" /></a></td>
+<td><a href="https://www.researchgate.net/profile/Adrian-Correndo-2"><img data-src="images/ResearchGate_icon.png" data-fig-align="center" width="60" /></a></td>
 </tr>
 </tbody>
 </table>
-
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden" data-render-id="quarto-metatitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-twittercardtitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-ogcardtitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-metasitename">UNIV6020 - Fall 2024</span> <span class="hidden" data-render-id="quarto-twittercarddesc">R Packages Essentials</span> <span class="hidden" data-render-id="quarto-ogcardddesc">R Packages Essentials</span></p>
+</div>
+<p><img src="images/statasaurus_logo.png" class="slide-logo" /></p>
 <div class="footer footer-default">
-
+<p><a href="https://adriancorrendo.github.io" class="uri">https://adriancorrendo.github.io</a></p>
 </div>
 </section></section>
     </div>
@@ -920,19 +849,9 @@ University of Guelph<br>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
-'smaller': true,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': true,
- 
+      Reveal.initialize({ 
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -949,7 +868,7 @@ University of Guelph<br>
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: c/t,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1099,8 +1018,7 @@ University of Guelph<br>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
-
+        plugins: [
           RevealMath,
           RevealNotes,
           RevealSearch,
@@ -1108,7 +1026,7 @@ University of Guelph<br>
         ]
       });
     </script>
-    <script id="quarto-html-after-body" type="application/javascript">
+    <script id = "quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -1254,6 +1172,5 @@ University of Guelph<br>
       }
     });
     </script>
-    
-
-</body></html>
+    </body>
+</html>

@@ -1,12 +1,401 @@
 ---
-title: "Day #3"
-author: "Adrian Correndo"
+title: "Reproducible Data Science with R III"
+subtitle: "R Packages Essentials"
+author: "Adrian A. Correndo"
+date: "2024-11-06"
+editor: source
 format:
-  html:
-    fontsize: 0.8em
-    linestretch: 1
+  revealjs: 
+    incremental: true
+    slide-number: true
+    show-slide-number: all
+    toc: true
+    toc_float: true
+    toc-depth: 1
+    toc-location: body
+    toc-title: "Contents"
+    smaller: false
+    scrollable: true
+    controls: true
+    preview-links: auto
+    logo: images/statasaurus_logo.png
+    css: styles.css
+    footer: <https://adriancorrendo.github.io>
+    code-tools:
+      code-block-bg: true
+      copy-to-clipboard: true
+  beamer: 
+    aspectratio: 1610
+    navigation: horizontal
+    theme: AnnArbor
+    colortheme: lily
+highlight-style: pygments 
+title-slide-attributes:
+    data-background-image: /images/packages.png
+    data-background-size: contain
+    data-background-opacity: "0.25"
 ---
 
-# Presentation
 
-Coming soon
+# What is an R Package? 📦
+
+## What's a Package? 📦 {.smaller}
+
+- An **R package** is a collection of R functions, data, and documentation organized in a standardized format.
+
+::: {.fragment}
+### Key Components of an R Package
+:::
+1. **Functions**: Reusable R code that performs specific tasks.
+1. **Data**: Example datasets to illustrate package functions or concepts.
+1. **Documentation**: Help files and vignettes explaining how to use the package.
+1. **Namespace**: Defines which functions are available to the user.
+
+::: {.fragment}
+::: callout-tip
+- **Pro Tip**: Packages help simplify code reuse and make complex tasks more accessible.
+:::
+:::
+
+
+
+# Why packages? 🚀
+
+## Benefits of Using R Packages 💡
+
+- **Efficiency**: Avoid rewriting code for common tasks.
+- **Consistency**: Standardized code structure and naming conventions.
+- **Reproducibility**: Ensures that your work is easier to share and reproduce.
+
+## Example 1: mutate()
+
+![](https://dplyr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+::: {.column width="65%"}
+Packages like `dplyr` simplify tasks by providing clean, concise code for data manipulation. 
+:::
+
+::: {.fragment}
+::: {.column width="65%"}
+**1. Create a new column**: `total`, which is the sum of two existing columns (`var1` and `var2`).
+:::
+:::
+
+## Example 1: mutate()
+
+![](https://dplyr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+
+#### Base R version
+::: {.fragment}
+::: {.column width="80%"}
+```r
+# Sample data
+df <- data.frame(var1 = c(1, 2, 3), var2 = c(4, 5, 6))
+
+# Adding a new column using base R
+df$total <- df$var1 + df$var2
+```
+:::
+:::
+
+<br/>
+
+::: {.fragment}
+#### dplyr package (Tidyverse)
+```r
+library(dplyr)
+
+# Using mutate to add a new column
+df <- df %>%
+  mutate(total = var1 + var2)
+
+```
+:::
+
+## Example 2: filter()
+
+![](https://dplyr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+::: {.fragment}
+**2. Filtering**: get values of `var1` greater than 2.
+:::
+
+::: {.fragment}
+
+
+#### Base R version
+::: {.column width="65%"}
+```r
+# Filter rows using base R
+filtered_df <- df[df$var1 > 2, ]
+```
+:::
+:::
+
+<br/>
+
+::: {.fragment}
+#### dplyr package (Tidyverse)
+```r
+# Filter rows using dplyr
+filtered_df <- filter(data = df, var1 > 2)
+```
+:::
+
+## Example 3: select()
+
+![](https://dplyr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+::: {.fragment}
+**3. Select specific variables**: get `var1` and `var3`.
+:::
+
+<br/>
+
+::: {.fragment}
+#### Base R version
+```r
+# Select columns using base R
+selected_df <- df[ , c("var1","var3")]
+```
+:::
+
+::: {.fragment}
+
+<br/>
+
+#### dplyr package (Tidyverse)
+```r
+# Filter rows using dplyr
+filtered_df <- select(data = df, var1, var3)
+```
+:::
+
+## Example 4: iteration
+
+![](https://purrr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+::: {.fragment}
+::: {.column width="75%"}
+**Scenario**:
+You have a data frame with a column study and a column data, where data contains nested data frames for each study.\
+We want to fit a linear model to each nested data frame (predicting y by x) and store the models in a new column called model.
+:::
+:::
+
+
+::: {.fragment}
+### Dataset
+```r 
+# Sample data frame with nested data
+df <- tibble(
+study = c("Study 1", "Study 2"),
+data = list(data.frame(x = 1:10, y = rnorm(10)), 
+            data.frame(x = 1:10, y = rnorm(10))  ) )
+```
+
+:::
+
+## Example 4: iteration {.smaller}
+
+![](https://purrr.tidyverse.org/logo.png){.absolute top=0 right=0 height="30%"}
+
+::: {.column width="75%"}
+
+::: {.fragment}
+#### Base R version (for loop)
+```r
+# Initialize an empty list to store models
+models <- vector("list", length = nrow(df))
+
+# Using a for loop to fit the model and store results
+for (i in seq_len(nrow(df))) {
+  models[[i]] <- lm(y ~ x, data = df$data[[i]])
+}
+
+# Add the list of models as a new column in the data frame
+df$model <- models
+```
+:::
+
+::: 
+
+<br/>
+
+::: {.fragment}
+#### purrr package (map() function)
+```r
+library(purrr)
+# Using map to fit the model for each nested data frame
+df <- df %>%
+  mutate(model = map(data, ~ lm(y ~ x, data = .x)))
+```
+:::
+
+# Where do packages come from ❓ 
+
+## Where do packages come from ❓ {.smaller }
+
+::: {layout-nrow="2"}
+[![](https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png){fig-align="center" width="300"}](https://cran.r-project.org) [![](https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg){fig-align="center" width="300"}](https://www.bioconductor.org) [![](images/GitHub-logo.png){fig-align="center" width="450"}](https://github.com) [![](https://avatars.githubusercontent.com/u/75573726?s=280&v=4){fig-align="center" width="300"}](https://github.com)
+:::
+
+## Why is the source important? 📌
+
+-   Understand the benefits and drawbacks of stable vs. development versions.
+-   Understand the security standards and risks associated.
+-   Learn when to choose each source for your projects.
+
+## CRAN: Comprehensive R Archive Network 🗂️ {.scrollable}
+
+The primary repository for R packages, stability and rigor.
+
+::: columns
+
+::: {.column width="50%"}
+::: fragment
+::: {.callout-tip title="Pros 🌟"}
+-   High stability and compatibility across systems
+-   Strict quality standards and documentation requirements
+-   Easy installation and dependency management
+:::
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+::: {.callout-caution title="Cons ⚠️"}
+-   Slower update cycles due to strict review processes
+-   Limited flexibility for experimental or niche packages
+:::
+:::
+:::
+
+:::
+
+## CRAN: Comprehensive R Archive Network 🗂️ {.smaller}
+
+There are currently +21,000 of packages (on CRAN only). 
+
+::: fragment
+![](images/cranpackages.png){fig-align="center" width="800"}
+::: 
+
+## CRAN Taskviews {.smaller}
+
+- **Definition**: A CRAN Task View is a curated collection of R packages focused on a specific topic or area of research.
+- **Purpose**: Organizes packages into categories, making it easier for users to find the right tools for their work.
+- **Topics**: Ranges from "Machine Learning" to "Ecology" to "Time Series Analysis" and beyond.
+- **Benefits**:
+    - Saves time for users by grouping relevant packages.
+    - Regularly updated by experts in each field.
+    - Offers a starting point for exploring specialized R tools.
+
+
+## [Agriculture Task View](https://cran.r-project.org/web/views/Agriculture.html) {.smaller}
+
+![](images/TaskviewAgriculture.png){.absolute top=0 right=0 height="30%"}
+
+::: {.column width="60%"}
+It compiles R packages useful for agricultural research and data analysis.
+:::
+
+::: rows
+::: fragment
+::: {.column width="85%"}
+- **Content Includes**:
+    - Packages for analyzing crop and livestock data.
+    - Tools for spatial analysis of agricultural data.
+    - Resources for agricultural economics and statistical models.
+- **Examples of Included Packages**:
+    - **agricolae**: Provides tools for analysis of experimental data in agriculture.
+    - **agridat**: A collection of agricultural datasets for research and teaching.
+- **Why Use It?**
+    - Simplifies the search for agricultural tools.
+    - Helps researchers quickly identify relevant resources for their work.
+
+:::
+:::
+:::
+
+
+## GitHub: Open-Source Platform {.smaller}
+
+![](images/GitHub-logo.png){.absolute top=0 right=0 height="15%"}
+
+::: fragment
+::: {.column width="75%"}
+A platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.
+:::
+:::
+
+::: rows
+::: fragment
+::: {.column width="75%"}
+::: {.callout-tip title="Pros 🚀"}
+
+-   Cutting-edge features and fast updates
+-   Flexible release of experimental tools or features
+-   Community-driven contributions and improvements
+
+:::
+:::
+:::
+
+::: fragment
+::: {.column width="75%"}
+::: {.callout-caution title="Cons ⚠️"}
+-   Less stability
+-   Potential for bugs and security risks
+-   Requires manual dependency management
+-   Variable documentation quality
+:::
+:::
+:::
+
+:::
+
+## Bioconductor {.scrollable}
+
+![](https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg){.absolute top=0 right=0 height="15%"}
+
+::: fragment
+::: {.column width="65%"}
+A platform designed for bioinformatics and computational biology, providing tools for genomic and biomedical data.
+:::
+:::
+
+::: fragment
+::: {.column width="90%"}
+::: {.callout-tip title="Pros 🚀"}
+-   **Tailored for Bioinformatics**: Ideal for handling specialized data
+
+:::
+:::
+:::
+
+
+
+## THANK YOU! {.smaller}
+
+::: {style="text-align: left; font-size: 0.75em"}
+acorrend\@uoguelph.ca
+Adrian A. Correndo\
+Assistant Professor\
+Sustainable Cropping Systems\
+Department of Plant Agriculture\
+University of Guelph\
+Rm 226, Crop Science Bldg \| Department of Plant Agriculture
+Ontario Agricultural College \| University of Guelph \| 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.
+<br/>
+:::
+
+
+
+### Contact me
+
+|                                                                                               |                                                                                                                                          |                                                                                                                            |
+|--------------------|----------------------------|-------------------------|
+| [![](images/X_logo.png.webp){fig-align="center" width="60"}](http://twitter.com/aacorrendo)   | [![](images/linkedin-icon.png){fig-align="center" width="60"}](https://www.linkedin.com/in/adriancorrendo/)                              | [![](images/github-brands.svg){fig-align="center" width="60" height="60"}](http://github.com/adriancorrendo)               |
+| [![](images/orcid.png){fig-align="center" width="60"}](https://orcid.org/0000-0002-4172-289X) | [![](images/768px-Google_Scholar_logo.png){fig-align="center" width="60"}](https://scholar.google.com/citations?user=4h88EXkAAAAJ&hl=en) | [![](images/ResearchGate_icon.png){fig-align="center" width="60"}](https://www.researchgate.net/profile/Adrian-Correndo-2) |

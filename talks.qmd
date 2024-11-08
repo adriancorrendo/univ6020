@@ -5,9 +5,10 @@ format:
   html:
     fontsize: 0.8em
     linestretch: 1
+    embed-resources: true
 ---
 
-# Presentation
+# Slides
 
 <iframe class="slide-deck" src="docs/day1.html">
 

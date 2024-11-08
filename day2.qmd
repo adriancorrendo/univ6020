@@ -14,16 +14,26 @@ format:
     toc-depth: 1
     toc-location: body
     toc-title: "Contents"
-    smaller: true
+    smaller: false
     scrollable: true
-highlight-style: oblivion  
+    preview-links: auto
+    logo: images/statasaurus_logo.png
+    css: styles.css
+    footer: <https://adriancorrendo.github.io>
+    menu:
+      side: right
+      width: wide
+    code-tools:
+      code-block-bg: true
+highlight-style: pygments
+link-citations: TRUE
 ---
 
 
 # Why R?
 
 
-## Why R?
+## Why R? {.smaller}
 
 ::: columns
 ::: {.column width="70%"}
@@ -44,7 +54,7 @@ highlight-style: oblivion
 :::
 :::
 
-## Why RStudio?
+## Why RStudio? {.smaller}
 
 ::: columns
 ::: {.column width="70%"}
@@ -73,7 +83,7 @@ highlight-style: oblivion
 ![](images/rstudiopanel.png)
 :::
 
-## Why version control? 🔄
+## Why version control? 🔄 {.smaller}
 
 ::: columns
 ::: {.column width="70%"}
@@ -105,8 +115,6 @@ highlight-style: oblivion
 ::: {.column width="70%"}
 -   **Git**
     -   A version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.
-
-<br/>
 
 -   **GitHub**
     -   An online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.
@@ -176,16 +184,12 @@ highlight-style: oblivion
 ## Key Principles for Reproducibility
 
 -   **Documentation and Code Comments**
-    -   Metadata: information about data origin, format, structure, and meaning.
-    -   Code comments: provide explanations directly in scripts for future reference.
-    
-<br/>
+    -   Metadata: data origin, format, structure, and meaning.
+    -   Code comments: explanations directly in scripts for future reference.
     
 -   **Version Control (Git/GitHub)**
-    -   Tracks changes to code over time, making it easy to return to previous versions.
+    -   Tracks changes to code over time, can return to previous versions.
     -   Useful for collaborative work and transparency.
-    
-<br/>
 
 -   **Organization & Structured coding...**
 
@@ -206,9 +210,9 @@ highlight-style: oblivion
     ├── README.md   # Overview of the project structure and purpose
     ```
 
-::: fragment
+## Basic Project Structure
+
 ![](images/projectfolders.png)
-:::
 
 
 # Essentials of R 🔍
@@ -260,13 +264,13 @@ a
 It's a collection of numbers, arithmetic expressions, logical values or character strings for example. Within a table, it could be a row or a column
 
 ::: fragment
-```{r}
+```{r .code-line-numbers: "1|2|3|4"}
 #| label: vector
 #| echo: true
 # numeric
 b <- c(3, 6, 10)
 b
-
+# text
 c <- "Workshop"
 c
 
@@ -291,8 +295,9 @@ d
 ```
 :::
 
+## Tabular data
+
 ::: fragment
-<br/>
 
 ### 2. Tibble
 
@@ -332,7 +337,8 @@ m
 
 -   A list is a vector but with heterogeneous data elements.
 
-::: fragment
+## List
+
 ```{r}
 #| echo: true
 f <- list("a" = a, "b" = b,
@@ -341,7 +347,6 @@ f
 
 class(f)
 ```
-:::
 
 ## Functions ⚙️
 
@@ -360,7 +365,8 @@ class(f)
 :::
 :::
 
-::: fragment
+## Functions ⚙️
+
 ```{r}
 #| echo: true
 arguments <- NULL 
@@ -369,7 +375,7 @@ fx <- function(arguments) {
 }
 
 ```
-:::
+
 
 ::: fragment
 Example of a function to calculate the mean
@@ -403,14 +409,12 @@ fx(na.rm = T, x = b2)
 ```
 :::
 
-## Packages
+## Packages {.smaller}
 
 ::: fragment
 A package is a collection of R functions, data sets, and compiled code in a well-defined format. 
 
 -   Packages are intended to solve specific problems or perform specific tasks. 
-
--   There are currently thousands of packages available (+21,000 on CRAN only). 
 :::
 
 ::: fragment
@@ -420,17 +424,17 @@ A package is a collection of R functions, data sets, and compiled code in a well
 
 ## Packages
 
-<br/>
+There are currently +21,000 of packages (on CRAN only). 
 
+::: fragment
 ![](images/cranpackages.png){fig-align="center" width="800"}
+::: 
 
 # Why TIDY data?
 
-## Tidyverse
+## Tidyverse {.smaller}
 
-::: fragment
-From the hand of the family of packages called [Tidyverse](https://www.tidyverse.org/), the "tidy data" framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure [@wickham2014]:
-:::
+The "tidy data" framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure:
 
 -   Each variable is a column,
 
@@ -439,43 +443,39 @@ From the hand of the family of packages called [Tidyverse](https://www.tidyverse
 -   Each value have its own cell.
 
 ::: fragment
-![](images/tidy-1.png) <br/>
+**Tidy-data structure**. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells (Wickham, 2017).
+:::
 
-**Tidy-data structure**. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells. Source: Wickham (2017).
+::: fragment
+
+![](images/tidy-1.png)
+
 :::
 
 ## Free HTML books
 
 ::: {layout-ncol="2"}
-[![](https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png){height="300"}](https://r4ds.had.co.nz/)
+[![](https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png){height="250"}](https://r4ds.had.co.nz/)
 
-[![](https://www.tmwr.org/images/cover.png){height="300"}](https://www.tmwr.org/)
+[![](https://www.tmwr.org/images/cover.png){height="250"}](https://www.tmwr.org/)
 :::
 
-## Summary & Key Takeaways
 
--   Data literacy and reproducibility are essential in modern agriculture.
--   Reproducible analyses build credibility and foster collaboration.
+## THANK YOU! {.smaller}
 
-------------------------------------------------------------------------
-
-## THANK YOU!
-
+::: {style="text-align: left; font-size: 0.75em"}
 acorrend\@uoguelph.ca
-
-::: {style="text-align: right; font-size: 0.75em"}
 Adrian A. Correndo\
 Assistant Professor\
 Sustainable Cropping Systems\
 Department of Plant Agriculture\
 University of Guelph\
+Rm 226, Crop Science Bldg \| Department of Plant Agriculture
+Ontario Agricultural College \| University of Guelph \| 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.
+<br/>
 :::
 
-Rm 226, Crop Science Bldg \| Department of Plant Agriculture
 
-Ontario Agricultural College \| University of Guelph \| 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.
-
-<br/>
 
 ### Contact me
 

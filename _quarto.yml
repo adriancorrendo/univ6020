@@ -17,6 +17,17 @@ website:
     left: "<span> Developed by Adrian Correndo using [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). </span>"
     background: dark
   
+  navbar:
+    
+    right: 
+      - icon: globe
+        href: https://adriancorrendo.github.io/
+      - icon: github
+        href: https://github.com/adriancorrendo/univ6020/
+      - icon: twitter
+        href: https://twitter.com/aacorrendo
+      - icon: linkedin
+        href: https://www.linkedin.com/in/adriancorrendo/
       
   sidebar:
     logo: "images/statasaurus_logo.png"
@@ -30,31 +41,31 @@ website:
     search: true
     collapse-level: 1
     contents:
-      - section: "About"
-        contents: 
-          - href: index.qmd
-            text: "Description"
-      - section: "Sessions"
+      - href: index.qmd
+        text: "Home" 
+      - section: "Slides"
         contents:
-          - href: talks.qmd
-            text: "Talks"
           - href: day1.qmd
             text: "Day 1"
           - href: day2.qmd
             text: "Day 2"
           - href: day3.qmd
             text: "Day 3"
+      - section: "Coding"
+        contents:
+          - href: coding/code/repmeasuresmodel.qmd
+            text: "Coding Session"
          
 format:
   html:
-    theme: cosmo
+    theme: minty
+    highlight-style: pygments
     css: styles.css
     toc: true
-    toc-title: "On this section"
+    toc-title: "Content"
     toc-location: right
     code-copy: true
     code-overflow: scroll
-    highlight-style: pygments
     
 freeze: auto
 

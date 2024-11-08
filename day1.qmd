@@ -15,7 +15,12 @@ format:
     toc-title: "Contents"
     smaller: true
     scrollable: true
-highlight-style: oblivion  
+    menu:
+      side: right
+    preview-links: auto
+    logo: images/statasaurus_logo.png
+    footer: <https://adriancorrendo.github.io>
+highlight-style: pygments  
 ---
 
 ## Welcome 👋
