@@ -2,7 +2,7 @@
 title: "Reproducible Data Science with R III"
 subtitle: "R Packages Essentials"
 author: "Adrian A. Correndo"
-date: "2024-11-06"
+date: "2024-11-08"
 editor: source
 format:
   revealjs: 
@@ -16,20 +16,17 @@ format:
     toc-title: "Contents"
     smaller: false
     scrollable: true
-    controls: true
     preview-links: auto
     logo: images/statasaurus_logo.png
     css: styles.css
     footer: <https://adriancorrendo.github.io>
+    menu:
+      side: right
+      width: wide
     code-tools:
       code-block-bg: true
-      copy-to-clipboard: true
-  beamer: 
-    aspectratio: 1610
-    navigation: horizontal
-    theme: AnnArbor
-    colortheme: lily
-highlight-style: pygments 
+highlight-style: pygments
+link-citations: TRUE
 title-slide-attributes:
     data-background-image: /images/packages.png
     data-background-size: contain

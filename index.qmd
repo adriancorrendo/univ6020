@@ -23,6 +23,7 @@ i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio
 :::
 
 # Slide-decks
+
 ```{=html}
 <style>
 .slide-deck {
@@ -33,15 +34,21 @@ i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio
 </style>
 ```
 ## Day 1
+
 <div>
+
 ```{=html}
 <iframe class="slide-deck" src="docs/day1.html"></iframe>
 ```
+
 </div>
 
 ## Day 2
+
 <div>
+
 ```{=html}
 <iframe class="slide-deck" src="docs/day2.html"></iframe>
 ```
+
 </div>

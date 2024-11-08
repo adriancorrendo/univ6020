@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.433" />
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Adrian A. Correndo">
-  <meta name="dcterms.date" content="2024-11-06">
-  <title>UNIV6020 - Fall 2024 – Reproducible Data Science with R III</title>
+  <meta name="dcterms.date" content="2024-11-08">
+  <title>UNIV6020 - Fall 2024 - Reproducible Data Science with R III</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -91,7 +97,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -381,12 +387,19 @@
       margin-right: 0; 
     }
   </style>
+<meta property="og:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R III">
+<meta property="og:description" content="R Packages Essentials">
+<meta property="og:site-name" content="UNIV6020 - Fall 2024">
+<meta name="twitter:title" content="UNIV6020 - Fall 2024 - Reproducible Data Science with R III">
+<meta name="twitter:description" content="R Packages Essentials">
+<meta name="twitter:creator" content="@aacorrendo">
+<meta name="twitter:card" content="summary">
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="/images/packages.png" data-background-opacity="0.25" data-background-size="contain" class="quarto-title-block">
+<section id="title-slide" data-background-image="./images/packages.png" data-background-opacity="0.25" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Reproducible Data Science with R III</h1>
   <p class="subtitle">R Packages Essentials</p>
 
@@ -398,7 +411,7 @@ Adrian A. Correndo
 </div>
 </div>
 
-  <p class="date">2024-11-06</p>
+  <p class="date">2024-11-08</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Contents</h2>
@@ -410,12 +423,12 @@ Adrian A. Correndo
 </nav>
 </section>
 <section>
-<section id="what-is-an-r-package" class="title-slide slide level1">
+<section id="what-is-an-r-package" class="title-slide slide level1 center">
 <h1>What is an R Package? 📦</h1>
 
 </section>
 <section id="whats-a-package" class="slide level2 smaller">
-<h2 class="smaller">What’s a Package? 📦</h2>
+<h2>What’s a Package? 📦</h2>
 <ul>
 <li class="fragment">An <strong>R package</strong> is a collection of R functions, data, and documentation organized in a standardized format.</li>
 </ul>
@@ -434,7 +447,7 @@ Adrian A. Correndo
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Tip</strong></p>
 </div>
@@ -448,7 +461,7 @@ Adrian A. Correndo
 </div>
 </section></section>
 <section>
-<section id="why-packages" class="title-slide slide level1">
+<section id="why-packages" class="title-slide slide level1 center">
 <h1>Why packages? 🚀</h1>
 
 </section>
@@ -462,7 +475,7 @@ Adrian A. Correndo
 </section>
 <section id="example-1-mutate" class="slide level2">
 <h2>Example 1: mutate()</h2>
-<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="column" style="width:65%;">
 <p>Packages like <code>dplyr</code> simplify tasks by providing clean, concise code for data manipulation.</p>
 </div>
@@ -474,31 +487,31 @@ Adrian A. Correndo
 </section>
 <section id="example-1-mutate-1" class="slide level2">
 <h2>Example 1: mutate()</h2>
-<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <h4 id="base-r-version">Base R version</h4>
 <div class="fragment">
 <div class="column" style="width:80%;">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Sample data</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Sample data</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">var1 =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">var2 =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>))</span>
 <span id="cb1-3"><a href="#cb1-3"></a></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Adding a new column using base R</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>df<span class="sc">$</span>total <span class="ot">&lt;-</span> df<span class="sc">$</span>var1 <span class="sc">+</span> df<span class="sc">$</span>var2</span></code></pre></div>
+<span id="cb1-5"><a href="#cb1-5"></a>df<span class="sc">$</span>total <span class="ot">&lt;-</span> df<span class="sc">$</span>var1 <span class="sc">+</span> df<span class="sc">$</span>var2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<p><br/></p>
+<p><br></p>
 <div class="fragment">
 <!-- -->
 <h4 id="dplyr-package-tidyverse">dplyr package (Tidyverse)</h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb2-2"><a href="#cb2-2"></a></span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="co"># Using mutate to add a new column</span></span>
 <span id="cb2-4"><a href="#cb2-4"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">mutate</span>(<span class="at">total =</span> var1 <span class="sc">+</span> var2)</span></code></pre></div>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">mutate</span>(<span class="at">total =</span> var1 <span class="sc">+</span> var2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-2-filter" class="slide level2">
 <h2>Example 2: filter()</h2>
-<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="fragment">
 <p><strong>2. Filtering</strong>: get values of <code>var1</code> greater than 2.</p>
 </div>
@@ -506,66 +519,66 @@ Adrian A. Correndo
 <!-- -->
 <h4 id="base-r-version-1">Base R version</h4>
 <div class="column" style="width:65%;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Filter rows using base R</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>filtered_df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>var1 <span class="sc">&gt;</span> <span class="dv">2</span>, ]</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Filter rows using base R</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>filtered_df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>var1 <span class="sc">&gt;</span> <span class="dv">2</span>, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<p><br/></p>
+<p><br></p>
 <div class="fragment">
 <!-- -->
 <h4 id="dplyr-package-tidyverse-1">dplyr package (Tidyverse)</h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Filter rows using dplyr</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">data =</span> df, var1 <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Filter rows using dplyr</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">data =</span> df, var1 <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-3-select" class="slide level2">
 <h2>Example 3: select()</h2>
-<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="fragment">
 <p><strong>3. Select specific variables</strong>: get <code>var1</code> and <code>var3</code>.</p>
 </div>
-<p><br/></p>
+<p><br></p>
 <div class="fragment">
 <!-- -->
 <h4 id="base-r-version-2">Base R version</h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Select columns using base R</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>selected_df <span class="ot">&lt;-</span> df[ , <span class="fu">c</span>(<span class="st">&quot;var1&quot;</span>,<span class="st">&quot;var3&quot;</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Select columns using base R</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>selected_df <span class="ot">&lt;-</span> df[ , <span class="fu">c</span>(<span class="st">"var1"</span>,<span class="st">"var3"</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
-<p><br/></p>
+<p><br></p>
 <h4 id="dplyr-package-tidyverse-2">dplyr package (Tidyverse)</h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Filter rows using dplyr</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">select</span>(<span class="at">data =</span> df, var1, var3)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Filter rows using dplyr</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>filtered_df <span class="ot">&lt;-</span> <span class="fu">select</span>(<span class="at">data =</span> df, var1, var3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-4-iteration" class="slide level2">
 <h2>Example 4: iteration</h2>
-<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="fragment">
 <div class="column" style="width:75%;">
-<p><strong>Scenario</strong>: You have a data frame with a column study and a column data, where data contains nested data frames for each study.<br />
+<p><strong>Scenario</strong>: You have a data frame with a column study and a column data, where data contains nested data frames for each study.<br>
 We want to fit a linear model to each nested data frame (predicting y by x) and store the models in a new column called model.</p>
 </div>
 </div>
 <div class="fragment">
 <!-- -->
 <h3 id="dataset">Dataset</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Sample data frame with nested data</span></span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Sample data frame with nested data</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="at">study =</span> <span class="fu">c</span>(<span class="st">&quot;Study 1&quot;</span>, <span class="st">&quot;Study 2&quot;</span>),</span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="at">study =</span> <span class="fu">c</span>(<span class="st">"Study 1"</span>, <span class="st">"Study 2"</span>),</span>
 <span id="cb7-4"><a href="#cb7-4"></a><span class="at">data =</span> <span class="fu">list</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)), </span>
-<span id="cb7-5"><a href="#cb7-5"></a>            <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">10</span>))  ) )</span></code></pre></div>
+<span id="cb7-5"><a href="#cb7-5"></a>            <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">10</span>))  ) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="example-4-iteration-1" class="slide level2 smaller">
-<h2 class="smaller">Example 4: iteration</h2>
-<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<h2>Example 4: iteration</h2>
+<p><img data-src="https://purrr.tidyverse.org/logo.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="column" style="width:75%;">
 <div class="fragment">
 <!-- -->
 <h4 id="base-r-version-for-loop">Base R version (for loop)</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Initialize an empty list to store models</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>models <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="at">length =</span> <span class="fu">nrow</span>(df))</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Initialize an empty list to store models</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>models <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">"list"</span>, <span class="at">length =</span> <span class="fu">nrow</span>(df))</span>
 <span id="cb8-3"><a href="#cb8-3"></a></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="co"># Using a for loop to fit the model and store results</span></span>
 <span id="cb8-5"><a href="#cb8-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(df))) {</span>
@@ -573,30 +586,30 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <span id="cb8-7"><a href="#cb8-7"></a>}</span>
 <span id="cb8-8"><a href="#cb8-8"></a></span>
 <span id="cb8-9"><a href="#cb8-9"></a><span class="co"># Add the list of models as a new column in the data frame</span></span>
-<span id="cb8-10"><a href="#cb8-10"></a>df<span class="sc">$</span>model <span class="ot">&lt;-</span> models</span></code></pre></div>
+<span id="cb8-10"><a href="#cb8-10"></a>df<span class="sc">$</span>model <span class="ot">&lt;-</span> models</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<p><br/></p>
+<p><br></p>
 <div class="fragment">
 <!-- -->
 <h4 id="purrr-package-map-function">purrr package (map() function)</h4>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(purrr)</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(purrr)</span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="co"># Using map to fit the model for each nested data frame</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, <span class="sc">~</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> .x)))</span></code></pre></div>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, <span class="sc">~</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> .x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
-<section id="where-do-packages-come-from" class="title-slide slide level1">
+<section id="where-do-packages-come-from" class="title-slide slide level1 center">
 <h1>Where do packages come from ❓</h1>
 
 </section>
 <section id="where-do-packages-come-from-1" class="slide level2 smaller">
-<h2 class="smaller">Where do packages come from ❓</h2>
+<h2>Where do packages come from ❓</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="https://cran.r-project.org"><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png" data-fig-align="center" width="300" /></a> <a href="https://www.bioconductor.org"><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" data-fig-align="center" width="300" /></a> <a href="https://github.com"><img data-src="images/GitHub-logo.png" data-fig-align="center" width="450" /></a> <a href="https://github.com"><img data-src="https://avatars.githubusercontent.com/u/75573726?s=280&amp;v=4.png" data-fig-align="center" width="300" /></a></p>
+<p><a href="https://cran.r-project.org"><img data-src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png" data-fig-align="center" width="300"></a> <a href="https://www.bioconductor.org"><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" data-fig-align="center" width="300"></a> <a href="https://github.com"><img data-src="images/GitHub-logo.png" data-fig-align="center" width="450"></a> <a href="https://github.com"><img data-src="https://avatars.githubusercontent.com/u/75573726?s=280&amp;v=4.png" data-fig-align="center" width="300"></a></p>
 </div>
 </div>
 </div>
@@ -604,13 +617,13 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <section id="why-is-the-source-important" class="slide level2">
 <h2>Why is the source important? 📌</h2>
 <ul>
-<li class="fragment">Understand the benefits and drawbacks of stable vs. development versions.</li>
+<li class="fragment">Understand the benefits and drawbacks of stable vs.&nbsp;development versions.</li>
 <li class="fragment">Understand the security standards and risks associated.</li>
 <li class="fragment">Learn when to choose each source for your projects.</li>
 </ul>
 </section>
 <section id="cran-comprehensive-r-archive-network" class="slide level2 scrollable">
-<h2 class="scrollable">CRAN: Comprehensive R Archive Network 🗂️</h2>
+<h2>CRAN: Comprehensive R Archive Network 🗂️</h2>
 <p>The primary repository for R packages, stability and rigor.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -619,7 +632,7 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Pros 🌟</strong></p>
 </div>
@@ -639,7 +652,7 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Cons ⚠️</strong></p>
 </div>
@@ -656,18 +669,18 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 </div>
 </section>
 <section id="cran-comprehensive-r-archive-network-1" class="slide level2 smaller">
-<h2 class="smaller">CRAN: Comprehensive R Archive Network 🗂️</h2>
+<h2>CRAN: Comprehensive R Archive Network 🗂️</h2>
 <p>There are currently +21,000 of packages (on CRAN only).</p>
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/cranpackages.png" width="800" /></p>
+<p><img data-src="images/cranpackages.png" width="800"></p>
 </figure>
 </div>
 </div>
 </section>
 <section id="cran-taskviews" class="slide level2 smaller">
-<h2 class="smaller">CRAN Taskviews</h2>
+<h2>CRAN Taskviews</h2>
 <ul>
 <li class="fragment"><strong>Definition</strong>: A CRAN Task View is a curated collection of R packages focused on a specific topic or area of research.</li>
 <li class="fragment"><strong>Purpose</strong>: Organizes packages into categories, making it easier for users to find the right tools for their work.</li>
@@ -681,8 +694,8 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 </ul>
 </section>
 <section id="agriculture-task-view" class="slide level2 smaller">
-<h2 class="smaller"><a href="https://cran.r-project.org/web/views/Agriculture.html">Agriculture Task View</a></h2>
-<p><img data-src="images/TaskviewAgriculture.png" class="absolute" style="top: 0px; right: 0px; height: 30%; " /></p>
+<h2><a href="https://cran.r-project.org/web/views/Agriculture.html">Agriculture Task View</a></h2>
+<p><img data-src="images/TaskviewAgriculture.png" class="absolute" style="top: 0px; right: 0px; height: 30%; "></p>
 <div class="column" style="width:60%;">
 <p>It compiles R packages useful for agricultural research and data analysis.</p>
 </div>
@@ -712,8 +725,8 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 </div>
 </section>
 <section id="github-open-source-platform" class="slide level2 smaller">
-<h2 class="smaller">GitHub: Open-Source Platform</h2>
-<p><img data-src="images/GitHub-logo.png" class="absolute" style="top: 0px; right: 0px; height: 15%; " /></p>
+<h2>GitHub: Open-Source Platform</h2>
+<p><img data-src="images/GitHub-logo.png" class="absolute" style="top: 0px; right: 0px; height: 15%; "></p>
 <div class="fragment">
 <div class="column" style="width:75%;">
 <p>A platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.</p>
@@ -726,7 +739,7 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Pros 🚀</strong></p>
 </div>
@@ -747,7 +760,7 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Cons ⚠️</strong></p>
 </div>
@@ -766,8 +779,8 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 </div>
 </section>
 <section id="bioconductor" class="slide level2 scrollable">
-<h2 class="scrollable">Bioconductor</h2>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" class="absolute" style="top: 0px; right: 0px; height: 15%; " /></p>
+<h2>Bioconductor</h2>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/en/1/13/Bioconductor_logo.svg" class="absolute" style="top: 0px; right: 0px; height: 15%; "></p>
 <div class="fragment">
 <div class="column" style="width:65%;">
 <p>A platform designed for bioinformatics and computational biology, providing tools for genomic and biomedical data.</p>
@@ -779,7 +792,7 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <p><strong>Pros 🚀</strong></p>
 </div>
@@ -794,34 +807,32 @@ We want to fit a linear model to each nested data frame (predicting y by x) and 
 </div>
 </section>
 <section id="thank-you" class="slide level2 smaller">
-<h2 class="smaller">THANK YOU!</h2>
+<h2>THANK YOU!</h2>
 <div style="text-align: left; font-size: 0.75em">
-<p>acorrend@uoguelph.ca Adrian A. Correndo<br />
-Assistant Professor<br />
-Sustainable Cropping Systems<br />
-Department of Plant Agriculture<br />
-University of Guelph<br />
-Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. <br/></p>
+<p>acorrend@uoguelph.ca Adrian A. Correndo<br>
+Assistant Professor<br>
+Sustainable Cropping Systems<br>
+Department of Plant Agriculture<br>
+University of Guelph<br>
+Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. <br></p>
 </div>
 <h3 id="contact-me">Contact me</h3>
 <table>
 <tbody>
 <tr class="odd">
-<td><a href="http://twitter.com/aacorrendo"><img data-src="images/X_logo.png.webp" data-fig-align="center" width="60" /></a></td>
-<td><a href="https://www.linkedin.com/in/adriancorrendo/"><img data-src="images/linkedin-icon.png" data-fig-align="center" width="60" /></a></td>
-<td><a href="http://github.com/adriancorrendo"><img data-src="images/github-brands.svg" data-fig-align="center" width="60" height="60" /></a></td>
+<td><a href="http://twitter.com/aacorrendo"><img data-src="images/X_logo.png.webp" data-fig-align="center" width="60"></a></td>
+<td><a href="https://www.linkedin.com/in/adriancorrendo/"><img data-src="images/linkedin-icon.png" data-fig-align="center" width="60"></a></td>
+<td><a href="http://github.com/adriancorrendo"><img data-src="images/github-brands.svg" data-fig-align="center" width="60" height="60"></a></td>
 </tr>
 <tr class="even">
-<td><a href="https://orcid.org/0000-0002-4172-289X"><img data-src="images/orcid.png" data-fig-align="center" width="60" /></a></td>
-<td><a href="https://scholar.google.com/citations?user=4h88EXkAAAAJ&amp;hl=en"><img data-src="images/768px-Google_Scholar_logo.png" data-fig-align="center" width="60" /></a></td>
-<td><a href="https://www.researchgate.net/profile/Adrian-Correndo-2"><img data-src="images/ResearchGate_icon.png" data-fig-align="center" width="60" /></a></td>
+<td><a href="https://orcid.org/0000-0002-4172-289X"><img data-src="images/orcid.png" data-fig-align="center" width="60"></a></td>
+<td><a href="https://scholar.google.com/citations?user=4h88EXkAAAAJ&amp;hl=en"><img data-src="images/768px-Google_Scholar_logo.png" data-fig-align="center" width="60"></a></td>
+<td><a href="https://www.researchgate.net/profile/Adrian-Correndo-2"><img data-src="images/ResearchGate_icon.png" data-fig-align="center" width="60"></a></td>
 </tr>
 </tbody>
 </table>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden" data-render-id="quarto-metatitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-twittercardtitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-ogcardtitle">UNIV6020 - Fall 2024 - Reproducible Data Science with R III</span> <span class="hidden" data-render-id="quarto-metasitename">UNIV6020 - Fall 2024</span> <span class="hidden" data-render-id="quarto-twittercarddesc">R Packages Essentials</span> <span class="hidden" data-render-id="quarto-ogcardddesc">R Packages Essentials</span></p>
-</div>
-<p><img src="images/statasaurus_logo.png" class="slide-logo" /></p>
+
+<p><img src="images/statasaurus_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://adriancorrendo.github.io" class="uri">https://adriancorrendo.github.io</a></p>
 </div>
@@ -849,9 +860,19 @@ Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
-      Reveal.initialize({ 
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"right","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"wide"},
+'smaller': false,
+ 
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -868,7 +889,7 @@ Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: c/t,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1018,7 +1039,8 @@ Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural
         },
 
         // reveal.js plugins
-        plugins: [
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
           RevealMath,
           RevealNotes,
           RevealSearch,
@@ -1026,7 +1048,7 @@ Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural
         ]
       });
     </script>
-    <script id = "quarto-html-after-body" type="application/javascript">
+    <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -1172,5 +1194,6 @@ Rm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural
       }
     });
     </script>
-    </body>
-</html>
+    
+
+</body></html>

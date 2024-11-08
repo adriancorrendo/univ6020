@@ -13,14 +13,19 @@ format:
     toc-depth: 1
     toc-location: body
     toc-title: "Contents"
-    smaller: true
+    smaller: false
     scrollable: true
-    menu:
-      side: right
     preview-links: auto
     logo: images/statasaurus_logo.png
+    css: styles.css
     footer: <https://adriancorrendo.github.io>
-highlight-style: pygments  
+    menu:
+      side: right
+      width: wide
+    code-tools:
+      code-block-bg: true
+highlight-style: pygments
+link-citations: TRUE
 ---
 
 ## Welcome 👋
