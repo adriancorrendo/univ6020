@@ -26,11 +26,6 @@ format:
     code-tools:
       code-block-bg: true
 highlight-style: pygments
-link-citations: TRUE
-title-slide-attributes:
-    data-background-image: /images/packages.png
-    data-background-size: contain
-    data-background-opacity: "0.25"
 ---
 
 

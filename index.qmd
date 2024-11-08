@@ -52,3 +52,13 @@ i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio
 ```
 
 </div>
+
+## Day 3
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="docs/day3.html"></iframe>
+```
+
+</div>
