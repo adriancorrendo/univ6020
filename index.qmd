@@ -9,6 +9,8 @@ In this special module, part of the UNIV6020 course, you'll dive into key princi
 
 Looking forward to explore the power of reproducibility in agricultural data science!
 
+[![](images/uog.png){height="150"}](https://www.plant.uoguelph.ca)
+
 ::: {style="text-align: left; font-size: 0.75em"}
 Dr. [Adrian Correndo](https://adriancorrendo.github.io/)\
 acorrend\@uoguelph.ca\
@@ -28,37 +30,28 @@ i\. the latest version of R & [RStudio](https://www.rstudio.com/products/rstudio
 <style>
 .slide-deck {
     border: 3px solid #dee2e6;
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 500px;
 }
 </style>
 ```
+
 ## Day 1
 
-<div>
-
 ```{=html}
-<iframe class="slide-deck" src="docs/day1.html"></iframe>
+<iframe class="slide-deck" src="day1.html"></iframe>
 ```
-
-</div>
 
 ## Day 2
 
-<div>
-
 ```{=html}
-<iframe class="slide-deck" src="docs/day2.html"></iframe>
+<iframe class="slide-deck" src="day2.html"></iframe>
 ```
-
-</div>
 
 ## Day 3
 
-<div>
-
 ```{=html}
-<iframe class="slide-deck" src="docs/day3.html"></iframe>
+<iframe class="slide-deck" src="day3.html"></iframe>
 ```
 
-</div>
+

@@ -2,7 +2,7 @@
 title: "Reproducible Data Science with R III"
 subtitle: "R Packages Essentials"
 author: "Adrian A. Correndo"
-date: "2024-11-08"
+date: "2025-11-28"
 editor: source
 format:
   revealjs: 
@@ -268,7 +268,7 @@ The primary repository for R packages, stability and rigor.
 
 ## CRAN: Comprehensive R Archive Network 🗂️ {.smaller}
 
-There are currently +21,000 of packages (on CRAN only). 
+There are currently +23,000 of packages (on CRAN only). 
 
 ::: fragment
 ![](images/cranpackages.png){fig-align="center" width="800"}
@@ -312,7 +312,7 @@ It compiles R packages useful for agricultural research and data analysis.
 :::
 
 
-## GitHub: Open-Source Platform {.smaller}
+## Package from GitHub{.smaller}
 
 ![](images/GitHub-logo.png){.absolute top=0 right=0 height="15%"}
 

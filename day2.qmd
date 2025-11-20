@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Data Science with R II"
-subtitle: "Why R and R essentials"
+subtitle: "The essentials of R"
 author: "Adrian A. Correndo"
-date: "2024-11-06"
+date: "2025-11-26"
 editor: source
 format:
   revealjs: 
@@ -331,11 +331,13 @@ m
 
 -   A generic object consisting of an ordered collection of objects. <br/>
 
--   Lists are one-dimensional, heterogeneous data structures. <br/>
+-   Lists are one-dimensional, but heterogeneous data structures. <br/>
 
 -   The list can be a list of vectors, matrices, characters, functions, etc... <br/>
 
--   A list is a vector but with heterogeneous data elements.
+-   A list is a vector that can contain heterogeneous elements.
+
+-   Statistical model outputs are typically lists.
 
 ## List
 
@@ -424,7 +426,7 @@ A package is a collection of R functions, data sets, and compiled code in a well
 
 ## Packages
 
-There are currently +21,000 of packages (on CRAN only). 
+There are currently 23,052 of packages (on CRAN only). 
 
 ::: fragment
 ![](images/cranpackages.png){fig-align="center" width="800"}

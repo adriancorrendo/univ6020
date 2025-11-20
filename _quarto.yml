@@ -4,7 +4,7 @@ project:
 
 website:
   page-navigation: true
-  title: "UNIV6020 - Fall 2024"
+  title: "UNIV6020 - Fall 2025"
   description: "Reproducible Ag Data Science with R"
   site-url: "https://adriancorrendo.github.io/"
   repo-actions: [edit, issue]
@@ -58,7 +58,7 @@ website:
          
 format:
   html:
-    theme: minty
+    theme: cosmo
     highlight-style: pygments
     css: styles.css
     toc: true

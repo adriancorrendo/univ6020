@@ -2,7 +2,7 @@
 title: "Tidy Mixed Models in R"
 subtitle: "A simple guide"
 author: "Adrian Correndo"
-date: 2024-11-08
+date: 2025-11-28
 abstract-title: 'Summary'
 abstract: 'This workshop provides a workflow to analyze a common type of mixed models data in agriculture: (i) Repeated measures. From exploring the data to create a summary report with figures, we will cover how to write, test, and select from multiple candidate models at once using tidy principles, packages from the tidyverse|tidymodels framework, and all implementing Quarto !'
 format:
@@ -249,7 +249,7 @@ I'm sorry for this, but the most important step is ALWAYS to write down the mode
 
 #### m0. Block Fixed
 
-In a traditional approach blocks are defined as fixed, affecting the mean of the expected value. Yet there is no consensus about treating blocks as fixed or as random. For more information, read @Dixon_2016. 
+In a traditional approach blocks are defined as fixed, affecting the mean of the expected value. Yet there is no consensus about treating blocks as fixed or as random. For more information, read @Dixon_2016.
 
 ::: callout-tip
 In my opinion, we should treat blocks as random because the number of blocks we choose is a random sample of all the potential blocks we could have used. However, for a decent estimation of a random effect, the usual amount of blocks we use in agriculture research (3-5) is not sufficient.

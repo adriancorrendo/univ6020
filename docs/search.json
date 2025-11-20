@@ -4,545 +4,919 @@
     "href": "day1.html#welcome",
     "title": "Reproducible Data Science with R",
     "section": "Welcome 👋",
-    "text": "Welcome 👋\n\nGoal: Gain foundational knowledge and understand how data science can improve agricultural practices.\nLet’s dive into it with an emphasis on reproducibility and data literacy.\n\n\n\n\n\n\n\n\nTip\n\n\n\nRemember: Questions and discussions are encouraged! 💬"
+    "text": "Welcome 👋\n\nGoal: Gain foundational knowledge and understand how data science can improve agricultural practices.\nLet’s dive into it with an emphasis on reproducibility and data literacy.\n\n\n\n\n\n\n\n\nTip\n\n\n\nRemember: Questions and discussions are encouraged! 💬",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#objectives-for-today",
     "href": "day1.html#objectives-for-today",
     "title": "Reproducible Data Science with R",
     "section": "Objectives for Today 📌",
-    "text": "Objectives for Today 📌\n\nDefine core concepts:\n\nData Science,\nData Literacy,\nReproducibility.\n\nUnderstand the role of reproducible data science in agriculture.\nExplore challenges and opportunities."
+    "text": "Objectives for Today 📌\n\nDefine core concepts:\n\nData Science,\nData Literacy,\nReproducibility.\n\nUnderstand the role of reproducible data science in agriculture.\nExplore challenges and opportunities.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#what-is-data-science-in-agriculture",
     "href": "day1.html#what-is-data-science-in-agriculture",
     "title": "Reproducible Data Science with R",
     "section": "What is Data Science in Agriculture? 🌱",
-    "text": "What is Data Science in Agriculture? 🌱\n\nApplying data engineering, analysis, statistics, and machine learning to solve agricultural problems.\nExamples: Precision agriculture, yield forecasting, environmental monitoring."
+    "text": "What is Data Science in Agriculture? 🌱\n\nApplying data engineering, analysis, statistics, and machine learning to solve agricultural problems.\nExamples: Precision agriculture, yield forecasting, environmental monitoring.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#key-definitions",
     "href": "day1.html#key-definitions",
     "title": "Reproducible Data Science with R",
     "section": "Key Definitions 📖",
-    "text": "Key Definitions 📖\n\n\n\nData Science: Extracting insights from data using algorithms and statistical methods. \nData Literacy: Skills to read, interpret, and analyze data. \nReproducibility: Ensuring analyses can be recreated by others.\n\n\n\n\n\n\n\n\n\nNote\n\n\nWhy does reproducibility matter?\n\nTrustworthy results,\ntransparency, &\ncollaboration in research."
+    "text": "Key Definitions 📖\n\n\n\nData Science: Extracting insights from data using algorithms and statistical methods. \nData Literacy: Skills to read, interpret, and analyze data. \nReproducibility: Ensuring analyses can be recreated by others.\n\n\n\n\n\n\n\n\n\nNote\n\n\nWhy does reproducibility matter?\n\nTrustworthy results,\ntransparency, &\ncollaboration in research.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#challenges-in-data-literacy",
     "href": "day1.html#challenges-in-data-literacy",
     "title": "Reproducible Data Science with R",
     "section": "Challenges in Data Literacy 🌐",
-    "text": "Challenges in Data Literacy 🌐\n\nDiverse data sources (weather, soil, crop data)\nStandardization issues across datasets\nData skills gap among ag professionals"
+    "text": "Challenges in Data Literacy 🌐\n\nDiverse data sources (weather, soil, crop data)\nStandardization issues across datasets\nData skills gap among ag professionals",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#why-does-it-matter",
     "href": "day1.html#why-does-it-matter",
     "title": "Reproducible Data Science with R",
     "section": "Why does it matter?",
-    "text": "Why does it matter?\n\n\nIt is the #1 skill-gap in the job market: \n\nAcademia,\nIndustry,\nGovernment, NGOs, etc.\n\n\n\n\n\n\n\nIs there a REPRODUCIBILITY CRISIS in science?\nA Nature survey with ~1,600 researchers found that\n\n+70% failure rate to reproduce another scientist’s experiments\n+50% have failed to reproduce their own experiments\nMain causes: selective reporting, weak stats, code/data unavailability, etc."
+    "text": "Why does it matter?\n\n\nIt is the #1 skill-gap in the job market: \n\nAcademia,\nIndustry,\nGovernment, NGOs, etc.\n\n\n\n\n\nIs there a REPRODUCIBILITY CRISIS in science?\nA Nature survey with ~1,600 researchers found that\n\n+70% failure rate to reproduce another scientist’s experiments\n+50% have failed to reproduce their own experiments\nMain causes: selective reporting, weak stats, code/data unavailability, etc.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#good-news-is",
     "href": "day1.html#good-news-is",
     "title": "Reproducible Data Science with R",
     "section": "GOOD NEWS IS…",
-    "text": "GOOD NEWS IS…"
+    "text": "GOOD NEWS IS…",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#why-reproducibility-in-agriculture",
     "href": "day1.html#why-reproducibility-in-agriculture",
     "title": "Reproducible Data Science with R",
     "section": "Why Reproducibility in Agriculture?",
-    "text": "Why Reproducibility in Agriculture?\n\nAgriculture research relies heavily on environmental data, often variable and complex.\nWe have complex challenges 🗒️\n\nVariability due to environmental factors, soil types, and weather patterns.\nComplex datasets involving long-term studies, geographical variability.\n\nOpportunities ✅\n\nReproducibility helps stakeholders make reliable, data-driven decisions.\nEnsures scientific findings are reliable and valid.\nFacilitates collaboration, accountability, and efficiency among researchers and practitioners."
+    "text": "Why Reproducibility in Agriculture?\n\nAgriculture research relies heavily on environmental data, often variable and complex.\nWe have complex challenges 🗒️\n\nVariability due to environmental factors, soil types, and weather patterns.\nComplex datasets involving long-term studies, geographical variability.\n\nOpportunities ✅\n\nReproducibility helps stakeholders make reliable, data-driven decisions.\nEnsures scientific findings are reliable and valid.\nFacilitates collaboration, accountability, and efficiency among researchers and practitioners.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#challenges-in-ag-research",
     "href": "day1.html#challenges-in-ag-research",
     "title": "Reproducible Data Science with R",
     "section": "Challenges in Ag-research",
-    "text": "Challenges in Ag-research\n\n\nREPRODUCIBILITY 💻\n\nLimited capability to reproduce analyses & results\nDATA are rarely shared, CODES even less\n\n\n\n\nACCESSIBILITY 📲\n\nYet we are not translating enough science into flexible, and transparent decision tools.\n\n\n\n“But it all starts with …”\n\n\n\nEDUCATION 🎓\n\nLimited curriculum in applied data science"
+    "text": "Challenges in Ag-research\n\nREPRODUCIBILITY 💻\n\nLimited capability to reproduce analyses & results\nDATA are rarely shared, CODES even less\n\n\n\nACCESSIBILITY 📲\n\nYet we are not translating enough science into flexible, and transparent decision tools.\n\n\n\n“But it all starts with …”\n\n\nEDUCATION 🎓\n\nLimited curriculum in applied data science",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#discussion-prompt",
     "href": "day1.html#discussion-prompt",
     "title": "Reproducible Data Science with R",
     "section": "Discussion Prompt 💬",
-    "text": "Discussion Prompt 💬\n\n\ni. Where do you think improved data literacy & reproducibility could impact agriculture the most?\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nConsider areas like resource management, market predictions, and farm management.\n\n\n\n\n\n\n\nii. What practical challenges do you face (or may) in implementing them?"
+    "text": "Discussion Prompt 💬\n\n\ni. Where do you think improved data literacy & reproducibility could impact agriculture the most?\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nConsider areas like resource management, market predictions, and farm management.\n\n\n\n\n\n\n\nii. What practical challenges do you face (or may) in implementing them?",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#what-is-r-1",
     "href": "day1.html#what-is-r-1",
     "title": "Reproducible Data Science with R",
     "section": "What is R? 🧮",
-    "text": "What is R? 🧮\n\nR is a programming language and environment primarily for statistical analysis, data visualization, and data science.\nKnown for its extensive statistical libraries, data manipulation capabilities, and graphics.\nWidely used in fields like data science, bioinformatics, agriculture, and social sciences."
+    "text": "What is R? 🧮\n\nR is a programming language and environment primarily for statistical analysis, data visualization, and data science.\nKnown for its extensive statistical libraries, data manipulation capabilities, and graphics.\nWidely used in fields like data science, bioinformatics, agriculture, and social sciences.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#r-vs.-excel-for-data-wrangling",
     "href": "day1.html#r-vs.-excel-for-data-wrangling",
     "title": "Reproducible Data Science with R",
     "section": "R vs. Excel for Data Wrangling 📊",
-    "text": "R vs. Excel for Data Wrangling 📊\n\n\n\nExcel: Known for ease of use, popular among business and finance professionals.\n\nPros: Intuitive, good for small datasets and quick analysis.\nCons: Limited in handling large datasets, lacks reproducibility.\n\nR: Provides powerful data manipulation packages (e.g., dplyr, tidyr).\n\nPros: Handles large datasets efficiently, supports complex transformations, fully reproducible.\nCons: Requires programming knowledge, steeper learning curve than Excel.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nTip: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets."
+    "text": "R vs. Excel for Data Wrangling 📊\n\n\n\nExcel: Known for ease of use, popular among business and finance professionals.\n\nPros: Intuitive, good for small datasets and quick analysis.\nCons: Limited in handling large datasets, lacks reproducibility.\n\nR: Provides powerful data manipulation packages (e.g., dplyr, tidyr).\n\nPros: Handles large datasets efficiently, supports complex transformations, fully reproducible.\nCons: Requires programming knowledge, steeper learning curve than Excel.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nTip: R is highly scalable and is ideal for projects requiring automation, reproducibility, and handling large datasets.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#r-vs.-sas-for-statistical-analysis",
     "href": "day1.html#r-vs.-sas-for-statistical-analysis",
     "title": "Reproducible Data Science with R",
     "section": "R vs. SAS for Statistical Analysis 📉",
-    "text": "R vs. SAS for Statistical Analysis 📉\n\n\n\nSAS: A powerful statistical software suite used widely in industries such as healthcare and finance.\n\nPros: Robust for regulatory environments, highly standardized.\nCons: Proprietary and costly, limited community contributions.\n\nR: Offers a vast array of statistical packages and flexibility in method implementation.\n\nPros: Free and open-source, customizable, strong community support.\nCons: Requires more coding and configuration for regulatory standards.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nComparison: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control."
+    "text": "R vs. SAS for Statistical Analysis 📉\n\n\n\nSAS: A powerful statistical software suite used widely in industries such as healthcare and finance.\n\nPros: Robust for regulatory environments, highly standardized.\nCons: Proprietary and costly, limited community contributions.\n\nR: Offers a vast array of statistical packages and flexibility in method implementation.\n\nPros: Free and open-source, customizable, strong community support.\nCons: Requires more coding and configuration for regulatory standards.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nComparison: R is often chosen for research and academia due to its flexibility and customization, while SAS remains strong in industries needing strict compliance and control.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#r-vs-python-vs-julia",
     "href": "day1.html#r-vs-python-vs-julia",
     "title": "Reproducible Data Science with R",
     "section": "R vs Python vs Julia 🔍",
-    "text": "R vs Python vs Julia 🔍\n\nR, Python, and Julia are popular languages in data science and research.\nEach language has unique strengths, ideal use cases, and licensing considerations."
+    "text": "R vs Python vs Julia 🔍\n\nR, Python, and Julia are popular languages in data science and research.\nEach language has unique strengths, ideal use cases, and licensing considerations.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#r-strengths-and-use-cases",
     "href": "day1.html#r-strengths-and-use-cases",
     "title": "Reproducible Data Science with R",
     "section": "R: Strengths and Use Cases 🧮",
-    "text": "R: Strengths and Use Cases 🧮\n\n\n\nDesigned for Statistics: R is optimized for statistical analysis, making it ideal for research and academia.\nVisualization: Excellent data visualization libraries like ggplot2.\nLicensing: Licensed under GPL; many packages are also GPL, with some using MIT or BSD.\n\n\n\nIdeal Use Cases:\n\nData analysis, visualization, and complex statistical modeling.\nResearch and academia where open-source, reproducible code is needed.\nLicensing in Production: GPL may restrict proprietary use; check package licenses carefully."
+    "text": "R: Strengths and Use Cases 🧮\n\n\n\nDesigned for Statistics: R is optimized for statistical analysis, making it ideal for research and academia.\nVisualization: Excellent data visualization libraries like ggplot2.\nLicensing: Licensed under GPL; many packages are also GPL, with some using MIT or BSD.\n\n\nIdeal Use Cases:\n\nData analysis, visualization, and complex statistical modeling.\nResearch and academia where open-source, reproducible code is needed.\nLicensing in Production: GPL may restrict proprietary use; check package licenses carefully.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#python-strengths-and-use-cases",
     "href": "day1.html#python-strengths-and-use-cases",
     "title": "Reproducible Data Science with R",
     "section": "Python: Strengths and Use Cases 🐍",
-    "text": "Python: Strengths and Use Cases 🐍\n\n\n\nGeneral-Purpose Language: Python is popular for both data science and software development.\nMachine Learning & AI: Extensive libraries for ML and AI, such as scikit-learn, TensorFlow.\nLicensing: PSFL (Python Software Foundation License), highly permissive for proprietary use.\n\n\n\nIdeal Use Cases:\n\nEnd-to-end development, from data wrangling to ML and web development.\nProduction-ready ML and AI applications.\nLicensing in Production: Permissive licenses allow closed-source use, making Python production-friendly."
+    "text": "Python: Strengths and Use Cases 🐍\n\n\n\nGeneral-Purpose Language: Python is popular for both data science and software development.\nMachine Learning & AI: Extensive libraries for ML and AI, such as scikit-learn, TensorFlow.\nLicensing: PSFL (Python Software Foundation License), highly permissive for proprietary use.\n\n\nIdeal Use Cases:\n\nEnd-to-end development, from data wrangling to ML and web development.\nProduction-ready ML and AI applications.\nLicensing in Production: Permissive licenses allow closed-source use, making Python production-friendly.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#julia-strengths-and-use-cases",
     "href": "day1.html#julia-strengths-and-use-cases",
     "title": "Reproducible Data Science with R",
     "section": "Julia: Strengths and Use Cases 🚀",
-    "text": "Julia: Strengths and Use Cases 🚀\n\n\n\nHigh Performance: Designed for scientific computing, close to the speed of C/C++.\nEase of Use: Combines high-level syntax with low-level performance.\nLicensing: MIT license, very permissive for commercial and open-source use.\n\n\n\nIdeal Use Cases:\n\nLarge-scale simulations, optimization problems, high-performance computing.\nLicensing in Production: MIT license allows proprietary use without restrictions."
+    "text": "Julia: Strengths and Use Cases 🚀\n\n\n\nHigh Performance: Designed for scientific computing, close to the speed of C/C++.\nEase of Use: Combines high-level syntax with low-level performance.\nLicensing: MIT license, very permissive for commercial and open-source use.\n\n\nIdeal Use Cases:\n\nLarge-scale simulations, optimization problems, high-performance computing.\nLicensing in Production: MIT license allows proprietary use without restrictions.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#comparison-summary",
     "href": "day1.html#comparison-summary",
     "title": "Reproducible Data Science with R",
     "section": "Comparison Summary 📊",
-    "text": "Comparison Summary 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.\n\n\n\n\n\n\nChoosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs. production."
+    "text": "Comparison Summary 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.\n\n\n\n\n\n\nChoosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs. production.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day1.html#thank-you",
     "href": "day1.html#thank-you",
     "title": "Reproducible Data Science with R",
     "section": "THANK YOU!",
-    "text": "THANK YOU!\nacorrend@uoguelph.ca\n\nAdrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\n\n\nRm 226, Crop Science Bldg | Department of Plant Agriculture\nOntario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.\n\nContact me\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://adriancorrendo.github.io"
+    "text": "THANK YOU!\nacorrend@uoguelph.ca\n\nAdrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\n\n\nRm 226, Crop Science Bldg | Department of Plant Agriculture\nOntario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada.\n\nContact me",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
   },
   {
     "objectID": "day2.html#why-r-1",
     "href": "day2.html#why-r-1",
     "title": "Reproducible Data Science with R II",
     "section": "Why R?",
-    "text": "Why R?\n\n\n\n1. Open-Source\n\nFree to use and modify, with contributions from a large community.\n\n2. Multi-Platform\n\nRuns on Windows, macOS, and Linux, making it versatile for collaboration.\n\n3. Community Support\n\nStrong online help through forums, tutorials, and dedicated resources.\n\n4. Continuous Development\n\nRegular updates keep R on the leading edge of data science.\n\n5. Reproducible Workflows\n\nTools like Rmarkdown and Quarto facilitates the job."
+    "text": "Why R?\n\n\n\n1. Open-Source\n\nFree to use and modify, with contributions from a large community.\n\n2. Multi-Platform\n\nRuns on Windows, macOS, and Linux, making it versatile for collaboration.\n\n3. Community Support\n\nStrong online help through forums, tutorials, and dedicated resources.\n\n4. Continuous Development\n\nRegular updates keep R on the leading edge of data science.\n\n5. Reproducible Workflows\n\nTools like Rmarkdown and Quarto facilitates the job.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#why-rstudio",
     "href": "day2.html#why-rstudio",
     "title": "Reproducible Data Science with R II",
     "section": "Why RStudio?",
-    "text": "Why RStudio?\n\n\n\n1. An interface to R\n\nProvides a user-friendly environment to work with R.\n\n2. Integrates various components of an analysis\n\nCombines data, code, and output in one place, simplifying the workflow.\n\n3. Colored syntax\n\nHighlights code with colors, making it easier to read and spot errors, improving code clarity.\n\n4. Syntax suggestions\n\nOffers autocomplete suggestions, which speeds up coding and reduces mistakes.\n\n5. RStudio panels\n\nPanels for console, scripts, files, and plots, giving quick access to all elements."
+    "text": "Why RStudio?\n\n\n\n1. An interface to R\n\nProvides a user-friendly environment to work with R.\n\n2. Integrates various components of an analysis\n\nCombines data, code, and output in one place, simplifying the workflow.\n\n3. Colored syntax\n\nHighlights code with colors, making it easier to read and spot errors, improving code clarity.\n\n4. Syntax suggestions\n\nOffers autocomplete suggestions, which speeds up coding and reduces mistakes.\n\n5. RStudio panels\n\nPanels for console, scripts, files, and plots, giving quick access to all elements.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#rstudio-panels",
     "href": "day2.html#rstudio-panels",
     "title": "Reproducible Data Science with R II",
     "section": "Rstudio panels",
-    "text": "Rstudio panels"
+    "text": "Rstudio panels",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#why-version-control",
     "href": "day2.html#why-version-control",
     "title": "Reproducible Data Science with R II",
     "section": "Why version control? 🔄",
-    "text": "Why version control? 🔄\n\n\n\n1. Track Changes\n\nMaintain a complete history of edits, making it easy to identify when and why changes were made.\n\n2. Collaborate Seamlessly\n\nMultiple users can work together without overwriting each other’s work, enhancing teamwork.\n\n3. Ensure Data Integrity\n\nProtect primary data by using branches for experimentation, avoiding accidental overwrites.\n\n4. Boost Reproducibility\n\nAccess exact versions of code and data, enabling others to reproduce your work reliably.\n\n5. Provide Built-in Documentation\n\nEach change can be documented, helping others understand your workflow and decisions."
+    "text": "Why version control? 🔄\n\n\n\n1. Track Changes\n\nMaintain a complete history of edits, making it easy to identify when and why changes were made.\n\n2. Collaborate Seamlessly\n\nMultiple users can work together without overwriting each other’s work, enhancing teamwork.\n\n3. Ensure Data Integrity\n\nProtect primary data by using branches for experimentation, avoiding accidental overwrites.\n\n4. Boost Reproducibility\n\nAccess exact versions of code and data, enabling others to reproduce your work reliably.\n\n5. Provide Built-in Documentation\n\nEach change can be documented, helping others understand your workflow and decisions.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#what-are-git-and-github",
     "href": "day2.html#what-are-git-and-github",
     "title": "Reproducible Data Science with R II",
     "section": "What are Git and GitHub?",
-    "text": "What are Git and GitHub?\n\n\n\nGit\n\nA version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.\n\nGitHub\n\nAn online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage."
+    "text": "What are Git and GitHub?\n\n\n\nGit\n\nA version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.\n\nGitHub\n\nAn online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#publishing-coding-projects",
     "href": "day2.html#publishing-coding-projects",
     "title": "Reproducible Data Science with R II",
     "section": "Publishing coding projects",
-    "text": "Publishing coding projects\n\n\n\n\n\nRetrieve soil data\n\n\n\n\n\n\nRetrieving weather data\n\n\n\n\n\n\nSoil test correlation analysis\n\n\n\n\n\n\nPrediction performance metrics"
+    "text": "Publishing coding projects\n\n\n\n\n\n\n\n\n\nRetrieve soil data\n\n\n\n\n\n\n\n\n\n\nRetrieving weather data\n\n\n\n\n\n\n\n\n\n\nSoil test correlation analysis\n\n\n\n\n\n\n\n\n\n\nPrediction performance metrics",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#open-source-review-of-coding-projects",
     "href": "day2.html#open-source-review-of-coding-projects",
     "title": "Reproducible Data Science with R II",
     "section": "Open source review of coding projects",
-    "text": "Open source review of coding projects"
+    "text": "Open source review of coding projects",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#documentation-of-coding-projects",
     "href": "day2.html#documentation-of-coding-projects",
     "title": "Reproducible Data Science with R II",
     "section": "Documentation of coding projects",
-    "text": "Documentation of coding projects"
+    "text": "Documentation of coding projects",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#key-principles-for-reproducibility",
     "href": "day2.html#key-principles-for-reproducibility",
     "title": "Reproducible Data Science with R II",
     "section": "Key Principles for Reproducibility",
-    "text": "Key Principles for Reproducibility\n\nDocumentation and Code Comments\n\nMetadata: data origin, format, structure, and meaning.\nCode comments: explanations directly in scripts for future reference.\n\nVersion Control (Git/GitHub)\n\nTracks changes to code over time, can return to previous versions.\nUseful for collaborative work and transparency.\n\nOrganization & Structured coding…"
+    "text": "Key Principles for Reproducibility\n\nDocumentation and Code Comments\n\nMetadata: data origin, format, structure, and meaning.\nCode comments: explanations directly in scripts for future reference.\n\nVersion Control (Git/GitHub)\n\nTracks changes to code over time, can return to previous versions.\nUseful for collaborative work and transparency.\n\nOrganization & Structured coding…",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#basic-project-structure",
     "href": "day2.html#basic-project-structure",
     "title": "Reproducible Data Science with R II",
     "section": "Basic Project Structure",
-    "text": "Basic Project Structure\n\nOrganizing Projects for Reproducibility\n\nFolder setup: data/, code/, results/ folders for logical organization.\nREADME file: brief guide to project structure, data sources, and analysis steps.\n\nSample Project Structure\nproject_directory/\n├── data/       # Raw and processed datasets\n├── code/    # Code files for data processing\n├── results/    # Generated results, plots, and reports\n├── README.md   # Overview of the project structure and purpose"
+    "text": "Basic Project Structure\n\nOrganizing Projects for Reproducibility\n\nFolder setup: data/, code/, results/ folders for logical organization.\nREADME file: brief guide to project structure, data sources, and analysis steps.\n\nSample Project Structure\nproject_directory/\n├── data/       # Raw and processed datasets\n├── code/    # Code files for data processing\n├── results/    # Generated results, plots, and reports\n├── README.md   # Overview of the project structure and purpose",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#basic-project-structure-1",
     "href": "day2.html#basic-project-structure-1",
     "title": "Reproducible Data Science with R II",
     "section": "Basic Project Structure",
-    "text": "Basic Project Structure"
+    "text": "Basic Project Structure",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#objectives",
     "href": "day2.html#objectives",
     "title": "Reproducible Data Science with R II",
     "section": "Objectives 📌",
-    "text": "Objectives 📌\n\nTypes of R objects and their uses.\nKey functions and data wrangling basics.\nTidy data concepts."
+    "text": "Objectives 📌\n\nTypes of R objects and their uses.\nKey functions and data wrangling basics.\nTidy data concepts.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#common-r-objects",
     "href": "day2.html#common-r-objects",
     "title": "Reproducible Data Science with R II",
     "section": "Common R Objects 🧩",
-    "text": "Common R Objects 🧩\n\nScalars: Single data point (e.g., 5, or a)\nVectors: Simple data storage (e.g., c(1, 2, 3))\nLists: Collection of various data types\nDataframes: Tabular data (like spreadsheets)\nTibbles: Enhanced dataframes with cleaner output\nMatrices: data arranged in rows and columns (2D)"
+    "text": "Common R Objects 🧩\n\nScalars: Single data point (e.g., 5, or a)\nVectors: Simple data storage (e.g., c(1, 2, 3))\nLists: Collection of various data types\nDataframes: Tabular data (like spreadsheets)\nTibbles: Enhanced dataframes with cleaner output\nMatrices: data arranged in rows and columns (2D)",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#object",
     "href": "day2.html#object",
     "title": "Reproducible Data Science with R II",
     "section": "Object",
-    "text": "Object\n\n\n20\n\n[1] 20\n\n20/4\n\n[1] 5\n\n\n\n\nUse &lt;- or =\n\n\n\na &lt;- 20/4\n\na\n\n[1] 5"
+    "text": "Object\n\n\n20\n\n[1] 20\n\n20/4\n\n[1] 5\n\n\n\n\nUse &lt;- or =\n\n\n\na &lt;- 20/4\n\na\n\n[1] 5",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#vector",
     "href": "day2.html#vector",
     "title": "Reproducible Data Science with R II",
     "section": "Vector",
-    "text": "Vector\nIt’s a collection of numbers, arithmetic expressions, logical values or character strings for example. Within a table, it could be a row or a column\n\n\n# numeric\nb &lt;- c(3, 6, 10)\nb\n\n[1]  3  6 10\n\n# text\nc &lt;- \"Workshop\"\nc\n\n[1] \"Workshop\""
+    "text": "Vector\nIt’s a collection of numbers, arithmetic expressions, logical values or character strings for example. Within a table, it could be a row or a column\n\n\n# numeric\nb &lt;- c(3, 6, 10)\nb\n\n[1]  3  6 10\n\n# text\nc &lt;- \"Workshop\"\nc\n\n[1] \"Workshop\"",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#tabular-data",
     "href": "day2.html#tabular-data",
     "title": "Reproducible Data Science with R II",
     "section": "Tabular data",
-    "text": "Tabular data\n\n\n1. Data Frame\nIt’s a tabular arrange of vectors (i.e. 2-dimensional, rectangular). Structure used to store values of any data type. The most common way to store data in R.\n\n\n\nd &lt;- data.frame(Number = b,\n                ID = c)\n\nd\n\n  Number       ID\n1      3 Workshop\n2      6 Workshop\n3     10 Workshop"
+    "text": "Tabular data\n\n1. Data Frame\nIt’s a tabular arrange of vectors (i.e. 2-dimensional, rectangular). Structure used to store values of any data type. The most common way to store data in R.\n\n\n\nd &lt;- data.frame(Number = b,\n                ID = c)\n\nd\n\n  Number       ID\n1      3 Workshop\n2      6 Workshop\n3     10 Workshop",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#tabular-data-1",
     "href": "day2.html#tabular-data-1",
     "title": "Reproducible Data Science with R II",
     "section": "Tabular data",
-    "text": "Tabular data\n\n\n2. Tibble\nIt’s a modern version of a data frame. It’s a data frame with class tbl_df and tbl and it only prints the first 10 rows and all the columns that fit on the screen.\n\n\n\ntb &lt;- tibble::as_tibble(d)\n\ntb\n\n# A tibble: 3 × 2\n  Number ID      \n   &lt;dbl&gt; &lt;chr&gt;   \n1      3 Workshop\n2      6 Workshop\n3     10 Workshop"
+    "text": "Tabular data\n\n2. Tibble\nIt’s a modern version of a data frame. It’s a data frame with class tbl_df and tbl and it only prints the first 10 rows and all the columns that fit on the screen.\n\n\n\ntb &lt;- tibble::as_tibble(d)\n\ntb\n\n# A tibble: 3 × 2\n  Number ID      \n   &lt;dbl&gt; &lt;chr&gt;   \n1      3 Workshop\n2      6 Workshop\n3     10 Workshop",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#matrix",
     "href": "day2.html#matrix",
     "title": "Reproducible Data Science with R II",
     "section": "Matrix",
-    "text": "Matrix\nA collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns.\n\n\nm &lt;- matrix(c(b,b),\n            nrow = 2)\n\nm\n\n     [,1] [,2] [,3]\n[1,]    3   10    6\n[2,]    6    3   10"
+    "text": "Matrix\nA collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns.\n\n\nm &lt;- matrix(c(b,b),\n            nrow = 2)\n\nm\n\n     [,1] [,2] [,3]\n[1,]    3   10    6\n[2,]    6    3   10",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#list",
     "href": "day2.html#list",
     "title": "Reproducible Data Science with R II",
     "section": "List",
-    "text": "List\n\nA generic object consisting of an ordered collection of objects. \nLists are one-dimensional, heterogeneous data structures. \nThe list can be a list of vectors, matrices, characters, functions, etc… \nA list is a vector but with heterogeneous data elements."
+    "text": "List\n\nA generic object consisting of an ordered collection of objects. \nLists are one-dimensional, but heterogeneous data structures. \nThe list can be a list of vectors, matrices, characters, functions, etc… \nA list is a vector that can contain heterogeneous elements.\nStatistical model outputs are typically lists.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#list-1",
     "href": "day2.html#list-1",
     "title": "Reproducible Data Science with R II",
     "section": "List",
-    "text": "List\n\nf &lt;- list(\"a\" = a, \"b\" = b,\n          \"c\" = c, \"d\" = d)\nf\n\n$a\n[1] 5\n\n$b\n[1]  3  6 10\n\n$c\n[1] \"Workshop\"\n\n$d\n  Number       ID\n1      3 Workshop\n2      6 Workshop\n3     10 Workshop\n\nclass(f)\n\n[1] \"list\""
+    "text": "List\n\nf &lt;- list(\"a\" = a, \"b\" = b,\n          \"c\" = c, \"d\" = d)\nf\n\n$a\n[1] 5\n\n$b\n[1]  3  6 10\n\n$c\n[1] \"Workshop\"\n\n$d\n  Number       ID\n1      3 Workshop\n2      6 Workshop\n3     10 Workshop\n\nclass(f)\n\n[1] \"list\"",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#functions",
     "href": "day2.html#functions",
     "title": "Reproducible Data Science with R II",
     "section": "Functions ⚙️",
-    "text": "Functions ⚙️\n\n\nA function is a block of code that performs a specific task. \nTypes:\n\nPre-built functions: e.g., mean(), sum()\nCustom functions: How to define and use\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nFunctions make code reusable and organized. Define once, use often! 💡\nA function is executed when it is called. \nYou can pass data, numbers, lists, dataframes, matrices, etc…"
+    "text": "Functions ⚙️\n\n\nA function is a block of code that performs a specific task. \nTypes:\n\nPre-built functions: e.g., mean(), sum()\nCustom functions: How to define and use\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nFunctions make code reusable and organized. Define once, use often! 💡\nA function is executed when it is called. \nYou can pass data, numbers, lists, dataframes, matrices, etc…",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#functions-1",
     "href": "day2.html#functions-1",
     "title": "Reproducible Data Science with R II",
     "section": "Functions ⚙️",
-    "text": "Functions ⚙️\n\narguments &lt;- NULL \nfx &lt;- function(arguments) {\n        ## Do something\n}\n\n\nExample of a function to calculate the mean\n\nfx &lt;- function(x, ...) {\n        mean(x)\n}\n\nfx(b)\n\n[1] 6.333333"
+    "text": "Functions ⚙️\n\narguments &lt;- NULL \nfx &lt;- function(arguments) {\n        ## Do something\n}\n\n\nExample of a function to calculate the mean\n\nfx &lt;- function(x, ...) {\n        mean(x)\n}\n\nfx(b)\n\n[1] 6.333333",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#argument",
     "href": "day2.html#argument",
     "title": "Reproducible Data Science with R II",
     "section": "Argument",
-    "text": "Argument\nAn argument is a value you pass to a function when calling it. \n\n\nb2 &lt;- c(3, 6, 10, NA)\nb2\n\n[1]  3  6 10 NA\n\nfx(b2, na.rm = T)\n\n[1] NA\n\n# The order of the arguments is important\n# But it can be overriden by calling the name of the argument\nfx(na.rm = T, x = b2)\n\n[1] NA"
+    "text": "Argument\nAn argument is a value you pass to a function when calling it. \n\n\nb2 &lt;- c(3, 6, 10, NA)\nb2\n\n[1]  3  6 10 NA\n\nfx(b2, na.rm = T)\n\n[1] NA\n\n# The order of the arguments is important\n# But it can be overriden by calling the name of the argument\nfx(na.rm = T, x = b2)\n\n[1] NA",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#packages",
     "href": "day2.html#packages",
     "title": "Reproducible Data Science with R II",
     "section": "Packages",
-    "text": "Packages\n\nA package is a collection of R functions, data sets, and compiled code in a well-defined format.\n\nPackages are intended to solve specific problems or perform specific tasks."
+    "text": "Packages\n\nA package is a collection of R functions, data sets, and compiled code in a well-defined format.\n\nPackages are intended to solve specific problems or perform specific tasks.",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#packages-1",
     "href": "day2.html#packages-1",
     "title": "Reproducible Data Science with R II",
     "section": "Packages",
-    "text": "Packages\nThere are currently +21,000 of packages (on CRAN only)."
+    "text": "Packages\nThere are currently 23,052 of packages (on CRAN only).",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#tidyverse",
     "href": "day2.html#tidyverse",
     "title": "Reproducible Data Science with R II",
     "section": "Tidyverse",
-    "text": "Tidyverse\nThe “tidy data” framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure:\n\nEach variable is a column,\nEach observation is a row, and\nEach value have its own cell.\n\n\nTidy-data structure. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells (Wickham, 2017)."
+    "text": "Tidyverse\nThe “tidy data” framework changed the way we code and work in R for data science. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure:\n\nEach variable is a column,\nEach observation is a row, and\nEach value have its own cell.\n\n\nTidy-data structure. Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells (Wickham, 2017).",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#free-html-books",
     "href": "day2.html#free-html-books",
     "title": "Reproducible Data Science with R II",
     "section": "Free HTML books",
-    "text": "Free HTML books"
+    "text": "Free HTML books",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "day2.html#thank-you",
     "href": "day2.html#thank-you",
     "title": "Reproducible Data Science with R II",
     "section": "THANK YOU!",
-    "text": "THANK YOU!\n\nacorrend@uoguelph.ca Adrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\nRm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. \n\nContact me\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://adriancorrendo.github.io"
+    "text": "THANK YOU!\n\nacorrend@uoguelph.ca Adrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\nRm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. \n\nContact me",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Reproducible Ag Data Science with R",
     "section": "",
-    "text": "Welcome 🚜 🌽\nIn this special module, part of the UNIV6020 course, you’ll dive into key principles and practices for reproducible data science within the context of agriculture. Throughout our time together, you’ll gain hands-on experience in R, learning how to structure, analyze, and present data in a way that ensures transparency and replicability—essential skills in today’s data-driven world of agriculture. Your understanding will be assessed with a short quiz to reinforce these core concepts.\nLooking forward to explore the power of reproducibility in agricultural data science!"
+    "text": "Welcome 🚜 🌽\nIn this special module, part of the UNIV6020 course, you’ll dive into key principles and practices for reproducible data science within the context of agriculture. Throughout our time together, you’ll gain hands-on experience in R, learning how to structure, analyze, and present data in a way that ensures transparency and replicability—essential skills in today’s data-driven world of agriculture. Your understanding will be assessed with a short quiz to reinforce these core concepts.\nLooking forward to explore the power of reproducibility in agricultural data science!",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#day-1",
     "href": "index.html#day-1",
     "title": "Reproducible Ag Data Science with R",
     "section": "Day 1",
-    "text": "Day 1"
+    "text": "Day 1",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#day-2",
     "href": "index.html#day-2",
     "title": "Reproducible Ag Data Science with R",
     "section": "Day 2",
-    "text": "Day 2"
+    "text": "Day 2",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#day-3",
     "href": "index.html#day-3",
     "title": "Reproducible Ag Data Science with R",
     "section": "Day 3",
-    "text": "Day 3"
+    "text": "Day 3",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html",
     "href": "coding/code/repmeasuresmodel.html",
     "title": "Tidy Mixed Models in R",
     "section": "",
-    "text": "In simple words, the rationale behind mixed models is the simultaneous presence of components that model the EXPECTED VALUE (fixed) as well as the VARIANCE (random).\nSpecifically, today we are going to cover LINEAR MIXED MODELS, which make the following assumptions (Bolker et al. 2022):\n\nThe expected values of the responses are linear combinations of the fixed predictor variables and the random effects.\nThe conditional distribution of the variable response is Gaussian (equivalently, the errors are “Normal”).\nThe random effects are normally distributed. Normally, we assume that the expected value of a random effect is equal to zero, but with a positive variance.\n\n\n\n\n\n\n\nNote\n\n\n\nThe most used packages and/or functions for frequentist LMMs:\n\n\nnlme: nlme::lme() provides REML or ML estimation. Allows multiple nested random effects, and provides structures for modeling heteroscedastic and/or correlated errors (spoiler for repeated measures analysis). This is already part of base R.\n\nlme4: lmer4::lmer() provides REML or ML estimation. Allows multiple nested or crossed random effects, can compute profile confidence intervals and conduct parametric bootstrapping.\n\n\n\nFor more information about mixed models in R, please, check out the new CRAN Task View: Mixed, Multilevel, and Hierarchical Models in R."
+    "text": "In simple words, the rationale behind mixed models is the simultaneous presence of components that model the EXPECTED VALUE (fixed) as well as the VARIANCE (random).\nSpecifically, today we are going to cover LINEAR MIXED MODELS, which make the following assumptions (Bolker et al. 2022):\n\nThe expected values of the responses are linear combinations of the fixed predictor variables and the random effects.\nThe conditional distribution of the variable response is Gaussian (equivalently, the errors are “Normal”).\nThe random effects are normally distributed. Normally, we assume that the expected value of a random effect is equal to zero, but with a positive variance.\n\n\n\n\n\n\n\nNote\n\n\n\nThe most used packages and/or functions for frequentist LMMs:\n\n\nnlme: nlme::lme() provides REML or ML estimation. Allows multiple nested random effects, and provides structures for modeling heteroscedastic and/or correlated errors (spoiler for repeated measures analysis). This is already part of base R.\n\nlme4: lmer4::lmer() provides REML or ML estimation. Allows multiple nested or crossed random effects, can compute profile confidence intervals and conduct parametric bootstrapping.\n\n\n\nFor more information about mixed models in R, please, check out the new CRAN Task View: Mixed, Multilevel, and Hierarchical Models in R.",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#what-do-you-need",
     "href": "coding/code/repmeasuresmodel.html#what-do-you-need",
     "title": "Tidy Mixed Models in R",
     "section": "What do you need?",
-    "text": "What do you need?\nFor a complete experience, I recommend you to download and install the:\n\nLatest version of R\nLatest version of RStudio"
+    "text": "What do you need?\nFor a complete experience, I recommend you to download and install the:\n\nLatest version of R\nLatest version of RStudio",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#what-is-quarto",
     "href": "coding/code/repmeasuresmodel.html#what-is-quarto",
     "title": "Tidy Mixed Models in R",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\nWe are going to explore the new features offered by Quarto documents (*.qmd).\n\nQuarto is a refined version (and successor) of R-markdown. It is an open-source scientific and technical publishing system built on Pandoc. It allows to combine R, Python, Julia, and Java (Observable JS) for the design of reports, applications, websites, blogs, scientific publications, and more…"
+    "text": "What is Quarto?\nWe are going to explore the new features offered by Quarto documents (*.qmd).\n\nQuarto is a refined version (and successor) of R-markdown. It is an open-source scientific and technical publishing system built on Pandoc. It allows to combine R, Python, Julia, and Java (Observable JS) for the design of reports, applications, websites, blogs, scientific publications, and more…",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#i.-data",
     "href": "coding/code/repmeasuresmodel.html#i.-data",
     "title": "Tidy Mixed Models in R",
     "section": "i. Data",
-    "text": "i. Data\n\nCode# Read file\nrm_data &lt;- \n  read.csv(\"../data/repeated_measures_data.csv\", header =  TRUE) %&gt;% \n  # Create PLOT column to identify subject (Exp. Unit for Rep. Measures)\n  unite(PLOT, BLOCK,TREAT, sep = \"_\", remove=FALSE) %&gt;%\n  # OR\n  # Identify Subplot\n  ungroup() %&gt;% \n  group_by(BLOCK, TREAT) %&gt;% \n  # Create plot ID # Needed for Repeated Measures\n  mutate(plot = cur_group_id(), .after = PLOT) %&gt;% \n  ungroup() %&gt;% \n  mutate(DEPTH = as.factor(DEPTH),\n         depth = as.integer(DEPTH), # Needed for CorAR1\n         BLOCK = factor(BLOCK),\n         SITE = factor(SITE),\n         TREAT = factor(TREAT),\n         # Create a grouping variable (WHY?) # Needed for HetVar\n         GROUP = case_when(TREAT == \"Pristine\" ~ \"Pristine\",\n                           TRUE ~ \"Agriculture\")\n         )\n\n# File online? Try this...(remove \"#\")\n# url_rm &lt;- \"https://raw.githubusercontent.com/adriancorrendo/univ6020/master/coding/data/repeated_measures_data.csv\"\n\n#rm_data &lt;- read_excel(url_rm, col_names = TRUE)"
+    "text": "i. Data\n\nShow code# Read file\nrm_data &lt;- \n  read.csv(\"../data/repeated_measures_data.csv\", header =  TRUE) %&gt;% \n  # Create PLOT column to identify subject (Exp. Unit for Rep. Measures)\n  unite(PLOT, BLOCK,TREAT, sep = \"_\", remove=FALSE) %&gt;%\n  # OR\n  # Identify Subplot\n  ungroup() %&gt;% \n  group_by(BLOCK, TREAT) %&gt;% \n  # Create plot ID # Needed for Repeated Measures\n  mutate(plot = cur_group_id(), .after = PLOT) %&gt;% \n  ungroup() %&gt;% \n  mutate(DEPTH = as.factor(DEPTH),\n         depth = as.integer(DEPTH), # Needed for CorAR1\n         BLOCK = factor(BLOCK),\n         SITE = factor(SITE),\n         TREAT = factor(TREAT),\n         # Create a grouping variable (WHY?) # Needed for HetVar\n         GROUP = case_when(TREAT == \"Pristine\" ~ \"Pristine\",\n                           TRUE ~ \"Agriculture\")\n         )\n\n# File online? Try this...(remove \"#\")\n# url_rm &lt;- \"https://raw.githubusercontent.com/adriancorrendo/univ6020/master/coding/data/repeated_measures_data.csv\"\n\n#rm_data &lt;- read_excel(url_rm, col_names = TRUE)",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#ii.-dig-the-data",
     "href": "coding/code/repmeasuresmodel.html#ii.-dig-the-data",
     "title": "Tidy Mixed Models in R",
     "section": "ii. Dig the data",
-    "text": "ii. Dig the data\nNow, let’s use several functions to explore the data.\na. glimpse()\nFirst, the glimpse() function from dplyr\n\nCode# Glimpse from dplyr\ndplyr::glimpse(rm_data)\n\nRows: 180\nColumns: 9\n$ SITE  &lt;fct&gt; site_1, site_1, site_1, site_1, site_1, site_1, site_1, site_1, …\n$ PLOT  &lt;chr&gt; \"I_Control\", \"I_Control\", \"I_Control\", \"I_Control\", \"I_Control\",…\n$ plot  &lt;int&gt; 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 7, 7, 7, 7, 7, 2, 2, 2, 2, 2, 5, 5…\n$ TREAT &lt;fct&gt; Control, Control, Control, Control, Control, Control, Control, C…\n$ BLOCK &lt;fct&gt; I, I, I, I, I, II, II, II, II, II, III, III, III, III, III, I, I…\n$ DEPTH &lt;fct&gt; 10, 30, 50, 70, 90, 10, 30, 50, 70, 90, 10, 30, 50, 70, 90, 10, …\n$ STK   &lt;int&gt; 105, 83, 103, 110, 127, 119, 98, 106, 107, 109, 132, 100, 96, 10…\n$ depth &lt;int&gt; 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2…\n$ GROUP &lt;chr&gt; \"Agriculture\", \"Agriculture\", \"Agriculture\", \"Agriculture\", \"Agr…\n\n\nb. skim()\nThen, the skim() function from skmir\n\nCode# Skim from skimr\nskimr::skim(rm_data)\n\n\nData summary\n\n\nName\nrm_data\n\n\nNumber of rows\n180\n\n\nNumber of columns\n9\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n2\n\n\nfactor\n4\n\n\nnumeric\n3\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\nPLOT\n0\n1\n5\n12\n0\n9\n0\n\n\nGROUP\n0\n1\n8\n11\n0\n2\n0\n\n\n\nVariable type: factor\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nordered\nn_unique\ntop_counts\n\n\n\nSITE\n0\n1\nFALSE\n4\nsit: 45, sit: 45, sit: 45, sit: 45\n\n\nTREAT\n0\n1\nFALSE\n3\nCon: 60, NPS: 60, Pri: 60\n\n\nBLOCK\n0\n1\nFALSE\n3\nI: 60, II: 60, III: 60\n\n\nDEPTH\n0\n1\nFALSE\n5\n10: 36, 30: 36, 50: 36, 70: 36\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\nplot\n0\n1\n5.00\n2.59\n1\n3.00\n5\n7.00\n9\n▇▇▃▇▇\n\n\nSTK\n0\n1\n181.84\n63.09\n74\n138.75\n174\n221.25\n406\n▅▇▅▂▁\n\n\ndepth\n0\n1\n3.00\n1.42\n1\n2.00\n3\n4.00\n5\n▇▇▇▇▇\n\n\n\n\n\nc. ggplot()\nAnd let’s use ggplot2 for a better look\n\nCode# Boxplot\nrm_data %&gt;% \n  dplyr::select(-depth) %&gt;% \n  # Plot\nggplot() + \n  # Boxplots\n  geom_boxplot(aes(x = reorder(DEPTH, desc(DEPTH)), y = STK, fill = TREAT))+\n  # Axis labels\n  labs(x = \"Soil depth (cm)\", y = \"STK (g/m2)\")+\n  # Plot by site\n  facet_wrap(~SITE)+\n  # Flip axes\n  coord_flip()+\n  # Set scale type\n  scale_x_discrete()+\n  # Change theme\n  tidybayes::theme_tidybayes()"
+    "text": "ii. Dig the data\nNow, let’s use several functions to explore the data.\na. glimpse()\nFirst, the glimpse() function from dplyr\n\nShow code# Glimpse from dplyr\ndplyr::glimpse(rm_data)\n\nRows: 180\nColumns: 9\n$ SITE  &lt;fct&gt; site_1, site_1, site_1, site_1, site_1, site_1, site_1, site_1, …\n$ PLOT  &lt;chr&gt; \"I_Control\", \"I_Control\", \"I_Control\", \"I_Control\", \"I_Control\",…\n$ plot  &lt;int&gt; 1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 7, 7, 7, 7, 7, 2, 2, 2, 2, 2, 5, 5…\n$ TREAT &lt;fct&gt; Control, Control, Control, Control, Control, Control, Control, C…\n$ BLOCK &lt;fct&gt; I, I, I, I, I, II, II, II, II, II, III, III, III, III, III, I, I…\n$ DEPTH &lt;fct&gt; 10, 30, 50, 70, 90, 10, 30, 50, 70, 90, 10, 30, 50, 70, 90, 10, …\n$ STK   &lt;int&gt; 105, 83, 103, 110, 127, 119, 98, 106, 107, 109, 132, 100, 96, 10…\n$ depth &lt;int&gt; 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2…\n$ GROUP &lt;chr&gt; \"Agriculture\", \"Agriculture\", \"Agriculture\", \"Agriculture\", \"Agr…\n\n\nb. skim()\nThen, the skim() function from skmir\n\nShow code# Skim from skimr\nskimr::skim(rm_data)\n\n\nData summary\n\n\nName\nrm_data\n\n\nNumber of rows\n180\n\n\nNumber of columns\n9\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n2\n\n\nfactor\n4\n\n\nnumeric\n3\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\nPLOT\n0\n1\n5\n12\n0\n9\n0\n\n\nGROUP\n0\n1\n8\n11\n0\n2\n0\n\n\n\nVariable type: factor\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nordered\nn_unique\ntop_counts\n\n\n\nSITE\n0\n1\nFALSE\n4\nsit: 45, sit: 45, sit: 45, sit: 45\n\n\nTREAT\n0\n1\nFALSE\n3\nCon: 60, NPS: 60, Pri: 60\n\n\nBLOCK\n0\n1\nFALSE\n3\nI: 60, II: 60, III: 60\n\n\nDEPTH\n0\n1\nFALSE\n5\n10: 36, 30: 36, 50: 36, 70: 36\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\nplot\n0\n1\n5.00\n2.59\n1\n3.00\n5\n7.00\n9\n▇▇▃▇▇\n\n\nSTK\n0\n1\n181.84\n63.09\n74\n138.75\n174\n221.25\n406\n▅▇▅▂▁\n\n\ndepth\n0\n1\n3.00\n1.42\n1\n2.00\n3\n4.00\n5\n▇▇▇▇▇\n\n\n\n\n\nc. ggplot()\nAnd let’s use ggplot2 for a better look\n\nShow code# Boxplot\nrm_data %&gt;% \n  dplyr::select(-depth) %&gt;% \n  # Plot\nggplot() + \n  # Boxplots\n  geom_boxplot(aes(x = reorder(DEPTH, desc(DEPTH)), y = STK, fill = TREAT))+\n  # Axis labels\n  labs(x = \"Soil depth (cm)\", y = \"STK (g/m2)\")+\n  # Plot by site\n  facet_wrap(~SITE)+\n  # Flip axes\n  coord_flip()+\n  # Set scale type\n  scale_x_discrete()+\n  # Change theme\n  tidybayes::theme_tidybayes()",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#iii.-candidate-models",
     "href": "coding/code/repmeasuresmodel.html#iii.-candidate-models",
     "title": "Tidy Mixed Models in R",
     "section": "iii. Candidate Models",
-    "text": "iii. Candidate Models\nI’m sorry for this, but the most important step is ALWAYS to write down the model.\na. Formulae\nm0. Block Fixed\nIn a traditional approach blocks are defined as fixed, affecting the mean of the expected value. Yet there is no consensus about treating blocks as fixed or as random. For more information, read Dixon (2016).\n\n\n\n\n\n\nTip\n\n\n\nIn my opinion, we should treat blocks as random because the number of blocks we choose is a random sample of all the potential blocks we could have used. However, for a decent estimation of a random effect, the usual amount of blocks we use in agriculture research (3-5) is not sufficient.\n\n\nLet’s define the model. For simplification (and avoid writing interaction terms), here we are going to consider that \\(\\tau_i\\) is the “treatment”.\n\\[ y_{ij} = \\mu + \\tau_i + \\beta_j + \\epsilon_{ij} \\]\n\\[ \\epsilon_{ij} \\sim N(0, \\sigma^2_{e} )\\] where \\(\\mu\\) represents the overall mean (if intercept is used), \\(\\tau_i\\) is the effect of treatment-j over \\(\\mu\\), \\(\\beta_j\\) is the effect of block-j over \\(\\mu\\), and \\(\\epsilon_{ij}\\) is the random effect of each experimental unit.\n\nCode# SIMPLEST MODEL\nfit_block_fixed &lt;- function(x){\n  lm(# Response variable\n     STK ~ \n       # Fixed\n       TREAT + DEPTH + TREAT:DEPTH + BLOCK,\n     # Data\n     data = x)\n  }\n\n\nm1. Block Random\nAn alternative approach is considering a MIXED MODEL, where blocks are considered “random”. Basically, we add a term to the model that it is expected to show a “null” overall effect over the mean of the variable of interest but introduces “noise”. By convention, a random effect is expected to have an expected value equal to zero but a positive variance as follows: \\[ y_{ij} = \\mu + \\tau_i + \\beta_j + \\epsilon_{ij} \\] \\[ \\beta_j \\sim N(0, \\sigma^2_{b} )\\] \\[ \\epsilon_{ij} \\sim N(0, \\sigma^2_{e} )\\] Similar than before, \\(\\mu\\) represents the overall mean (if intercept is used), \\(\\tau_i\\) is the effect of treatment-j over \\(\\mu\\), \\(\\beta_j\\) is the “random” effect of block-j over \\(\\mu\\), and \\(\\epsilon_{ij}\\) is the random effect of each experimental unit.\nSo what’s the difference? Simply specifying this component: \\[ \\beta_j \\sim N(0, \\sigma^2_b) \\], which serves to model the variance.\nHow do we write that?\n\nCode# RANDOM BLOCK\nfit_block_random &lt;- function(x){\n  nlme::lme(\n    # Fixed\n    STK ~ TREAT + DEPTH + TREAT:DEPTH,\n    # Random\n    random = ~1|BLOCK,\n    # Data\n    data = x)\n  }\n\n\nModels w/ correlated ERRORS\nUntil here all sounds easy. However, we are (potentially) missing a key component. All measures involving DEPTH have been taken from the same “subjects” (experimental units/plots). So we do have “repeated measures” over space. Thus, it is highly likely that using depth implies the need to adjust the error correlation and covariance structure. Let’s explore some options…\nm2. m1 + CompSymm\nCompound symmetry is the simplest covariance structure, where we include a within-subject correlated errors. It is basically the same we do with including BLOCKS as random. We are telling the model that the observations within a given “depth” “share” something, they have something in common (the error).\n\nCode# RANDOM BLOCK w/compound symmetry error correlation structure\nfit_corsymm &lt;- function(x){\n  lme(# Response Variable\n      STK ~\n        # Fixed\n        TREAT + DEPTH + TREAT:DEPTH,\n        # Random\n        random = ~1|BLOCK,\n        # Identify subject where repeated measure happens\n        # Plots nested within blocks.\n        correlation = corCompSymm(form = ~ DEPTH |BLOCK/PLOT), \n     # Data   \n     data=x) }\n\n\nm3. m1 + CorAR1\nThe autoregressive of first order structure (CorAR1) considers correlations dependent of the “distance”. Thus, correlation of error is expected to be the highest between adjacent depths (e.g. 0-20 and 20-40 cm), and a systematically decrease with the distance. For example, the correlation between depth 1 and depth 2 would be \\(\\rho^{depth_2-depth_1}\\), and then less and less, ending with the correlation between depth 5 and depth 1 equal to \\(\\rho^{depth_5-depth_1}\\).\n\n\n\n\n\n\nCaution\n\n\n\nAn important detail here is that CorAR1 structure is only applicable for evenly spaced intervals!\n\n\n\nCode# RANDOM BLOCK w/ auto-regressive of 1st order as error correlation structure\nfit_ar1 &lt;- function(x){lme(STK ~ TREAT + DEPTH + TREAT:DEPTH,\n                       random = ~1|BLOCK,\n                       correlation=corAR1(form=~depth|BLOCK/PLOT),\n                       data=x)}\n\n\nm4. m2 + HetVar\nDid you know that we can “relax” the assumption about homogeneity of variance? Oftentimes we have data that shows different variability depending on the level of a given factor or variable.\nIn the STK dataset, we observed that the “Pristine” treatment (or agriculture condition) present a higher variability compared to Control and NPS treatments, probably linked to higher values of STK. Variance is modeled by adding a “weight”. This “weight” could be a function of a continuous variable (e.g. fertilizer rate?) or, like in our case, based on a “categorical” variable.\n\nCode# RANDOM BLOCK w/compound symmetry error correlation structure + Heterogeneous Variance\nfit_corsymm_hetvar &lt;- function(x){\n  lme(# Response variable\n      STK ~ \n        # Fixed\n        TREAT + DEPTH + TREAT:DEPTH,\n        # Random  \n        random = ~1|BLOCK,\n        # Correlation\n        correlation = corCompSymm(form = ~ depth |BLOCK/PLOT),\n        # Variance\n        weights = varComb(varIdent(form= ~1|GROUP)),\n      # Data\n      data=x) }\n\n\nb. Fit\nRun the candidate models\n\nCodeSTK_models &lt;- \n  rm_data %&gt;% \n  # Let's group data to run multiple locations|datasets at once\n  group_by(SITE) %&gt;% \n  # Store the data per location using nested arrangement\n  nest() %&gt;% \n  # BLOCK as FIXED \n  mutate(model_0 = map(data, fit_block_fixed)) %&gt;% \n  # BLOCK as RANDOM\n  mutate(model_1 = map(data, fit_block_random)) %&gt;% \n  # COMPOUND SYMMETRY\n  mutate(model_2 = map(data, fit_corsymm)) %&gt;% \n  # AUTO-REGRESSIVE ORDER 1\n  mutate(model_3 = map(data, fit_ar1)) %&gt;% \n  # COMPOUND SYMMETRY + HETEROSKEDASTIC\n  mutate(model_4 = map(data,  fit_corsymm_hetvar) ) %&gt;%\n    \n  # Data wrangling\n  pivot_longer(cols = c(model_0:model_4), # show alternative 'contains' model\n               names_to = \"model_id\",\n               values_to = \"model\") %&gt;% \n  # Map over model column\n  mutate(results = map(model, broom.mixed::augment )) %&gt;% \n  # Performance\n  mutate(performance = map(model, broom.mixed::glance )) %&gt;% \n  # Extract AIC\n  mutate(AIC = map(performance, ~.x$AIC)) %&gt;% \n  # Extract coefficients\n  mutate(coef = map(model, ~coef(.x))) %&gt;% \n  # Visual-check plots\n  mutate(checks = map(model, ~performance::check_model(.))) %&gt;% \n  ungroup()\n\n\nc. Check\nChecking assumptions is always important. To learn more about data exploration, tools to detect outliers, heterogeneity of variance, collinearity, dependence of observations, problems with interactions, among others, I highly recommend reading (Zuur, Ieno, and Elphick 2010).\n\nCode# Extracting by site\nsite_1_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_1\")\nsite_2_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_3\")\nsite_3_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_4\")\nsite_4_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_2\")\n\n\n\n\nSite 1\nSite 2\nSite 3\nSite 4\n\n\n\n\nCode(site_1_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\nCode(site_2_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\nCode(site_3_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\nCode(site_4_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\nd. Selection\nCompare models performance\n\nCode# Visual model selection\nbest_STK_models &lt;- \n  STK_models %&gt;% \n  group_by(SITE) %&gt;% \n  # Use case_when to identify the best model\n  mutate(best_model = \n           case_when(AIC == min(as.numeric(AIC)) ~ \"Yes\",\n                     TRUE ~ \"No\")) %&gt;% \n  ungroup()\n\n# Plot\nbest_STK_models %&gt;% \n  ggplot()+\n  geom_point(aes(x = model_id, y = as.numeric(AIC), \n                 color = best_model, shape = best_model), \n             size = 3)+\n  facet_wrap(~SITE)\n\n\n\nCode# Final models\nselected_models &lt;- best_STK_models %&gt;% dplyr::filter(best_model == \"Yes\")\n\n\ne. ANOVA\nEstimate the effects of factors under study (and their interaction)\n\nCodemodels_effects &lt;- \n  selected_models %&gt;%\n  # Type 3 Sum of Squares (Partial SS, when interactions are present)\n  mutate(ANOVA = map(model, ~Anova(., type = 3)) )\n\n# Extract ANOVAS\nmodels_effects$ANOVA[[1]]\n\nAnalysis of Deviance Table (Type III tests)\n\nResponse: STK\n              Chisq Df Pr(&gt;Chisq)    \n(Intercept) 326.261  1  &lt; 2.2e-16 ***\nTREAT        39.994  2  2.067e-09 ***\nDEPTH        12.637  4   0.013191 *  \nTREAT:DEPTH  21.827  8   0.005247 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nCodemodels_effects$ANOVA[[2]]\n\nAnalysis of Deviance Table (Type III tests)\n\nResponse: STK\n              Chisq Df Pr(&gt;Chisq)    \n(Intercept) 794.721  1  &lt; 2.2e-16 ***\nTREAT        21.394  2  2.261e-05 ***\nDEPTH        67.224  4  8.743e-14 ***\nTREAT:DEPTH  52.957  8  1.099e-08 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+    "text": "iii. Candidate Models\nI’m sorry for this, but the most important step is ALWAYS to write down the model.\na. Formulae\nm0. Block Fixed\nIn a traditional approach blocks are defined as fixed, affecting the mean of the expected value. Yet there is no consensus about treating blocks as fixed or as random. For more information, read Dixon (2016).\n\n\n\n\n\n\nTip\n\n\n\nIn my opinion, we should treat blocks as random because the number of blocks we choose is a random sample of all the potential blocks we could have used. However, for a decent estimation of a random effect, the usual amount of blocks we use in agriculture research (3-5) is not sufficient.\n\n\nLet’s define the model. For simplification (and avoid writing interaction terms), here we are going to consider that \\(\\tau_i\\) is the “treatment”.\n\\[ y_{ij} = \\mu + \\tau_i + \\beta_j + \\epsilon_{ij} \\]\n\\[ \\epsilon_{ij} \\sim N(0, \\sigma^2_{e} )\\] where \\(\\mu\\) represents the overall mean (if intercept is used), \\(\\tau_i\\) is the effect of treatment-j over \\(\\mu\\), \\(\\beta_j\\) is the effect of block-j over \\(\\mu\\), and \\(\\epsilon_{ij}\\) is the random effect of each experimental unit.\n\nShow code# SIMPLEST MODEL\nfit_block_fixed &lt;- function(x){\n  lm(# Response variable\n     STK ~ \n       # Fixed\n       TREAT + DEPTH + TREAT:DEPTH + BLOCK,\n     # Data\n     data = x)\n  }\n\n\nm1. Block Random\nAn alternative approach is considering a MIXED MODEL, where blocks are considered “random”. Basically, we add a term to the model that it is expected to show a “null” overall effect over the mean of the variable of interest but introduces “noise”. By convention, a random effect is expected to have an expected value equal to zero but a positive variance as follows: \\[ y_{ij} = \\mu + \\tau_i + \\beta_j + \\epsilon_{ij} \\] \\[ \\beta_j \\sim N(0, \\sigma^2_{b} )\\] \\[ \\epsilon_{ij} \\sim N(0, \\sigma^2_{e} )\\] Similar than before, \\(\\mu\\) represents the overall mean (if intercept is used), \\(\\tau_i\\) is the effect of treatment-j over \\(\\mu\\), \\(\\beta_j\\) is the “random” effect of block-j over \\(\\mu\\), and \\(\\epsilon_{ij}\\) is the random effect of each experimental unit.\nSo what’s the difference? Simply specifying this component: \\[ \\beta_j \\sim N(0, \\sigma^2_b) \\], which serves to model the variance.\nHow do we write that?\n\nShow code# RANDOM BLOCK\nfit_block_random &lt;- function(x){\n  nlme::lme(\n    # Fixed\n    STK ~ TREAT + DEPTH + TREAT:DEPTH,\n    # Random\n    random = ~1|BLOCK,\n    # Data\n    data = x)\n  }\n\n\nModels w/ correlated ERRORS\nUntil here all sounds easy. However, we are (potentially) missing a key component. All measures involving DEPTH have been taken from the same “subjects” (experimental units/plots). So we do have “repeated measures” over space. Thus, it is highly likely that using depth implies the need to adjust the error correlation and covariance structure. Let’s explore some options…\nm2. m1 + CompSymm\nCompound symmetry is the simplest covariance structure, where we include a within-subject correlated errors. It is basically the same we do with including BLOCKS as random. We are telling the model that the observations within a given “depth” “share” something, they have something in common (the error).\n\nShow code# RANDOM BLOCK w/compound symmetry error correlation structure\nfit_corsymm &lt;- function(x){\n  lme(# Response Variable\n      STK ~\n        # Fixed\n        TREAT + DEPTH + TREAT:DEPTH,\n        # Random\n        random = ~1|BLOCK,\n        # Identify subject where repeated measure happens\n        # Plots nested within blocks.\n        correlation = corCompSymm(form = ~ DEPTH |BLOCK/PLOT), \n     # Data   \n     data=x) }\n\n\nm3. m1 + CorAR1\nThe autoregressive of first order structure (CorAR1) considers correlations dependent of the “distance”. Thus, correlation of error is expected to be the highest between adjacent depths (e.g. 0-20 and 20-40 cm), and a systematically decrease with the distance. For example, the correlation between depth 1 and depth 2 would be \\(\\rho^{depth_2-depth_1}\\), and then less and less, ending with the correlation between depth 5 and depth 1 equal to \\(\\rho^{depth_5-depth_1}\\).\n\n\n\n\n\n\nCaution\n\n\n\nAn important detail here is that CorAR1 structure is only applicable for evenly spaced intervals!\n\n\n\nShow code# RANDOM BLOCK w/ auto-regressive of 1st order as error correlation structure\nfit_ar1 &lt;- function(x){lme(STK ~ TREAT + DEPTH + TREAT:DEPTH,\n                       random = ~1|BLOCK,\n                       correlation=corAR1(form=~depth|BLOCK/PLOT),\n                       data=x)}\n\n\nm4. m2 + HetVar\nDid you know that we can “relax” the assumption about homogeneity of variance? Oftentimes we have data that shows different variability depending on the level of a given factor or variable.\nIn the STK dataset, we observed that the “Pristine” treatment (or agriculture condition) present a higher variability compared to Control and NPS treatments, probably linked to higher values of STK. Variance is modeled by adding a “weight”. This “weight” could be a function of a continuous variable (e.g. fertilizer rate?) or, like in our case, based on a “categorical” variable.\n\nShow code# RANDOM BLOCK w/compound symmetry error correlation structure + Heterogeneous Variance\nfit_corsymm_hetvar &lt;- function(x){\n  lme(# Response variable\n      STK ~ \n        # Fixed\n        TREAT + DEPTH + TREAT:DEPTH,\n        # Random  \n        random = ~1|BLOCK,\n        # Correlation\n        correlation = corCompSymm(form = ~ depth |BLOCK/PLOT),\n        # Variance\n        weights = varComb(varIdent(form= ~1|GROUP)),\n      # Data\n      data=x) }\n\n\nb. Fit\nRun the candidate models\n\nShow codeSTK_models &lt;- \n  rm_data %&gt;% \n  # Let's group data to run multiple locations|datasets at once\n  group_by(SITE) %&gt;% \n  # Store the data per location using nested arrangement\n  nest() %&gt;% \n  # BLOCK as FIXED \n  mutate(model_0 = map(data, fit_block_fixed)) %&gt;% \n  # BLOCK as RANDOM\n  mutate(model_1 = map(data, fit_block_random)) %&gt;% \n  # COMPOUND SYMMETRY\n  mutate(model_2 = map(data, fit_corsymm)) %&gt;% \n  # AUTO-REGRESSIVE ORDER 1\n  mutate(model_3 = map(data, fit_ar1)) %&gt;% \n  # COMPOUND SYMMETRY + HETEROSKEDASTIC\n  mutate(model_4 = map(data,  fit_corsymm_hetvar) ) %&gt;%\n    \n  # Data wrangling\n  pivot_longer(cols = c(model_0:model_4), # show alternative 'contains' model\n               names_to = \"model_id\",\n               values_to = \"model\") %&gt;% \n  # Map over model column\n  mutate(results = map(model, broom.mixed::augment )) %&gt;% \n  # Performance\n  mutate(performance = map(model, broom.mixed::glance )) %&gt;% \n  # Extract AIC\n  mutate(AIC = map(performance, ~.x$AIC)) %&gt;% \n  # Extract coefficients\n  mutate(coef = map(model, ~coef(.x))) %&gt;% \n  # Visual-check plots\n  mutate(checks = map(model, ~performance::check_model(.))) %&gt;% \n  ungroup()\n\n\nc. Check\nChecking assumptions is always important. To learn more about data exploration, tools to detect outliers, heterogeneity of variance, collinearity, dependence of observations, problems with interactions, among others, I highly recommend reading (Zuur, Ieno, and Elphick 2010).\n\nShow code# Extracting by site\nsite_1_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_1\")\nsite_2_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_3\")\nsite_3_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_4\")\nsite_4_models &lt;- STK_models %&gt;% dplyr::filter(SITE == \"site_2\")\n\n\n\n\nSite 1\nSite 2\nSite 3\nSite 4\n\n\n\n\nShow code(site_1_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\n\n\n\nShow code(site_2_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\n\n\n\nShow code(site_3_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\n\n\n\nShow code(site_4_models %&gt;% dplyr::filter(model_id == \"model_0\"))$checks[[1]]\n\n\n\n\n\n\n\n\n\n\nd. Selection\nCompare models performance\n\nShow code# Visual model selection\nbest_STK_models &lt;- \n  STK_models %&gt;% \n  group_by(SITE) %&gt;% \n  # Use case_when to identify the best model\n  mutate(best_model = \n           case_when(AIC == min(as.numeric(AIC)) ~ \"Yes\",\n                     TRUE ~ \"No\")) %&gt;% \n  ungroup()\n\n# Plot\nbest_STK_models %&gt;% \n  ggplot()+\n  geom_point(aes(x = model_id, y = as.numeric(AIC), \n                 color = best_model, shape = best_model), \n             size = 3)+\n  facet_wrap(~SITE)\n\n\n\n\n\n\nShow code# Final models\nselected_models &lt;- best_STK_models %&gt;% dplyr::filter(best_model == \"Yes\")\n\n\ne. ANOVA\nEstimate the effects of factors under study (and their interaction)\n\nShow codemodels_effects &lt;- \n  selected_models %&gt;%\n  # Type 3 Sum of Squares (Partial SS, when interactions are present)\n  mutate(ANOVA = map(model, ~Anova(., type = 3)) )\n\n# Extract ANOVAS\nmodels_effects$ANOVA[[1]]\n\nAnalysis of Deviance Table (Type III tests)\n\nResponse: STK\n              Chisq Df Pr(&gt;Chisq)    \n(Intercept) 326.261  1  &lt; 2.2e-16 ***\nTREAT        39.994  2  2.067e-09 ***\nDEPTH        12.637  4   0.013191 *  \nTREAT:DEPTH  21.827  8   0.005247 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nShow codemodels_effects$ANOVA[[2]]\n\nAnalysis of Deviance Table (Type III tests)\n\nResponse: STK\n              Chisq Df Pr(&gt;Chisq)    \n(Intercept) 794.721  1  &lt; 2.2e-16 ***\nTREAT        21.394  2  2.261e-05 ***\nDEPTH        67.224  4  8.743e-14 ***\nTREAT:DEPTH  52.957  8  1.099e-08 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#iv.-means-comparison",
     "href": "coding/code/repmeasuresmodel.html#iv.-means-comparison",
     "title": "Tidy Mixed Models in R",
     "section": "iv. Means comparison",
-    "text": "iv. Means comparison\n\nCode# MULTCOMPARISON\n# emmeans and cld multcomp\n# We need to specify ourselves the most important interaction to perform the comparisons\nmult_comp &lt;- \n  models_effects %&gt;% \n  # Comparisons estimates (emmeans)\n  mutate(mc_estimates = map(model, ~emmeans(., ~ TREAT*DEPTH))) %&gt;% \n  # Assign letters and p-value adjustment (multcomp)\n  mutate(mc_letters = \n           map(mc_estimates, \n               ~as.data.frame( \n                 # By specifies a strata or level to assign the letters\n                 cld(., by = \"DEPTH\", decreasing = TRUE, details=FALSE,\n                     reversed=TRUE, alpha=0.05,  adjust = \"tukey\", Letters=LETTERS))))"
+    "text": "iv. Means comparison\n\nShow code# MULTCOMPARISON\n# emmeans and cld multcomp\n# We need to specify ourselves the most important interaction to perform the comparisons\nmult_comp &lt;- \n  models_effects %&gt;% \n  # Comparisons estimates (emmeans)\n  mutate(mc_estimates = map(model, ~emmeans(., ~ TREAT*DEPTH))) %&gt;% \n  # Assign letters and p-value adjustment (multcomp)\n  mutate(mc_letters = \n           map(mc_estimates, \n               ~as.data.frame( \n                 # By specifies a strata or level to assign the letters\n                 cld(., by = \"DEPTH\", decreasing = TRUE, details=FALSE,\n                     reversed=TRUE, alpha=0.05,  adjust = \"tukey\", Letters=LETTERS))))",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#v.-plot",
     "href": "coding/code/repmeasuresmodel.html#v.-plot",
     "title": "Tidy Mixed Models in R",
     "section": "v. Plot",
-    "text": "v. Plot\nNow, we are going to reproduce Figure 2\n\nCode# Create data frame for plot\nplot_df &lt;- mult_comp %&gt;% \n  dplyr::select(SITE, mc_letters) %&gt;% \n  unnest(mc_letters)\n\n# Define your own colors\nmy_colors &lt;- c(\"#ffaa00\", \"#7E5AA0\", \"#5c9c8c\")\n\n# Create the plot\nSTK_plot &lt;-\n  plot_df %&gt;% \n  # We need to re-express DEPTH from factor to character, and then to numeric\n  mutate(DEPTH = as.numeric(as.character(DEPTH)))  %&gt;% \n  # Re-order levels of the factors\n  mutate(TREAT = fct_relevel(TREAT,\"Control\", \"NPS\", \"Pristine\")) %&gt;% \n  mutate(SITE = fct_relevel(SITE,\"site_1\", \"site_2\", \"site_3\", \"site_4\")) %&gt;% \n  # Create plot\n  ggplot()+\n  # 01. LAYOUT\n  ## Subplots\n  facet_wrap(~SITE, nrow = 2)+\n  ## Axis titles\n  labs(x = \"Soil depth (cm)\", y = bquote(~NH[4]*'OAc-K (g' ~m^-2*')'))+\n  # 02. GEOMETRIES\n  ## i. Points\n  geom_point(aes(x = DEPTH, y = emmean,\n                 fill= TREAT,\n                 shape = TREAT),\n             size = 3, col = \"black\")+\n  ## Adjust shape aesthetics\n  scale_shape_manual(name=\"Fertilizer Scenario\", values=c(24,23,21),\n                     guide=\"legend\")+\n  scale_colour_manual(name=\"Fertilizer Scenario\",\n                    values = my_colors,\n                    guide='legend')+\n  scale_fill_manual(name=\"Fertilizer Scenario\",\n                    values = my_colors,\n                    guide='legend')+\n  ## ii. Add error bar\n  geom_errorbar(width = 0.25, aes(x = DEPTH, color = TREAT, \n                                 ymin = emmean-2*SE, ymax = emmean+2*SE))+\n  ## iii. Add line\n  geom_line(size = 0.5,aes(x = DEPTH, y = emmean, color = TREAT))+\n  # 03. ADJUST XY AXIS\n  ## Reverse the scale\n  scale_x_reverse(breaks=seq(0, 100, 20), limits = c(100,0))+\n  coord_flip()+\n  # 04. THEME\n  theme_bw()+\n  theme(strip.text = element_text(size = rel(1.25)),\n        strip.background = element_blank(),\n        # Grid\n        panel.grid = element_blank(),\n        # Axis\n        axis.title = element_text(size = rel(1.5)),\n        axis.text = element_text(size = rel(1.25), color = \"black\"),\n        # Legend\n        legend.position = \"top\", legend.title = element_blank(),\n        legend.text = element_text(size = rel(1.25))        )\n\n\ni. Figure with caption\n\n\nCodeSTK_plot\n\n\n\n\nFigure 2. Soil profiles of STK (\\(g~m^{-2}\\)) under three different conditions: pristine soils (green circles), under grain cropping from 2000 to 2009 with no fertilizers added (Control, orange triangles), and under grain cropping from 2000 to 2009 with N, P, plus S fertilization (NPS, purple diamonds). Overlapping error bars indicate absence of significant differences between scenarios by soil depths combinations (Tukey’s HSD, p &lt; 0.05).\n\n☺"
+    "text": "v. Plot\nNow, we are going to reproduce Figure 2\n\nShow code# Create data frame for plot\nplot_df &lt;- mult_comp %&gt;% \n  dplyr::select(SITE, mc_letters) %&gt;% \n  unnest(mc_letters)\n\n# Define your own colors\nmy_colors &lt;- c(\"#ffaa00\", \"#7E5AA0\", \"#5c9c8c\")\n\n# Create the plot\nSTK_plot &lt;-\n  plot_df %&gt;% \n  # We need to re-express DEPTH from factor to character, and then to numeric\n  mutate(DEPTH = as.numeric(as.character(DEPTH)))  %&gt;% \n  # Re-order levels of the factors\n  mutate(TREAT = fct_relevel(TREAT,\"Control\", \"NPS\", \"Pristine\")) %&gt;% \n  mutate(SITE = fct_relevel(SITE,\"site_1\", \"site_2\", \"site_3\", \"site_4\")) %&gt;% \n  # Create plot\n  ggplot()+\n  # 01. LAYOUT\n  ## Subplots\n  facet_wrap(~SITE, nrow = 2)+\n  ## Axis titles\n  labs(x = \"Soil depth (cm)\", y = bquote(~NH[4]*'OAc-K (g' ~m^-2*')'))+\n  # 02. GEOMETRIES\n  ## i. Points\n  geom_point(aes(x = DEPTH, y = emmean,\n                 fill= TREAT,\n                 shape = TREAT),\n             size = 3, col = \"black\")+\n  ## Adjust shape aesthetics\n  scale_shape_manual(name=\"Fertilizer Scenario\", values=c(24,23,21),\n                     guide=\"legend\")+\n  scale_colour_manual(name=\"Fertilizer Scenario\",\n                    values = my_colors,\n                    guide='legend')+\n  scale_fill_manual(name=\"Fertilizer Scenario\",\n                    values = my_colors,\n                    guide='legend')+\n  ## ii. Add error bar\n  geom_errorbar(width = 0.25, aes(x = DEPTH, color = TREAT, \n                                 ymin = emmean-2*SE, ymax = emmean+2*SE))+\n  ## iii. Add line\n  geom_line(size = 0.5,aes(x = DEPTH, y = emmean, color = TREAT))+\n  # 03. ADJUST XY AXIS\n  ## Reverse the scale\n  scale_x_reverse(breaks=seq(0, 100, 20), limits = c(100,0))+\n  coord_flip()+\n  # 04. THEME\n  theme_bw()+\n  theme(strip.text = element_text(size = rel(1.25)),\n        strip.background = element_blank(),\n        # Grid\n        panel.grid = element_blank(),\n        # Axis\n        axis.title = element_text(size = rel(1.5)),\n        axis.text = element_text(size = rel(1.25), color = \"black\"),\n        # Legend\n        legend.position = \"top\", legend.title = element_blank(),\n        legend.text = element_text(size = rel(1.25))        )\n\n\ni. Figure with caption\n\n\nShow codeSTK_plot\n\n\n\n\n\n\n\nFigure 2. Soil profiles of STK (\\(g~m^{-2}\\)) under three different conditions: pristine soils (green circles), under grain cropping from 2000 to 2009 with no fertilizers added (Control, orange triangles), and under grain cropping from 2000 to 2009 with N, P, plus S fertilization (NPS, purple diamonds). Overlapping error bars indicate absence of significant differences between scenarios by soil depths combinations (Tukey’s HSD, p &lt; 0.05).\n\n☺",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#i.-citations",
     "href": "coding/code/repmeasuresmodel.html#i.-citations",
     "title": "Tidy Mixed Models in R",
     "section": "i. Citations",
-    "text": "i. Citations\nAdding references with Quarto has become quite easy. Let’s see…\nThis is a citation of the Tidyverse (Wickham et al. 2019) package.\n\nUsing a “*.bib” file: Figures were produced using the ggplot2 package (Wickham 2016). Models check were tested with the performance package (Lüdecke et al. 2021).\nUsing Footnotes: For example, this is some text with a Footnote1, this is a second Footnote2\n\nUsing visual editor: this option introduced by Quarto is simply awesome! 🤩. Let’s see. Insert -&gt; Citation or “Crtl + Shift + F8”. With this option we can look for citations online via DOI, Crossref, etc… and insert them into our document (and to our *.bib file)."
+    "text": "i. Citations\nAdding references with Quarto has become quite easy. Let’s see…\nThis is a citation of the Tidyverse (Wickham et al. 2019) package.\n\nUsing a “*.bib” file: Figures were produced using the ggplot2 package (Wickham 2016). Models check were tested with the performance package (Lüdecke et al. 2021).\nUsing Footnotes: For example, this is some text with a Footnote1, this is a second Footnote2\n\nUsing visual editor: this option introduced by Quarto is simply awesome! 🤩. Let’s see. Insert -&gt; Citation or “Crtl + Shift + F8”. With this option we can look for citations online via DOI, Crossref, etc… and insert them into our document (and to our *.bib file).",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "coding/code/repmeasuresmodel.html#footnotes",
     "href": "coding/code/repmeasuresmodel.html#footnotes",
     "title": "Tidy Mixed Models in R",
     "section": "Footnotes",
-    "text": "Footnotes\n\nCitation for Footnote 1↩︎\nCitation for Footnote 2↩︎"
+    "text": "Footnotes\n\nCitation for Footnote 1↩︎\nCitation for Footnote 2↩︎",
+    "crumbs": [
+      "Coding",
+      "Coding Session"
+    ]
   },
   {
     "objectID": "day3.html#whats-a-package",
     "href": "day3.html#whats-a-package",
     "title": "Reproducible Data Science with R III",
     "section": "What’s a Package? 📦",
-    "text": "What’s a Package? 📦\n\nAn R package is a collection of R functions, data, and documentation organized in a standardized format.\n\n\n\nKey Components of an R Package\n\n\nFunctions: Reusable R code that performs specific tasks.\nData: Example datasets to illustrate package functions or concepts.\nDocumentation: Help files and vignettes explaining how to use the package.\nNamespace: Defines which functions are available to the user.\n\n\n\n\n\n\n\n\nTip\n\n\n\nPro Tip: Packages help simplify code reuse and make complex tasks more accessible."
+    "text": "What’s a Package? 📦\n\nAn R package is a collection of R functions, data, and documentation organized in a standardized format.\n\n\nKey Components of an R Package\n\n\nFunctions: Reusable R code that performs specific tasks.\nData: Example datasets to illustrate package functions or concepts.\nDocumentation: Help files and vignettes explaining how to use the package.\nNamespace: Defines which functions are available to the user.\n\n\n\n\n\n\n\n\nTip\n\n\n\nPro Tip: Packages help simplify code reuse and make complex tasks more accessible.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#benefits-of-using-r-packages",
     "href": "day3.html#benefits-of-using-r-packages",
     "title": "Reproducible Data Science with R III",
     "section": "Benefits of Using R Packages 💡",
-    "text": "Benefits of Using R Packages 💡\n\nEfficiency: Avoid rewriting code for common tasks.\nConsistency: Standardized code structure and naming conventions.\nReproducibility: Ensures that your work is easier to share and reproduce."
+    "text": "Benefits of Using R Packages 💡\n\nEfficiency: Avoid rewriting code for common tasks.\nConsistency: Standardized code structure and naming conventions.\nReproducibility: Ensures that your work is easier to share and reproduce.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-1-mutate",
     "href": "day3.html#example-1-mutate",
     "title": "Reproducible Data Science with R III",
     "section": "Example 1: mutate()",
-    "text": "Example 1: mutate()\n\n\nPackages like dplyr simplify tasks by providing clean, concise code for data manipulation.\n\n\n\n1. Create a new column: total, which is the sum of two existing columns (var1 and var2)."
+    "text": "Example 1: mutate()\n\n\nPackages like dplyr simplify tasks by providing clean, concise code for data manipulation.\n\n\n1. Create a new column: total, which is the sum of two existing columns (var1 and var2).",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-1-mutate-1",
     "href": "day3.html#example-1-mutate-1",
     "title": "Reproducible Data Science with R III",
     "section": "Example 1: mutate()",
-    "text": "Example 1: mutate()\n\nBase R version\n\n\n# Sample data\ndf &lt;- data.frame(var1 = c(1, 2, 3), var2 = c(4, 5, 6))\n\n# Adding a new column using base R\ndf$total &lt;- df$var1 + df$var2\n\n\n\n\n\ndplyr package (Tidyverse)\nlibrary(dplyr)\n\n# Using mutate to add a new column\ndf &lt;- df %&gt;%\n  mutate(total = var1 + var2)"
+    "text": "Example 1: mutate()\n\nBase R version\n\n\n# Sample data\ndf &lt;- data.frame(var1 = c(1, 2, 3), var2 = c(4, 5, 6))\n\n# Adding a new column using base R\ndf$total &lt;- df$var1 + df$var2\n\n\n\ndplyr package (Tidyverse)\nlibrary(dplyr)\n\n# Using mutate to add a new column\ndf &lt;- df %&gt;%\n  mutate(total = var1 + var2)",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-2-filter",
     "href": "day3.html#example-2-filter",
     "title": "Reproducible Data Science with R III",
     "section": "Example 2: filter()",
-    "text": "Example 2: filter()\n\n\n2. Filtering: get values of var1 greater than 2.\n\n\n\nBase R version\n\n# Filter rows using base R\nfiltered_df &lt;- df[df$var1 &gt; 2, ]\n\n\n\n\n\ndplyr package (Tidyverse)\n# Filter rows using dplyr\nfiltered_df &lt;- filter(data = df, var1 &gt; 2)"
+    "text": "Example 2: filter()\n\n\n2. Filtering: get values of var1 greater than 2.\n\n\nBase R version\n\n# Filter rows using base R\nfiltered_df &lt;- df[df$var1 &gt; 2, ]\n\n\n\ndplyr package (Tidyverse)\n# Filter rows using dplyr\nfiltered_df &lt;- filter(data = df, var1 &gt; 2)",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-3-select",
     "href": "day3.html#example-3-select",
     "title": "Reproducible Data Science with R III",
     "section": "Example 3: select()",
-    "text": "Example 3: select()\n\n\n3. Select specific variables: get var1 and var3.\n\n\n\n\nBase R version\n# Select columns using base R\nselected_df &lt;- df[ , c(\"var1\",\"var3\")]\n\n\n\ndplyr package (Tidyverse)\n# Filter rows using dplyr\nfiltered_df &lt;- select(data = df, var1, var3)"
+    "text": "Example 3: select()\n\n\n3. Select specific variables: get var1 and var3.\n\n\n\nBase R version\n# Select columns using base R\nselected_df &lt;- df[ , c(\"var1\",\"var3\")]\n\n\n\ndplyr package (Tidyverse)\n# Filter rows using dplyr\nfiltered_df &lt;- select(data = df, var1, var3)",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-4-iteration",
     "href": "day3.html#example-4-iteration",
     "title": "Reproducible Data Science with R III",
     "section": "Example 4: iteration",
-    "text": "Example 4: iteration\n\n\n\nScenario: You have a data frame with a column study and a column data, where data contains nested data frames for each study.\nWe want to fit a linear model to each nested data frame (predicting y by x) and store the models in a new column called model.\n\n\n\n\nDataset\n# Sample data frame with nested data\ndf &lt;- tibble(\nstudy = c(\"Study 1\", \"Study 2\"),\ndata = list(data.frame(x = 1:10, y = rnorm(10)), \n            data.frame(x = 1:10, y = rnorm(10))  ) )"
+    "text": "Example 4: iteration\n\n\n\nScenario: You have a data frame with a column study and a column data, where data contains nested data frames for each study.\nWe want to fit a linear model to each nested data frame (predicting y by x) and store the models in a new column called model.\n\n\nDataset\n# Sample data frame with nested data\ndf &lt;- tibble(\nstudy = c(\"Study 1\", \"Study 2\"),\ndata = list(data.frame(x = 1:10, y = rnorm(10)), \n            data.frame(x = 1:10, y = rnorm(10))  ) )",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#example-4-iteration-1",
     "href": "day3.html#example-4-iteration-1",
     "title": "Reproducible Data Science with R III",
     "section": "Example 4: iteration",
-    "text": "Example 4: iteration\n\n\n\n\nBase R version (for loop)\n# Initialize an empty list to store models\nmodels &lt;- vector(\"list\", length = nrow(df))\n\n# Using a for loop to fit the model and store results\nfor (i in seq_len(nrow(df))) {\n  models[[i]] &lt;- lm(y ~ x, data = df$data[[i]])\n}\n\n# Add the list of models as a new column in the data frame\ndf$model &lt;- models\n\n\n\n\n\npurrr package (map() function)\nlibrary(purrr)\n# Using map to fit the model for each nested data frame\ndf &lt;- df %&gt;%\n  mutate(model = map(data, ~ lm(y ~ x, data = .x)))"
+    "text": "Example 4: iteration\n\n\n\nBase R version (for loop)\n# Initialize an empty list to store models\nmodels &lt;- vector(\"list\", length = nrow(df))\n\n# Using a for loop to fit the model and store results\nfor (i in seq_len(nrow(df))) {\n  models[[i]] &lt;- lm(y ~ x, data = df$data[[i]])\n}\n\n# Add the list of models as a new column in the data frame\ndf$model &lt;- models\n\n\n\npurrr package (map() function)\nlibrary(purrr)\n# Using map to fit the model for each nested data frame\ndf &lt;- df %&gt;%\n  mutate(model = map(data, ~ lm(y ~ x, data = .x)))",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#where-do-packages-come-from-1",
     "href": "day3.html#where-do-packages-come-from-1",
     "title": "Reproducible Data Science with R III",
     "section": "Where do packages come from ❓",
-    "text": "Where do packages come from ❓"
+    "text": "Where do packages come from ❓",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#why-is-the-source-important",
     "href": "day3.html#why-is-the-source-important",
     "title": "Reproducible Data Science with R III",
     "section": "Why is the source important? 📌",
-    "text": "Why is the source important? 📌\n\nUnderstand the benefits and drawbacks of stable vs. development versions.\nUnderstand the security standards and risks associated.\nLearn when to choose each source for your projects."
+    "text": "Why is the source important? 📌\n\nUnderstand the benefits and drawbacks of stable vs. development versions.\nUnderstand the security standards and risks associated.\nLearn when to choose each source for your projects.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#cran-comprehensive-r-archive-network",
     "href": "day3.html#cran-comprehensive-r-archive-network",
     "title": "Reproducible Data Science with R III",
     "section": "CRAN: Comprehensive R Archive Network 🗂️",
-    "text": "CRAN: Comprehensive R Archive Network 🗂️\nThe primary repository for R packages, stability and rigor.\n\n\n\n\n\n\n\n\n\nPros 🌟\n\n\n\nHigh stability and compatibility across systems\nStrict quality standards and documentation requirements\nEasy installation and dependency management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nSlower update cycles due to strict review processes\nLimited flexibility for experimental or niche packages"
+    "text": "CRAN: Comprehensive R Archive Network 🗂️\nThe primary repository for R packages, stability and rigor.\n\n\n\n\n\n\n\n\n\n\nPros 🌟\n\n\n\nHigh stability and compatibility across systems\nStrict quality standards and documentation requirements\nEasy installation and dependency management\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nSlower update cycles due to strict review processes\nLimited flexibility for experimental or niche packages",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#cran-comprehensive-r-archive-network-1",
     "href": "day3.html#cran-comprehensive-r-archive-network-1",
     "title": "Reproducible Data Science with R III",
     "section": "CRAN: Comprehensive R Archive Network 🗂️",
-    "text": "CRAN: Comprehensive R Archive Network 🗂️\nThere are currently +21,000 of packages (on CRAN only)."
+    "text": "CRAN: Comprehensive R Archive Network 🗂️\nThere are currently +23,000 of packages (on CRAN only).",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#cran-taskviews",
     "href": "day3.html#cran-taskviews",
     "title": "Reproducible Data Science with R III",
     "section": "CRAN Taskviews",
-    "text": "CRAN Taskviews\n\nDefinition: A CRAN Task View is a curated collection of R packages focused on a specific topic or area of research.\nPurpose: Organizes packages into categories, making it easier for users to find the right tools for their work.\nTopics: Ranges from “Machine Learning” to “Ecology” to “Time Series Analysis” and beyond.\nBenefits:\n\nSaves time for users by grouping relevant packages.\nRegularly updated by experts in each field.\nOffers a starting point for exploring specialized R tools."
+    "text": "CRAN Taskviews\n\nDefinition: A CRAN Task View is a curated collection of R packages focused on a specific topic or area of research.\nPurpose: Organizes packages into categories, making it easier for users to find the right tools for their work.\nTopics: Ranges from “Machine Learning” to “Ecology” to “Time Series Analysis” and beyond.\nBenefits:\n\nSaves time for users by grouping relevant packages.\nRegularly updated by experts in each field.\nOffers a starting point for exploring specialized R tools.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#agriculture-task-view",
     "href": "day3.html#agriculture-task-view",
     "title": "Reproducible Data Science with R III",
     "section": "Agriculture Task View",
-    "text": "Agriculture Task View\n\n\nIt compiles R packages useful for agricultural research and data analysis.\n\n\n\n\n\nContent Includes:\n\nPackages for analyzing crop and livestock data.\nTools for spatial analysis of agricultural data.\nResources for agricultural economics and statistical models.\n\nExamples of Included Packages:\n\nagricolae: Provides tools for analysis of experimental data in agriculture.\nagridat: A collection of agricultural datasets for research and teaching.\n\nWhy Use It?\n\nSimplifies the search for agricultural tools.\nHelps researchers quickly identify relevant resources for their work."
+    "text": "Agriculture Task View\n\n\nIt compiles R packages useful for agricultural research and data analysis.\n\n\n\n\nContent Includes:\n\nPackages for analyzing crop and livestock data.\nTools for spatial analysis of agricultural data.\nResources for agricultural economics and statistical models.\n\nExamples of Included Packages:\n\nagricolae: Provides tools for analysis of experimental data in agriculture.\nagridat: A collection of agricultural datasets for research and teaching.\n\nWhy Use It?\n\nSimplifies the search for agricultural tools.\nHelps researchers quickly identify relevant resources for their work.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#github-open-source-platform",
     "href": "day3.html#github-open-source-platform",
     "title": "Reproducible Data Science with R III",
     "section": "GitHub: Open-Source Platform",
-    "text": "GitHub: Open-Source Platform\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality"
+    "text": "GitHub: Open-Source Platform\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#bioconductor",
     "href": "day3.html#bioconductor",
     "title": "Reproducible Data Science with R III",
     "section": "Bioconductor",
-    "text": "Bioconductor\n\n\n\nA platform designed for bioinformatics and computational biology, providing tools for genomic and biomedical data.\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nTailored for Bioinformatics: Ideal for handling specialized data"
+    "text": "Bioconductor\n\n\n\nA platform designed for bioinformatics and computational biology, providing tools for genomic and biomedical data.\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nTailored for Bioinformatics: Ideal for handling specialized data",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
   },
   {
     "objectID": "day3.html#thank-you",
     "href": "day3.html#thank-you",
     "title": "Reproducible Data Science with R III",
     "section": "THANK YOU!",
-    "text": "THANK YOU!\n\nacorrend@uoguelph.ca Adrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\nRm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. \n\nContact me\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://adriancorrendo.github.io"
+    "text": "THANK YOU!\n\nacorrend@uoguelph.ca Adrian A. Correndo\nAssistant Professor\nSustainable Cropping Systems\nDepartment of Plant Agriculture\nUniversity of Guelph\nRm 226, Crop Science Bldg | Department of Plant Agriculture Ontario Agricultural College | University of Guelph | 50 Stone Rd E, Guelph, ON-N1G 2W1, Canada. \n\nContact me",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
+  },
+  {
+    "objectID": "day1.html#comparison-summary-i",
+    "href": "day1.html#comparison-summary-i",
+    "title": "Reproducible Data Science with R",
+    "section": "Comparison Summary I 📊",
+    "text": "Comparison Summary I 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
+  },
+  {
+    "objectID": "day1.html#comparison-summary-ii",
+    "href": "day1.html#comparison-summary-ii",
+    "title": "Reproducible Data Science with R",
+    "section": "Comparison Summary II 📊",
+    "text": "Comparison Summary II 📊\nChoosing the right tool depends on:\n\nyour project’s requirements, \nteam structure & skills, and \nlicensing needs for research vs. production.\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
+  },
+  {
+    "objectID": "day1.html",
+    "href": "day1.html",
+    "title": "Reproducible Data Science with R",
+    "section": "",
+    "text": "Goal: Gain foundational knowledge and understand how data science can improve agricultural practices.\nLet’s dive into it with an emphasis on reproducibility and data literacy.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nRemember: Questions and discussions are encouraged! 💬",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
+  },
+  {
+    "objectID": "day3.html",
+    "href": "day3.html",
+    "title": "Reproducible Data Science with R III",
+    "section": "",
+    "text": "An R package is a collection of R functions, data, and documentation organized in a standardized format.\n\n\n\n\n\n\n\nFunctions: Reusable R code that performs specific tasks.\nData: Example datasets to illustrate package functions or concepts.\nDocumentation: Help files and vignettes explaining how to use the package.\nNamespace: Defines which functions are available to the user.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nPro Tip: Packages help simplify code reuse and make complex tasks more accessible.",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
+  },
+  {
+    "objectID": "day3.html#package-from-github",
+    "href": "day3.html#package-from-github",
+    "title": "Reproducible Data Science with R III",
+    "section": "Package from GitHub",
+    "text": "Package from GitHub\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality",
+    "crumbs": [
+      "Slides",
+      "Day 3"
+    ]
+  },
+  {
+    "objectID": "day2.html",
+    "href": "day2.html",
+    "title": "Reproducible Data Science with R II",
+    "section": "",
+    "text": "1. Open-Source\n\nFree to use and modify, with contributions from a large community.\n\n2. Multi-Platform\n\nRuns on Windows, macOS, and Linux, making it versatile for collaboration.\n\n3. Community Support\n\nStrong online help through forums, tutorials, and dedicated resources.\n\n4. Continuous Development\n\nRegular updates keep R on the leading edge of data science.\n\n5. Reproducible Workflows\n\nTools like Rmarkdown and Quarto facilitates the job.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1. An interface to R\n\nProvides a user-friendly environment to work with R.\n\n2. Integrates various components of an analysis\n\nCombines data, code, and output in one place, simplifying the workflow.\n\n3. Colored syntax\n\nHighlights code with colors, making it easier to read and spot errors, improving code clarity.\n\n4. Syntax suggestions\n\nOffers autocomplete suggestions, which speeds up coding and reduces mistakes.\n\n5. RStudio panels\n\nPanels for console, scripts, files, and plots, giving quick access to all elements.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1. Track Changes\n\nMaintain a complete history of edits, making it easy to identify when and why changes were made.\n\n2. Collaborate Seamlessly\n\nMultiple users can work together without overwriting each other’s work, enhancing teamwork.\n\n3. Ensure Data Integrity\n\nProtect primary data by using branches for experimentation, avoiding accidental overwrites.\n\n4. Boost Reproducibility\n\nAccess exact versions of code and data, enabling others to reproduce your work reliably.\n\n5. Provide Built-in Documentation\n\nEach change can be documented, helping others understand your workflow and decisions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit\n\nA version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.\n\nGitHub\n\nAn online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieve soil data\n\n\n\n\n\n\n\n\n\n\nRetrieving weather data\n\n\n\n\n\n\n\n\n\n\nSoil test correlation analysis\n\n\n\n\n\n\n\n\n\n\nPrediction performance metrics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocumentation and Code Comments\n\nMetadata: data origin, format, structure, and meaning.\nCode comments: explanations directly in scripts for future reference.\n\nVersion Control (Git/GitHub)\n\nTracks changes to code over time, can return to previous versions.\nUseful for collaborative work and transparency.\n\nOrganization & Structured coding…\n\n\n\n\n\nOrganizing Projects for Reproducibility\n\nFolder setup: data/, code/, results/ folders for logical organization.\nREADME file: brief guide to project structure, data sources, and analysis steps.\n\nSample Project Structure\nproject_directory/\n├── data/       # Raw and processed datasets\n├── code/    # Code files for data processing\n├── results/    # Generated results, plots, and reports\n├── README.md   # Overview of the project structure and purpose",
+    "crumbs": [
+      "Slides",
+      "Day 2"
+    ]
   }
 ]
