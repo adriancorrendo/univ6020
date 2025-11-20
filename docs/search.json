@@ -187,11 +187,22 @@
     ]
   },
   {
-    "objectID": "day1.html#comparison-summary",
-    "href": "day1.html#comparison-summary",
+    "objectID": "day1.html#comparison-summary-i",
+    "href": "day1.html#comparison-summary-i",
     "title": "Reproducible Data Science with R",
-    "section": "Comparison Summary 📊",
-    "text": "Comparison Summary 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.\n\n\n\n\n\n\nChoosing the right tool depends on your project’s requirements, team skills, and licensing needs for research vs. production.",
+    "section": "Comparison Summary I 📊",
+    "text": "Comparison Summary I 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary",
+    "crumbs": [
+      "Slides",
+      "Day 1"
+    ]
+  },
+  {
+    "objectID": "day1.html#comparison-summary-ii",
+    "href": "day1.html#comparison-summary-ii",
+    "title": "Reproducible Data Science with R",
+    "section": "Comparison Summary II 📊",
+    "text": "Comparison Summary II 📊\nChoosing the right tool depends on:\n\nyour project’s requirements, \nteam structure & skills, and \nlicensing needs for research vs. production.\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.",
     "crumbs": [
       "Slides",
       "Day 1"
@@ -821,11 +832,11 @@
     ]
   },
   {
-    "objectID": "day3.html#github-open-source-platform",
-    "href": "day3.html#github-open-source-platform",
+    "objectID": "day3.html#package-from-github",
+    "href": "day3.html#package-from-github",
     "title": "Reproducible Data Science with R III",
-    "section": "GitHub: Open-Source Platform",
-    "text": "GitHub: Open-Source Platform\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality",
+    "section": "Package from GitHub",
+    "text": "Package from GitHub\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality",
     "crumbs": [
       "Slides",
       "Day 3"
@@ -851,72 +862,6 @@
     "crumbs": [
       "Slides",
       "Day 3"
-    ]
-  },
-  {
-    "objectID": "day1.html#comparison-summary-i",
-    "href": "day1.html#comparison-summary-i",
-    "title": "Reproducible Data Science with R",
-    "section": "Comparison Summary I 📊",
-    "text": "Comparison Summary I 📊\n\n\n\n\n\n\n\nNote\n\n\n\nR: Open-source, powerful for data science, statistical analysis, and visualizations.\nExcel: User-friendly, ideal for simple tasks, but limited for complex data wrangling.\nSAS: Industry-standard for statistical analysis with regulatory requirements, but costly and less flexible than R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nR\nPython\nJulia\n\n\n\n\nPrimary Strength\nStatistics & Visualization\nGeneral-purpose, ML, AI\nHigh-performance computing\n\n\nPerformance\nModerate\nModerate\nHigh\n\n\nLicensing\nGPL (core), MIT, BSD (some)\nPSFL, highly permissive\nMIT, highly permissive\n\n\nProduction Use\nLimited by GPL\nVery friendly for proprietary\nVery friendly for proprietary",
-    "crumbs": [
-      "Slides",
-      "Day 1"
-    ]
-  },
-  {
-    "objectID": "day1.html#comparison-summary-ii",
-    "href": "day1.html#comparison-summary-ii",
-    "title": "Reproducible Data Science with R",
-    "section": "Comparison Summary II 📊",
-    "text": "Comparison Summary II 📊\nChoosing the right tool depends on:\n\nyour project’s requirements, \nteam structure & skills, and \nlicensing needs for research vs. production.\n\n\n\n\n\n\n\n\nTip\n\n\n\nR: Best for statistical analysis and visualization, but GPL license may restrict use in proprietary products.\nPython: Strong in ML and AI with highly permissive licensing, making it ideal for production.\nJulia: Excellent for high-performance computing, with permissive licensing suitable for proprietary use.",
-    "crumbs": [
-      "Slides",
-      "Day 1"
-    ]
-  },
-  {
-    "objectID": "day1.html",
-    "href": "day1.html",
-    "title": "Reproducible Data Science with R",
-    "section": "",
-    "text": "Goal: Gain foundational knowledge and understand how data science can improve agricultural practices.\nLet’s dive into it with an emphasis on reproducibility and data literacy.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nRemember: Questions and discussions are encouraged! 💬",
-    "crumbs": [
-      "Slides",
-      "Day 1"
-    ]
-  },
-  {
-    "objectID": "day3.html",
-    "href": "day3.html",
-    "title": "Reproducible Data Science with R III",
-    "section": "",
-    "text": "An R package is a collection of R functions, data, and documentation organized in a standardized format.\n\n\n\n\n\n\n\nFunctions: Reusable R code that performs specific tasks.\nData: Example datasets to illustrate package functions or concepts.\nDocumentation: Help files and vignettes explaining how to use the package.\nNamespace: Defines which functions are available to the user.\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nPro Tip: Packages help simplify code reuse and make complex tasks more accessible.",
-    "crumbs": [
-      "Slides",
-      "Day 3"
-    ]
-  },
-  {
-    "objectID": "day3.html#package-from-github",
-    "href": "day3.html#package-from-github",
-    "title": "Reproducible Data Science with R III",
-    "section": "Package from GitHub",
-    "text": "Package from GitHub\n\n\n\nA platform that allows developers to share packages with fewer restrictions, encouraging innovation and collaboration.\n\n\n\n\n\n\n\n\n\n\n\nPros 🚀\n\n\n\nCutting-edge features and fast updates\nFlexible release of experimental tools or features\nCommunity-driven contributions and improvements\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCons ⚠️\n\n\n\nLess stability\nPotential for bugs and security risks\nRequires manual dependency management\nVariable documentation quality",
-    "crumbs": [
-      "Slides",
-      "Day 3"
-    ]
-  },
-  {
-    "objectID": "day2.html",
-    "href": "day2.html",
-    "title": "Reproducible Data Science with R II",
-    "section": "",
-    "text": "1. Open-Source\n\nFree to use and modify, with contributions from a large community.\n\n2. Multi-Platform\n\nRuns on Windows, macOS, and Linux, making it versatile for collaboration.\n\n3. Community Support\n\nStrong online help through forums, tutorials, and dedicated resources.\n\n4. Continuous Development\n\nRegular updates keep R on the leading edge of data science.\n\n5. Reproducible Workflows\n\nTools like Rmarkdown and Quarto facilitates the job.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1. An interface to R\n\nProvides a user-friendly environment to work with R.\n\n2. Integrates various components of an analysis\n\nCombines data, code, and output in one place, simplifying the workflow.\n\n3. Colored syntax\n\nHighlights code with colors, making it easier to read and spot errors, improving code clarity.\n\n4. Syntax suggestions\n\nOffers autocomplete suggestions, which speeds up coding and reduces mistakes.\n\n5. RStudio panels\n\nPanels for console, scripts, files, and plots, giving quick access to all elements.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1. Track Changes\n\nMaintain a complete history of edits, making it easy to identify when and why changes were made.\n\n2. Collaborate Seamlessly\n\nMultiple users can work together without overwriting each other’s work, enhancing teamwork.\n\n3. Ensure Data Integrity\n\nProtect primary data by using branches for experimentation, avoiding accidental overwrites.\n\n4. Boost Reproducibility\n\nAccess exact versions of code and data, enabling others to reproduce your work reliably.\n\n5. Provide Built-in Documentation\n\nEach change can be documented, helping others understand your workflow and decisions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit\n\nA version control system that tracks changes in files on your local computer, allowing you to manage versions and revert to previous work.\n\nGitHub\n\nAn online platform for hosting Git repositories, enabling easy collaboration, project sharing, and cloud storage.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieve soil data\n\n\n\n\n\n\n\n\n\n\nRetrieving weather data\n\n\n\n\n\n\n\n\n\n\nSoil test correlation analysis\n\n\n\n\n\n\n\n\n\n\nPrediction performance metrics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocumentation and Code Comments\n\nMetadata: data origin, format, structure, and meaning.\nCode comments: explanations directly in scripts for future reference.\n\nVersion Control (Git/GitHub)\n\nTracks changes to code over time, can return to previous versions.\nUseful for collaborative work and transparency.\n\nOrganization & Structured coding…\n\n\n\n\n\nOrganizing Projects for Reproducibility\n\nFolder setup: data/, code/, results/ folders for logical organization.\nREADME file: brief guide to project structure, data sources, and analysis steps.\n\nSample Project Structure\nproject_directory/\n├── data/       # Raw and processed datasets\n├── code/    # Code files for data processing\n├── results/    # Generated results, plots, and reports\n├── README.md   # Overview of the project structure and purpose",
-    "crumbs": [
-      "Slides",
-      "Day 2"
     ]
   }
 ]
