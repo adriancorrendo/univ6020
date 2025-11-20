@@ -532,7 +532,7 @@
     "href": "index.html",
     "title": "Reproducible Ag Data Science with R",
     "section": "",
-    "text": "Welcome 🚜 🌽\nIn this special module, part of the UNIV6020 course, you’ll dive into key principles and practices for reproducible data science within the context of agriculture. Throughout our time together, you’ll gain hands-on experience in R, learning how to structure, analyze, and present data in a way that ensures transparency and replicability—essential skills in today’s data-driven world of agriculture. Your understanding will be assessed with a short quiz to reinforce these core concepts.\nLooking forward to explore the power of reproducibility in agricultural data science!",
+    "text": "Welcome 🚜 🌽\nIn this special module of the UNIV6020 course, you’ll dive into key principles and practices for reproducible data science within the context of agriculture. Throughout our time together, you’ll gain hands-on experience in R, learning how to structure, analyze, and present data in a way that ensures transparent and reproducible frameworks, essential in today’s data-driven world of agriculture. Your understanding will be assessed with a short quiz to reinforce these core concepts.\nLooking forward to explore the power of reproducibility in agricultural data science!",
     "crumbs": [
       "Home"
     ]
